@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUV Rental | Pullman Safaris</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="../../images/logo.png" alt="Pullman Safaris Logo" class="h-12">
+                <span class="ml-2 text-xl font-bold text-green-800">Pullman Safaris</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="../../index.html" class="text-gray-600 hover:text-green-600 font-medium">Home</a>
+                <a href="../../about.html" class="text-gray-600 hover:text-green-600 font-medium">About Us</a>
+                <a href="../../safaris/index.html" class="text-gray-600 hover:text-green-600 font-medium">Safaris</a>
+                <a href="../index.html" class="text-green-800 font-medium">Car Rentals</a>
+                <a href="../../testimonials.html" class="text-gray-600 hover:text-green-600 font-medium">Testimonials</a>
+                <a href="../../blog.html" class="text-gray-600 hover:text-green-600 font-medium">Blog</a>
+                <a href="../../contact.html" class="text-gray-600 hover:text-green-600 font-medium">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="../../index.html" class="block py-2 text-gray-600 hover:text-green-600">Home</a>
+            <a href="../../about.html" class="block py-2 text-gray-600 hover:text-green-600">About Us</a>
+            <a href="../../safaris/index.html" class="block py-2 text-gray-600 hover:text-green-600">Safaris</a>
+            <a href="../index.html" class="block py-2 text-green-800">Car Rentals</a>
+            <a href="../../testimonials.html" class="block py-2 text-gray-600 hover:text-green-600">Testimonials</a>
+            <a href="../../blog.html" class="block py-2 text-gray-600 hover:text-green-600">Blog</a>
+            <a href="../../contact.html" class="block py-2 text-gray-600 hover:text-green-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Car Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-cover bg-center" style="background-image: url('../../images/suv-hero.jpg');">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">SUV Rental</h1>
+            <p class="text-xl md:text-2xl mb-8">Comfortable and capable for families and light safari routes</p>
+        </div>
+    </section>
+
+    <!-- Car Overview Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-2/3">
+                    <h2 class="text-3xl font-bold text-green-800 mb-6">Vehicle Overview</h2>
+                    <p class="text-gray-700 mb-6">Our SUVs provide the perfect balance of comfort and capability, making them ideal for families or small groups exploring Uganda. With ample space and higher ground clearance than saloon cars, they can handle rougher roads while still providing a smooth ride.</p>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-green-800 mb-4">Key Features</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-users text-green-700 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Spacious Interior</h4>
+                                    <p class="text-gray-600 text-sm">Comfortably seats 5-7 passengers with luggage</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-car-side text-green-700 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">4x4 Capability</h4>
+                                    <p class="text-gray-600 text-sm">Handles light off-road and rough terrain</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-snowflake text-green-700 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Climate Control</h4>
+                                    <p class="text-gray-600 text-sm">Dual-zone air conditioning for all passengers</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-shield-alt text-green-700 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Safety Features</h4>
+                                    <p class="text-gray-600 text-sm">ABS, airbags, and stability control</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-green-800 mb-4">Specifications</h3>
+                        <dl class="car-specs grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <dt>Make & Model:</dt>
+                            <dd>Toyota RAV4 / Nissan X-Trail (or similar)</dd>
+                            
+                            <dt>Year:</dt>
+                            <dd>2018-2021 models</dd>
+                            
+                            <dt>Engine:</dt>
+                            <dd>2.5L 4-cylinder</dd>
+                            
+                            <dt>Transmission:</dt>
+                            <dd>Automatic</dd>
+                            
+                            <dt>Drive:</dt>
+                            <dd>4WD (selectable)</dd>
+                            
+                            <dt>Seating Capacity:</dt>
+                            <dd>5-7 passengers</dd>
+                            
+                            <dt>Fuel Consumption:</dt>
+                            <dd>Approx. 10-12 km/L</dd>
+                            
+                            <dt>Luggage Capacity:</dt>
+                            <dd>4-6 medium suitcases</dd>
+                        </dl>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-green-800 mb-4">Ideal For</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li>Family vacations and group travel</li>
+                            <li>Light safari routes and national park visits</li>
+                            <li>Road trips with mixed paved and unpaved roads</li>
+                            <li>Travelers needing extra space and comfort</li>
+                            <li>Corporate groups and business travel</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/3">
+                    <div class="bg-gray-100 p-6 rounded-lg sticky top-24">
+                        <h3 class="text-2xl font-bold text-green-800 mb-4">Rental Details</h3>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-bold text-gray-800 mb-2">Daily Rate</h4>
+                            <p class="text-3xl font-bold text-yellow-600">$50 <span class="text-sm font-normal text-gray-600">per day</span></p>
+                            <p class="text-sm text-gray-600">(minimum 2-day rental)</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-bold text-gray-800 mb-2">Weekly Rate</h4>
+                            <p class="text-2xl font-bold text-yellow-600">$300 <span class="text-sm font-normal text-gray-600">per week</span></p>
+                            <p class="text-sm text-gray-600">(7 days, save $50)</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-bold text-gray-800 mb-2">Monthly Rate</h4>
+                            <p class="text-2xl font-bold text-yellow-600">$1,000 <span class="text-sm font-normal text-gray-600">per month</span></p>
+                            <p class="text-sm text-gray-600">(30 days, save $500)</p>
+                        </div>
+                        
+                        <div class="mb-6 border-t border-gray-300 pt-4">
+                            <h4 class="font-bold text-gray-800 mb-2">Included in Rental</h4>
+                            <ul class="text-sm text-gray-700 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                    <span>Unlimited mileage</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                    <span>Comprehensive insurance</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+ <span>24/7 roadside assistance</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+<span>Vehicle delivery available</span>
+</li>
+</ul>
+</div>
+                    <a href="../../booking.html" class="block w-full bg-green-700 hover:bg-green-600 text-white text-center font-bold py-3 px-6 rounded-lg transition duration-300 mb-4">
+                        Book This Vehicle
+                    </a>
+                    
+                    <a href="../../contact.html" class="block w-full bg-white hover:bg-gray-100 text-green-800 text-center font-bold py-3 px-6 rounded-lg border border-green-700 transition duration-300">
+                        Enquire Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Photo Gallery</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <a href="../../images/suv-gallery1.jpg" class="gallery-item">
+                <img src="../../images/suv-gallery1-thumb.jpg" alt="SUV exterior" class="w-full h-48 object-cover rounded-lg hover:opacity-90 transition duration-300">
+            </a>
+            <a href="../../images/suv-gallery2.jpg" class="gallery-item">
+                <img src="../../images/suv-gallery2-thumb.jpg" alt="SUV interior" class="w-full h-48 object-cover rounded-lg hover:opacity-90 transition duration-300">
+            </a>
+            <a href="../../images/suv-gallery3.jpg" class="gallery-item">
+                <img src="../../images/suv-gallery3-thumb.jpg" alt="SUV cargo space" class="w-full h-48 object-cover rounded-lg hover:opacity-90 transition duration-300">
+            </a>
+            <a href="../../images/suv-gallery4.jpg" class="gallery-item">
+                <img src="../../images/suv-gallery4-thumb.jpg" alt="SUV dashboard" class="w-full h-48 object-cover rounded-lg hover:opacity-90 transition duration-300">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Rental Terms Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Rental Terms</h2>
+        
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-green-800 mb-4">Requirements</h3>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Valid driver's license (international license if not in English)</li>
+                    <li>Minimum age: 23 years</li>
+                    <li>Credit card in driver's name for security deposit ($500 hold)</li>
+                    <li>Passport or national ID for verification</li>
+                </ul>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-green-800 mb-4">Insurance Coverage</h3>
+                <p class="text-gray-700 mb-4">All rentals include comprehensive insurance with a deductible of $750. You can reduce the deductible to $250 by purchasing our Super Cover package for an additional $15/day.</p>
+                <p class="text-gray-700">Insurance does not cover damage caused by reckless driving, off-road use beyond light trails, or driving under the influence.</p>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-green-800 mb-4">Additional Options</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-green-800 mb-2">Roof Rack</h4>
+                        <p class="text-gray-600 mb-2">$8/day</p>
+                        <p class="text-sm text-gray-600">For extra luggage and equipment</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-green-800 mb-2">Child Safety Seats</h4>
+                        <p class="text-gray-600 mb-2">$5/day each</p>
+                        <p class="text-sm text-gray-600">Available for infants and toddlers</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-green-800 mb-2">GPS Navigation</h4>
+                        <p class="text-gray-600 mb-2">$5/day</p>
+                        <p class="text-sm text-gray-600">With offline maps for remote areas</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-green-800 mb-2">Additional Driver</h4>
+                        <p class="text-gray-600 mb-2">$3/day</p>
+                        <p class="text-sm text-gray-600">Add a second authorized driver</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Related Vehicles Section -->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Other Vehicles You May Like</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Related Vehicle 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="../../images/landcruiser-thumb.jpg" alt="Safari Land Cruiser" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-green-800 mb-2">Safari Land Cruiser</h3>
+                    <p class="text-gray-600 mb-4">The ultimate vehicle for serious safari adventures.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-yellow-600 font-bold">From $150/day</span>
+                        <a href="../landcruiser.html" class="text-green-700 hover:text-green-600 font-medium">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Related Vehicle 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="../../images/van-thumb.jpg" alt="Passenger Van" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-green-800 mb-2">Passenger Van</h3>
+                    <p class="text-gray-600 mb-4">Spacious transport for groups of up to 12 people.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-yellow-600 font-bold">From $80/day</span>
+                        <a href="../van.html" class="text-green-700 hover:text-green-600 font-medium">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Related Vehicle 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="../../images/pickup-thumb.jpg" alt="Pickup Truck" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-green-800 mb-2">Pickup Truck</h3>
+                    <p class="text-gray-600 mb-4">Rugged 4x4 for adventurous travelers and cargo transport.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-yellow-600 font-bold">From $70/day</span>
+                        <a href="../pickup.html" class="text-green-700 hover:text-green-600 font-medium">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="py-16 bg-green-800 text-white">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Ready to Reserve Your SUV?</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today to check availability and get the best rates for your travel dates.</p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="../../booking.html" class="bg-white hover:bg-gray-100 text-green-800 font-bold py-3 px-6 rounded-lg transition duration-300">Book Now</a>
+            <a href="../../contact.html" class="bg-transparent hover:bg-green-700 border-2 border-white text-white font-bold py-3 px-6 rounded-lg transition duration-300">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <img src="../../images/logo-white.png" alt="Pullman Safaris Logo" class="h-12 mb-4">
+                <p class="mb-4">Explore Africa with confidence through our safari packages and reliable car rental services.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-green-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-green-400"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-green-400"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-green-400"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white hover:text-green-400"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="../../index.html" class="hover:text-green-400">Home</a></li>
+                    <li><a href="../../about.html" class="hover:text-green-400">About Us</a></li>
+                    <li><a href="../../safaris/index.html" class="hover:text-green-400">Safari Packages</a></li>
+                    <li><a href="../index.html" class="hover:text-green-400">Car Rentals</a></li>
+                    <li><a href="../../testimonials.html" class="hover:text-green-400">Testimonials</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                        <span>Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <span>+256 702 551 090</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span>info@pullmansafaris.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                <p class="mb-4">Subscribe to our newsletter for updates and special offers.</p>
+                <form class="flex">
+                    <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-900">
+                    <button type="submit" class="bg-green-700 hover:bg-green-600 px-4 py-2 rounded-r-lg">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2023 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/256702551090" class="fixed bottom-6 right-6 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition duration-300 z-50">
+    <i class="fab fa-whatsapp text-2xl"></i>
+</a>
+
+<script src="../../js/script.js"></script>
+<!-- Lightbox script for gallery -->
+<script>
+    // Simple lightbox functionality for gallery images
+    document.querySelectorAll('.gallery-item').forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            const imgSrc = this.getAttribute('href');
+            const lightbox = document.createElement('div');
+            lightbox.className = 'fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4';
+            lightbox.innerHTML = `
+                <div class="relative max-w-4xl w-full">
+                    <img src="${imgSrc}" class="max-h-screen w-full object-contain">
+                    <button class="absolute top-4 right-4 text-white text-3xl">&times;</button>
+                </div>
+            `;
+            document.body.appendChild(lightbox);
+            
+            lightbox.querySelector('button').addEventListener('click',

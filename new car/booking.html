@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Pullman Safaris and Car Rentals Ltd</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation (same as index.html) -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <!-- ... same header content as index.html ... -->
+    </header>
+
+    <!-- Booking Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-cover bg-center" style="background-image: url('images/booking-hero.jpg');">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Book Your Adventure</h1>
+            <p class="text-xl md:text-2xl mb-8">Fill out the form below to reserve your safari or rental vehicle</p>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-gray-100 p-6 rounded-lg mb-8">
+                    <h2 class="text-2xl font-bold text-green-800 mb-4">Before You Book</h2>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>For safari bookings, please check availability of permits (especially gorilla trekking permits) before proceeding</li>
+                        <li>A 30% deposit is required to confirm your booking</li>
+                        <li>Balance payment is due 30 days before your trip start date</li>
+                        <li>Review our <a href="#" class="text-green-700 hover:text-green-600 underline">booking terms and conditions</a></li>
+                    </ul>
+                </div>
+                
+                <form id="booking-form" class="booking-form">
+                    <div class="mb-8">
+                        <h2 class="text-2xl font-bold text-green-800 mb-6">Personal Information</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first-name">First Name*</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            <div>
+                                <label for="last-name">Last Name*</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                            <div>
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div>
+                                <label for="phone">Phone Number*</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div>
+                                <label for="country">Country*</label>
+                                <input type="text" id="country" name="country" required>
+                            </div>
+                            <div>
+                                <label for="passengers">Number of Passengers</label>
+                                <input type="number" id="passengers" name="passengers" min="1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h2 class="text-2xl font-bold text-green-800 mb-6">Booking Details</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="booking-type">Booking Type*</label>
+                                <select id="booking-type" name="booking-type" required>
+                                    <option value="">Select booking type</option>
+                                    <option value="safari">Safari Package</option>
+                                    <option value="car-rental">Car Rental</option>
+                                    <option value="both">Safari + Car Rental</option>
+                                </select>
+                            </div>
+                            <div id="safari-package-field" class="hidden">
+                                <label for="safari-package">Safari Package</label>
+                                <select id="safari-package" name="safari-package">
+                                    <option value="">Select safari package</option>
+                                    <option value="bwindi">Bwindi Gorilla Trekking</option>
+                                    <option value="queen-elizabeth">Queen Elizabeth Wildlife</option>
+                                    <option value="murchison">Murchison Falls</option>
+                                    <option value="kibale">Kibale Chimpanzee Trekking</option>
+                                    <option value="kenya">Kenya Safari</option>
+                                    <option value="custom">Custom Safari</option>
+                                </select>
+                            </div>
+                            <div id="car-type-field" class="hidden">
+                                <label for="car-type">Vehicle Type</label>
+                                <select id="car-type" name="car-type">
+                                    <option value="">Select vehicle</option>
+                                    <option value="saloon">Saloon Car</option>
+                                    <option value="suv">SUV</option>
+                                    <option value="landcruiser">Safari Land Cruiser</option>
+                                    <option value="van">Passenger Van</option>
+                                    <option value="pickup">Pickup Truck</option>
+                                    <option value="bus">Bus</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="rental-option">Rental Option</label>
+                                <select id="rental-option" name="rental-option">
+                                    <option value="">Select option</option>
+                                    <option value="self-drive">Self Drive</option>
+                                    <option value="chauffeur">Chauffeur-Driven</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="start-date">Start Date*</label>
+                                <input type="date" id="start-date" name="start-date" required>
+                            </div>
+                            <div>
+                                <label for="end-date">End Date*</label>
+                                <input type="date" id="end-date" name="end-date" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h2 class="text-2xl font-bold text-green-800 mb-6">Additional Information</h2>
+                        <div>
+                            <label for="special-requests">Special Requests</label>
+                            <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any special requirements, dietary restrictions, preferred accommodation level, etc."></textarea>
+                        </div>
+                        <div class="mt-4">
+                            <label for="how-heard">How did you hear about us?</label>
+                            <select id="how-heard" name="how-heard">
+                                <option value="">Select option</option>
+                                <option value="search">Search Engine (Google, etc.)</option>
+                                <option value="social">Social Media</option>
+                                <option value="recommendation">Friend/Family Recommendation</option>
+                                <option value="travel-agent">Travel Agent</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-start">
+                            <input type="checkbox" id="terms" name="terms" class="mt-1 mr-2" required>
+                            <label for="terms" class="text-gray-700">I have read and agree to the <a href="#" class="text-green-700 hover:text-green-600 underline">terms and conditions</a>*</label>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="bg-green-700 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                            Submit Booking Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Need Help Booking?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone-alt text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-2">Call Us</h3>
+                    <p class="text-gray-700">+256 702 551 090</p>
+                    <p class="text-gray-600 text-sm">Mon-Fri: 8am-6pm EAT</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-2">Email Us</h3>
+                    <p class="text-gray-700">info@pullmansafaris.com</p>
+                    <p class="text-gray-600 text-sm">Response within 24 hours</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-whatsapp text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-800 mb-2">WhatsApp</h3>
+                    <p class="text-gray-700">+256 702 551 090</p>
+                    <p class="text-gray-600 text-sm">Quick responses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <!-- ... same footer content as index.html ... -->
+    </footer>
+
+    <!-- WhatsApp Floating Button (same as index.html) -->
+    <a href="https://wa.me/256702551090" class="fixed bottom-6 right-6 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Show/hide fields based on booking type
+        document.getElementById('booking-type').addEventListener('change', function() {
+            const bookingType = this.value;
+            const safariField = document.getElementById('safari-package-field');
+            const carField = document.getElementById('car-type-field');
+            
+            safariField.classList.add('hidden');
+            carField.classList.add('hidden');
+            
+            if (bookingType === 'safari' || bookingType === 'both') {
+                safariField.classList.remove('hidden');
+            }
+            
+            if (bookingType === 'car-rental' || bookingType === 'both') {
+                carField.classList.remove('hidden');
+            }
+        });
+        
+        // Set minimum date for date inputs to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('start-date').setAttribute('min', today);
+        document.getElementById('end-date').setAttribute('min', today);
+        
+        // Form submission
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value) {
+                    field.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    field.classList.remove('border-red-500');
+                }
+            });
+            
+            if (!isValid) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show a success message
+            alert('Thank you for your booking request! We will contact you shortly to confirm your reservation and discuss payment options.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

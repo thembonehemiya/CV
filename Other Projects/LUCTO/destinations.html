@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations - LUCTO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-leaf me-2"></i>LUCTO
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="destinations.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html">Book Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="page-header">
+      <div class="overlay"></div>
+      <div class="container">
+        <h1>Our Destinations</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Destinations</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Intro Section -->
+    <section class="destinations-intro py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-title">Explore the Beauty of Rwenzori</h2>
+            <p class="section-description">
+              Discover the breathtaking attractions we've identified in our community. From stunning waterfalls to unique cultural sites, the Rwenzori region offers unforgettable experiences for nature lovers and adventure seekers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Filter -->
+    <section class="destinations-filter py-3">
+      <div class="container">
+        <div class="filter-buttons text-center mb-4">
+          <button class="btn btn-filter active" data-filter="all">All Destinations</button>
+          <button class="btn btn-filter" data-filter="natural">Natural Attractions</button>
+          <button class="btn btn-filter" data-filter="cultural">Cultural Sites</button>
+          <button class="btn btn-filter" data-filter="wildlife">Wildlife</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations List -->
+    <section class="destinations-list py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Destination 1 -->
+          <div class="col-md-6 col-lg-4 destination-item" id="swing-bridge" data-category="natural">
+            <div class="destination-card">
+              <div class="destination-image">
+                <img src="https://images.pexels.com/photos/6647425/pexels-photo-6647425.jpeg" alt="Lhubiriha Swing Bridge" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h3>Lhubiriha Swing Bridge</h3>
+                <p class="location"><i class="fas fa-map-marker-alt me-2"></i>Kyabayenze</p>
+                <div class="destination-details">
+                  <p class="description">Experience the thrill of crossing the historic swing bridge over the Lhubiriha river.</p>
+                  <div class="destination-meta">
+                    <div class="price">
+                      <span class="amount">$15</span>
+                      <span class="period">per person</span>
+                    </div>
+                    <div class="duration">
+                      <i class="far fa-clock me-1"></i>
+                      <span>2 hours</span>
+                    </div>
+                  </div>
+                  <a href="booking.html?destination=swing-bridge" class="btn btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination 2 -->
+          <div class="col-md-6 col-lg-4 destination-item" data-category="cultural">
+            <div class="destination-card">
+              <div class="destination-image">
+                <img src="https://images.pexels.com/photos/3754299/pexels-photo-3754299.jpeg" alt="Kamirima Cultural Stones" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h3>Kamirima Cultural Stones</h3>
+                <p class="location"><i class="fas fa-map-marker-alt me-2"></i>Kisabu 1 Village</p>
+                <div class="destination-details">
+                  <p class="description">Explore the unique caves and cultural stones with triple unique caves in Kisabu village.</p>
+                  <div class="destination-meta">
+                    <div class="price">
+                      <span class="amount">$20</span>
+                      <span class="period">per person</span>
+                    </div>
+                    <div class="duration">
+                      <i class="far fa-clock me-1"></i>
+                      <span>3 hours</span>
+                    </div>
+                  </div>
+                  <a href="booking.html?destination=kamirima-cultural-stones" class="btn btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination 3 -->
+          <div class="col-md-6 col-lg-4 destination-item" data-category="cultural">
+            <div class="destination-card">
+              <div class="destination-image">
+                <img src="https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg" alt="Ibwelyakyona Stone" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h3>Ibwelyakyona Stone</h3>
+                <p class="location"><i class="fas fa-map-marker-alt me-2"></i>Kanyatsi 2 Village</p>
+                <div class="destination-details">
+                  <p class="description">Visit the famous stone with caves that has cultural significance to local communities.</p>
+                  <div class="destination-meta">
+                    <div class="price">
+                      <span class="amount">$18</span>
+                      <span class="period">per person</span>
+                    </div>
+                    <div class="duration">
+                      <i class="far fa-clock me-1"></i>
+                      <span>2.5 hours</span>
+                    </div>
+                  </div>
+                  <a href="booking.html?destination=ibwelyakyona-stone" class="btn btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination 4 -->
+          <div class="col-md-6 col-lg-4 destination-item" id="kabira-waterfall" data-category="natural">
+            <div class="destination-card">
+              <div class="destination-image">
+                <img src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg" alt="Kabira Starling Waterfall" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h3>Kabira Starling Waterfall</h3>
+                <p class="location"><i class="fas fa-map-marker-alt me-2"></i>Kitholhu Village</p>
+                <div class="destination-details">
+                  <p class="description">Marvel at the stunning waterfall cascading down the mountainside in Kitholhu village.</p>
+                  <div class="destination-meta">
+                    <div class="price">
+                      <span class="amount">$25</span>
+                      <span class="period">per person</span>
+                    </div>
+                    <div class="duration">
+                      <i class="far fa-clock me-1"></i>
+                      <span>4 hours</span>
+                    </div>
+                  </div>
+                  <a href="booking.html?destination=kabira-waterfall" class="btn btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination 5 -->
+          <div class="col-md-6 col-lg-4 destination-item" data-category="natural">
+            <div class="destination-card">
+              <div class="destination-image">
+                <img src="https://images.pexels.com/photos/2275275/pexels-photo-2275275.jpeg" alt="Kasalhalha Waterfalls" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h3>Kasalhalha Three Stapes Waterfalls</h3>
+                <p class="location"><i class="fas fa-map-marker-alt me-2"></i>Kitholhu Village</p>
+                <div class="destination-details">
+                  <p class="description">Experience the three-step waterfall with unique formation and stunning views.</p>
+                  <div class="destination-meta">
+                    <div class="price">
+                      <span class="amount">$22</span>
+                      <span class="period">per person</span>
+                    </div>
+                    <div class="duration">
+                      <i class="far fa-clock me-1"></i>
+                      <span>3.5 hours</span>
+                    </div>
+                  </div>
+                  <a href="booking.html?destination=kasalhalha-waterfalls" class="btn btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination 6 -->
+          <div class="col-md-6 col-lg-4 destination-item" id="kithakakisa-campsite" data-category="natural">
+            <div class="destination-card">
+              <div class="destination-image">
+                <img src="https://images.pexels.com/photos/2582818/pexels-photo-2582818.jpeg" alt="Kithakakisa Campsite View" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h3>Kithakakisa Campsite View</h3>
+                <p class="location"><i class="fas fa-map-marker-alt me-2"></i>Kinone Village</p>
+                <div class="destination-details">
+                  <p class="description">Enjoy panoramic views of the Rwenzori Mountains from our established campsite.</p>
+                  <div class="destination-meta">
+                    <div class="price">
+                      <span class="amount">$35</span>
+                      <span class="period">per night</span>
+                    </div>
+                    <div class="duration">
+                      <i class="far fa-clock me-1"></i>
+                      <span>Overnight</span>
+                    </div>
+                  </div>
+                  <a href="booking.html?destination=kithakakisa-campsite" class="btn btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination 7 -->
+          <div class="col-md-6 col-lg-4 destination-item" data-category="natural">
+            <div class="destination-card">
+              <div class="destination-image">
+                <img src="https://images.pexels.com/photos/1463936/pexels-photo-1463936.jpeg" alt="Kabira Fish Ponds" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h3>Kabira Fish Ponds</h3>
+                <p class="location"><i class="fas fa-map-marker-alt me-2"></i>Near Kisebere Primary School</p>
+                <div class="destination-details">
+                  <p class="description">Visit the sustainable fish ponds and learn about local aquaculture practices.</p>
+                  <div class="destination-meta">
+                    <div class="price">
+                      <span class="amount">$12</span>
+                      <span class="period">per person</span>
+                    </div>
+                    <div class="duration">
+                      <i class="far fa-clock me-1"></i>
+                      <span>1.5 hours</span>
+                    </div>
+                  </div>
+                  <a href="booking.html?destination=kabira-fish-ponds" class="btn btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination 8 -->
+          <div class="col-md-6 col-lg-4 destination-item" data-category="cultural">
+            <div class="destination-card">
+              <div class="destination-image">
+                <img src="https://images.pexels.com/photos/2749165/pexels-photo-2749165.jpeg" alt="Mbayirwe Black Smith" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h3>Mbayirwe Black Smith</h3>
+                <p class="location"><i class="fas fa-map-marker-alt me-2"></i>Bughungu Village</p>
+                <div class="destination-details">
+                  <p class="description">Witness traditional blacksmithing techniques that have been passed down for generations.</p>
+                  <div class="destination-meta">
+                    <div class="price">
+                      <span class="amount">$15</span>
+                      <span class="period">per person</span>
+                    </div>
+                    <div class="duration">
+                      <i class="far fa-clock me-1"></i>
+                      <span>2 hours</span>
+                    </div>
+                  </div>
+                  <a href="booking.html?destination=mbayirwe-black-smith" class="btn btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination 9 -->
+          <div class="col-md-6 col-lg-4 destination-item" data-category="natural">
+            <div class="destination-card">
+              <div class="destination-image">
+                <img src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg" alt="Rwamasunga Rock" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h3>Rwamasunga Huge Rock</h3>
+                <p class="location"><i class="fas fa-map-marker-alt me-2"></i>Kiraro Village</p>
+                <div class="destination-details">
+                  <p class="description">Explore the massive rock formation with panoramic views of the surrounding landscape.</p>
+                  <div class="destination-meta">
+                    <div class="price">
+                      <span class="amount">$18</span>
+                      <span class="period">per person</span>
+                    </div>
+                    <div class="duration">
+                      <i class="far fa-clock me-1"></i>
+                      <span>3 hours</span>
+                    </div>
+                  </div>
+                  <a href="booking.html?destination=rwamasunga-rock" class="btn btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination 10 -->
+          <div class="col-md-6 col-lg-4 destination-item" data-category="cultural">
+            <div class="destination-card">
+              <div class="destination-image">
+                <img src="https://images.pexels.com/photos/8099283/pexels-photo-8099283.jpeg" alt="Tsurunga Cave" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h3>Tsurunga Cave</h3>
+                <p class="location"><i class="fas fa-map-marker-alt me-2"></i>Kabwe Village</p>
+                <div class="destination-details">
+                  <p class="description">Discover the mysterious cave with cultural significance to the local communities.</p>
+                  <div class="destination-meta">
+                    <div class="price">
+                      <span class="amount">$20</span>
+                      <span class="period">per person</span>
+                    </div>
+                    <div class="duration">
+                      <i class="far fa-clock me-1"></i>
+                      <span>2.5 hours</span>
+                    </div>
+                  </div>
+                  <a href="booking.html?destination=tsurunga-cave" class="btn btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination 11 -->
+          <div class="col-md-6 col-lg-4 destination-item" data-category="cultural">
+            <div class="destination-card">
+              <div class="destination-image">
+                <img src="https://images.pexels.com/photos/3694706/pexels-photo-3694706.jpeg" alt="Buralya Rock" class="img-fluid">
+              </div>
+              <div class="destination-content">
+                <h3>Buralya Huge Rock</h3>
+                <p class="location"><i class="fas fa-map-marker-alt me-2"></i>Buralya Area</p>
+                <div class="destination-details">
+                  <p class="description">Explore the 1 square kilometer rock formation with unique caves and cultural significance.</p>
+                  <div class="destination-meta">
+                    <div class="price">
+                      <span class="amount">$22</span>
+                      <span class="period">per person</span>
+                    </div>
+                    <div class="duration">
+                      <i class="far fa-clock me-1"></i>
+                      <span>4 hours</span>
+                    </div>
+                  </div>
+                  <a href="booking.html?destination=buralya-rock" class="btn btn-primary">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inside the Park -->
+    <section class="park-attractions py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Inside the Park Attractions</h2>
+        <p class="text-center mb-4">The following attractions can be found along our 3.5km trail inside the Rwenzori Mountains National Park:</p>
+        
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="park-attraction-card" data-category="natural">
+              <div class="icon"><i class="fas fa-tree"></i></div>
+              <h3>Flora</h3>
+              <ul>
+                <li>Amathembe</li>
+                <li>Smilax used for making buskers</li>
+                <li>Smelling trees</li>
+                <li>Herbal trees</li>
+                <li>Different species of trees</li>
+                <li>Different species of grass</li>
+                <li>Bamboo trees</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="park-attraction-card" data-category="wildlife">
+              <div class="icon"><i class="fas fa-paw"></i></div>
+              <h3>Wildlife</h3>
+              <ul>
+                <li>Red tailed monkeys</li>
+                <li>Blue monkeys</li>
+                <li>Calabus monkeys</li>
+                <li>Squirrels</li>
+                <li>Mountain Gorillas</li>
+                <li>Sun birds</li>
+                <li>More than twenty species of birds</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="park-attraction-card" data-category="natural">
+              <div class="icon"><i class="fas fa-mountain"></i></div>
+              <h3>Landscapes</h3>
+              <ul>
+                <li>Valleys</li>
+                <li>Ridges</li>
+                <li>Hills</li>
+                <li>Eastern DR Congo view</li>
+                <li>Three cultural sites (Kinone, Burangwa and Katsape)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-5">
+          <a href="booking.html?destination=park-trail" class="btn btn-primary btn-lg">Book Park Trail Tour</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Package Tours -->
+    <section class="package-tours py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Package Tours</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="tour-package-card">
+              <div class="package-image">
+                <img src="https://images.pexels.com/photos/7625316/pexels-photo-7625316.jpeg" alt="Day Explorer Package" class="img-fluid">
+                <div class="package-badge">Most Popular</div>
+              </div>
+              <div class="package-content">
+                <h3>Day Explorer Package</h3>
+                <ul class="package-features">
+                  <li><i class="fas fa-check-circle"></i> Visit to 2 community attractions</li>
+                  <li><i class="fas fa-check-circle"></i> Local guide</li>
+                  <li><i class="fas fa-check-circle"></i> Lunch included</li>
+                  <li><i class="fas fa-check-circle"></i> Transportation from meeting point</li>
+                </ul>
+                <div class="package-price">
+                  <span class="price">$45</span>
+                  <span class="period">per person</span>
+                </div>
+                <a href="booking.html?package=day-explorer" class="btn btn-primary w-100">Book This Package</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="tour-package-card">
+              <div class="package-image">
+                <img src="https://images.pexels.com/photos/5364933/pexels-photo-5364933.jpeg" alt="Overnight Adventure" class="img-fluid">
+              </div>
+              <div class="package-content">
+                <h3>Overnight Adventure</h3>
+                <ul class="package-features">
+                  <li><i class="fas fa-check-circle"></i> Stay at Kithakakisa Campsite</li>
+                  <li><i class="fas fa-check-circle"></i> Visit to 3 community attractions</li>
+                  <li><i class="fas fa-check-circle"></i> All meals included</li>
+                  <li><i class="fas fa-check-circle"></i> Experienced guide</li>
+                  <li><i class="fas fa-check-circle"></i> Cultural evening performance</li>
+                </ul>
+                <div class="package-price">
+                  <span class="price">$95</span>
+                  <span class="period">per person</span>
+                </div>
+                <a href="booking.html?package=overnight-adventure" class="btn btn-primary w-100">Book This Package</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="tour-package-card">
+              <div class="package-image">
+                <img src="https://images.pexels.com/photos/6271625/pexels-photo-6271625.jpeg" alt="Rwenzori Explorer" class="img-fluid">
+              </div>
+              <div class="package-content">
+                <h3>Rwenzori Explorer</h3>
+                <ul class="package-features">
+                  <li><i class="fas fa-check-circle"></i> 3-day adventure</li>
+                  <li><i class="fas fa-check-circle"></i> Trail hiking inside Rwenzori Mountains NP</li>
+                  <li><i class="fas fa-check-circle"></i> Visit to 5 community attractions</li>
+                  <li><i class="fas fa-check-circle"></i> All meals and accommodation</li>
+                  <li><i class="fas fa-check-circle"></i> Expert guides</li>
+                  <li><i class="fas fa-check-circle"></i> Photography opportunities</li>
+                </ul>
+                <div class="package-price">
+                  <span class="price">$250</span>
+                  <span class="period">per person</span>
+                </div>
+                <a href="booking.html?package=rwenzori-explorer" class="btn btn-primary w-100">Book This Package</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5">
+      <div class="container">
+        <div class="cta-content text-center">
+          <h2>Ready to Experience the Rwenzori Mountains?</h2>
+          <p>Book your tour today and discover the natural beauty and cultural heritage of our region</p>
+          <a href="booking.html" class="btn btn-primary btn-lg">Book Now</a>
+          <a href="contact.html" class="btn btn-outline-light btn-lg ms-3">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="footer-title">About LUCTO</h3>
+          <p>Lhubiriha Conservation and Tourism Organisation (LUCTO) is dedicated to eco-tourism, natural environmental conservation and sustainable human development in the Rwenzori Mountains region.</p>
+          <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Book Online</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 class="footer-title">Contact Us</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> Kanyatsi 2 Village, Kanyatsi Parish, Kitholhu Sub County, Uganda</li>
+            <li><i class="fas fa-phone"></i> +256 (0) XXX XXX XXX</li>
+            <li><i class="fas fa-envelope"></i> info@lucto.org</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Lhubiriha Conservation and Tourism Organisation (LUCTO). All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/destinations.js"></script>
+</body>
+</html>

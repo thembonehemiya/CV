@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Testimonials | Pullman Safaris and Car Rentals Ltd</title>
+    <meta name="description" content="Read what our clients say about their experiences with Pullman Safaris and Car Rentals. Real stories from happy travelers.">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body class="font-sans bg-beige-50">
+    <!-- WhatsApp Integration -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/256702551090" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+        </a>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="relative">
+        <div class="hero-image h-96 w-full bg-cover bg-center flex items-center justify-center">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="container mx-auto px-4 z-10">
+                <nav class="flex justify-between items-center py-4">
+                    <div class="logo">
+                        <a href="index.html" class="text-white text-2xl font-bold">
+                            <img src="images/logo.png" alt="Pullman Safaris Logo" class="h-16">
+                        </a>
+                    </div>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="index.html" class="text-white hover:text-gold-400 font-medium">Home</a>
+                        <a href="about.html" class="text-white hover:text-gold-400 font-medium">About Us</a>
+                        <a href="safaris.html" class="text-white hover:text-gold-400 font-medium">Safaris</a>
+                        <a href="rentals.html" class="text-white hover:text-gold-400 font-medium">Car Rentals</a>
+                        <a href="testimonials.html" class="text-white hover:text-gold-400 font-medium">Testimonials</a>
+                        <a href="blog.html" class="text-white hover:text-gold-400 font-medium">Blog</a>
+                        <a href="contact.html" class="text-white hover:text-gold-400 font-medium">Contact</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="text-white focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </nav>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden absolute top-20 right-4 bg-white rounded-md shadow-lg z-20 w-48 py-2">
+                    <a href="index.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Home</a>
+                    <a href="about.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">About Us</a>
+                    <a href="safaris.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Safaris</a>
+                    <a href="rentals.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Car Rentals</a>
+                    <a href="testimonials.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Testimonials</a>
+                    <a href="blog.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Blog</a>
+                    <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Contact</a>
+                </div>
+                <!-- Hero Content -->
+                <div class="text-center mt-12 z-10">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Client Testimonials</h1>
+                    <p class="text-xl text-white mb-8 max-w-2xl mx-auto">Hear what our travelers say about their experiences with Pullman Safaris</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Testimonials Section -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Traveler Stories</h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">We take pride in creating unforgettable experiences for our clients. Here's what some of them have to say about their adventures with us.</p>
+            </div>
+            
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-500 mr-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-500 text-sm">March 15, 2023</p>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The gorilla trekking experience in Bwindi organized by Pullman Safaris was absolutely incredible. Our guide was knowledgeable and ensured we had the best possible experience. The accommodations were comfortable and the food delicious. Can't recommend them enough!"</p>
+                    <div class="flex items-center">
+                        <img src="images/client1.jpg" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-gray-500 text-sm">From USA • Bwindi Gorilla Trekking</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-500 mr-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-500 text-sm">January 28, 2023</p>
+                    </div>
+                    <p class="text-gray-600 mb-4">"We rented a 4x4 from Pullman for our self-drive safari to Murchison Falls. The vehicle was in excellent condition and their team was very helpful with route suggestions and park information. The whole process was smooth from booking to return. Will definitely use them again!"</p>
+                    <div class="flex items-center">
+                        <img src="images/client2.jpg" alt="Michael Brown" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael Brown</h4>
+                            <p class="text-gray-500 text-sm">From UK • Murchison Falls Safari</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-500 mr-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-500 text-sm">November 5, 2022</p>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Our family's 10-day safari with Pullman was the trip of a lifetime. They customized the itinerary perfectly for our kids (ages 8 and 12), and our guide David was amazing with them. We saw all the Big Five plus so much more. The lodges they selected were perfect for our family."</p>
+                    <div class="flex items-center">
+                        <img src="images/client3.jpg" alt="The Rodriguez Family" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-800">The Rodriguez Family</h4>
+                            <p class="text-gray-500 text-sm">From Spain • Family Safari Package</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-500 mr-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="text-gray-500 text-sm">September 18, 2022</p>
+                    </div>
+                    <p class="text-gray-600 mb-4">"As a solo female traveler, safety was my top concern. Pullman Safaris made me feel completely secure throughout my 2-week trip. My guide Joseph was professional and knowledgeable, and the company checked in regularly to ensure everything was perfect. I'll be recommending them to all my friends!"</p>
+                    <div class="flex items-center">
+                        <img src="images/client4.jpg" alt="Aisha Mohammed" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Aisha Mohammed</h4>
+                            <p class="text-gray-500 text-sm">From Canada • Solo Traveler</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Testimonials -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Video Testimonials</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-200 rounded-lg overflow-hidden aspect-video">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/example1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="bg-gray-200 rounded-lg overflow-hidden aspect-video">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/example2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- TripAdvisor Section -->
+            <div class="bg-gray-100 rounded-lg p-8 text-center">
+                <div class="max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">See More Reviews on TripAdvisor</h3>
+                    <div class="flex justify-center mb-6">
+                        <div class="text-gold-500 text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">We're proud to maintain a 5-star rating on TripAdvisor with over 200 reviews from happy travelers.</p>
+                    <a href="#" target="_blank" class="inline-block bg-gold-500 hover:bg-gold-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                        <i class="fab fa-tripadvisor mr-2"></i> Read Our TripAdvisor Reviews
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="bg-green-700 rounded-lg p-8 text-center text-white">
+            <h2 class="text-3xl font-bold mb-4">Ready to Create Your Own Story?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Contact us today to start planning your dream safari or to book your rental vehicle.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="booking.html" class="bg-white hover:bg-gray-100 text-green-700 font-bold py-3 px-6 rounded-lg transition duration-300">
+                    Book Now
+                </a>
+                <a href="contact.html" class="bg-transparent hover:bg-green-800 border-2 border-white text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

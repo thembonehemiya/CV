@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - Pullman Safaris and Car Rentals Ltd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="./src/styles.css" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-green-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-mountain text-2xl text-yellow-400"></i>
+                    <span class="text-xl font-bold">Pullman Safaris & Car Rentals</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="safaris.html" class="nav-link">Safaris</a>
+                    <a href="car-rentals.html" class="nav-link">Car Rentals</a>
+                    <a href="booking.html" class="nav-link active">Book Now</a>
+                    <a href="testimonials.html" class="nav-link">Reviews</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden text-white" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-2 space-y-2">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-green-800">Home</a>
+                    <a href="about.html" class="block px-4 py-2 hover:bg-green-800">About Us</a>
+                    <a href="safaris.html" class="block px-4 py-2 hover:bg-green-800">Safaris</a>
+                    <a href="car-rentals.html" class="block px-4 py-2 hover:bg-green-800">Car Rentals</a>
+                    <a href="booking.html" class="block px-4 py-2 hover:bg-green-800">Book Now</a>
+                    <a href="testimonials.html" class="block px-4 py-2 hover:bg-green-800">Reviews</a>
+                    <a href="contact.html" class="block px-4 py-2 hover:bg-green-800">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Image -->
+    <div class="header-image">
+        <div class="header-overlay">
+            <div class="container mx-auto px-4 py-20 text-center text-white">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fade-in">Book Your Adventure</h1>
+                <p class="text-xl md:text-2xl animate-slide-up">Start Planning Your Perfect Uganda Experience</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-green-900 mb-4">Make Your Booking</h2>
+                    <p class="text-xl text-gray-600">Choose your service and let us create an unforgettable experience for you</p>
+                </div>
+
+                <!-- Service Selection Tabs -->
+                <div class="flex flex-col md:flex-row bg-gray-100 rounded-lg p-2 mb-8">
+                    <button class="service-tab active w-full md:w-1/2 py-3 px-6 rounded-lg font-semibold transition-colors" data-service="safari">
+                        <i class="fas fa-binoculars mr-2"></i>Safari Booking
+                    </button>
+                    <button class="service-tab w-full md:w-1/2 py-3 px-6 rounded-lg font-semibold transition-colors" data-service="rental">
+                        <i class="fas fa-car mr-2"></i>Car Rental Booking
+                    </button>
+                </div>
+
+                <!-- Safari Booking Form -->
+                <div id="safari-form" class="booking-form">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-input" placeholder="Enter your full name" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-input" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-input" placeholder="Enter your phone number" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Country</label>
+                                <input type="text" class="form-input" placeholder="Enter your country" required>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div>
+                                <label class="form-label">Safari Package</label>
+                                <select class="form-input" required>
+                                    <option value="">Select Package</option>
+                                    <option value="gorilla-3day">3-Day Gorilla Safari</option>
+                                    <option value="wildlife-5day">5-Day Wildlife Safari</option>
+                                    <option value="grand-10day">10-Day Grand Safari</option>
+                                    <option value="custom">Custom Safari</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Number of Travelers</label>
+                                <select class="form-input" required>
+                                    <option value="">Select Number</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6+">6+ People</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Budget Range (USD)</label>
+                                <select class="form-input" required>
+                                    <option value="">Select Budget</option>
+                                    <option value="500-1000">$500 - $1,000</option>
+                                    <option value="1000-2000">$1,000 - $2,000</option>
+                                    <option value="2000-3000">$2,000 - $3,000</option>
+                                    <option value="3000+">$3,000+</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="form-label">Preferred Start Date</label>
+                                <input type="date" class="form-input" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Preferred End Date</label>
+                                <input type="date" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Destinations of Interest</label>
+                            <div class="grid md:grid-cols-3 gap-4 mt-2">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="bwindi"> Bwindi (Gorilla Trekking)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="queen-elizabeth"> Queen Elizabeth NP
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="murchison"> Murchison Falls NP
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="kibale"> Kibale Forest NP
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="lake-mburo"> Lake Mburo NP
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="jinja"> Source of the Nile
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Special Requirements or Requests</label>
+                            <textarea class="form-input" rows="4" placeholder="Tell us about any special requirements, dietary restrictions, accessibility needs, or specific interests..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary w-full">Submit Safari Booking Request</button>
+                    </form>
+                </div>
+
+                <!-- Car Rental Booking Form -->
+                <div id="rental-form" class="booking-form hidden">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-input" placeholder="Enter your full name" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-input" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-input" placeholder="Enter your phone number" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Driver's License Number</label>
+                                <input type="text" class="form-input" placeholder="Enter license number" required>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="form-label">Vehicle Type</label>
+                                <select class="form-input" required>
+                                    <option value="">Select Vehicle Type</option>
+                                    <option value="sedan">Sedan (City Car)</option>
+                                    <option value="suv">SUV</option>
+                                    <option value="land-cruiser">Safari Land Cruiser</option>
+                                    <option value="van">Van (Group Travel)</option>
+                                    <option value="pickup">Pickup Truck</option>
+                                    <option value="luxury">Luxury Vehicle</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Service Type</label>
+                                <select class="form-input" required>
+                                    <option value="">Select Service</option>
+                                    <option value="self-drive">Self-Drive</option>
+                                    <option value="chauffeur">With Chauffeur</option>
+                                    <option value="airport-transfer">Airport Transfer</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div>
+                                <label class="form-label">Pickup Date</label>
+                                <input type="date" class="form-input" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Return Date</label>
+                                <input type="date" class="form-input" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Rental Duration</label>
+                                <select class="form-input" required>
+                                    <option value="">Select Duration</option>
+                                    <option value="daily">Daily Rental</option>
+                                    <option value="weekly">Weekly Rental</option>
+                                    <option value="monthly">Monthly Rental</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="form-label">Pickup Location</label>
+                                <select class="form-input" required>
+                                    <option value="">Select Pickup Location</option>
+                                    <option value="office">Our Office (Kampala)</option>
+                                    <option value="airport">Entebbe Airport</option>
+                                    <option value="hotel">Hotel Delivery</option>
+                                    <option value="custom">Custom Location</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Return Location</label>
+                                <select class="form-input" required>
+                                    <option value="">Select Return Location</option>
+                                    <option value="office">Our Office (Kampala)</option>
+                                    <option value="airport">Entebbe Airport</option>
+                                    <option value="hotel">Hotel Pickup</option>
+                                    <option value="custom">Custom Location</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Additional Services</label>
+                            <div class="grid md:grid-cols-2 gap-4 mt-2">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="gps"> GPS Navigation
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="child-seat"> Child Safety Seat
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="wifi"> Mobile WiFi Hotspot
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="insurance"> Additional Insurance
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Special Requirements or Notes</label>
+                            <textarea class="form-input" rows="4" placeholder="Any special requests, specific pickup instructions, or additional information..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary w-full">Submit Car Rental Request</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="mt-12 bg-green-50 rounded-lg p-8">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-green-900 mb-4">Need Help with Your Booking?</h3>
+                        <p class="text-gray-700 mb-6">Our friendly team is ready to assist you with any questions or custom requests</p>
+                        <div class="flex flex-col md:flex-row gap-4 justify-center">
+                            <a href="tel:0702551090" class="btn-secondary">
+                                <i class="fas fa-phone mr-2"></i>Call: +256 702 551 090
+                            </a>
+                            <a href="https://wa.me/256702551090" class="btn-secondary">
+                                <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                            </a>
+                            <a href="mailto:info@pullmansafaris.com" class="btn-secondary">
+                                <i class="fas fa-envelope mr-2"></i>Email Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-mountain text-2xl text-yellow-400"></i>
+                        <span class="text-xl font-bold">Pullman Safaris</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your trusted partner for unforgettable African adventures and reliable transportation services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="safaris.html" class="hover:text-white">Safari Packages</a></li>
+                        <li><a href="car-rentals.html" class="hover:text-white">Car Rentals</a></li>
+                        <li><a href="testimonials.html" class="hover:text-white">Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Gorilla Trekking</a></li>
+                        <li><a href="#" class="hover:text-white">Wildlife Safaris</a></li>
+                        <li><a href="#" class="hover:text-white">Car Hire</a></li>
+                        <li><a href="#" class="hover:text-white">Airport Transfers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</li>
+                        <li><i class="fas fa-phone mr-2"></i> +256 702 551 090</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@pullmansafaris.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/256702551090" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>

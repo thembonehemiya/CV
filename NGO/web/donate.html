@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - Rwenzori Mountains Conservation Initiative</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="https://via.placeholder.com/50" alt="RMCI Logo" class="h-10 mr-3">
+            <span class="text-xl font-bold text-green-700">RMCI</span>
+          </a>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="projects.html" class="nav-link">Our Work</a>
+          <a href="get-involved.html" class="nav-link">Get Involved</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="donate.html" class="btn-donate active-donate">Donate</a>
+        </div>
+        
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-500 hover:text-green-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <a href="index.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Home</a>
+        <a href="about.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">About Us</a>
+        <a href="projects.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Our Work</a>
+        <a href="get-involved.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Get Involved</a>
+        <a href="blog.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Blog</a>
+        <a href="contact.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Contact</a>
+        <a href="donate.html" class="block py-2 px-4 mt-2 bg-green-600 text-white rounded-md text-center">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="relative">
+    <div class="hero-image h-screen-50 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2021&q=80');">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+        <div class="max-w-2xl text-white">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Support Our Work</h1>
+          <p class="text-xl">Your donation helps us conserve the Rwenzori Mountains and empower local communities</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Donation Impact -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-center mb-12">Your Donation Makes a Difference</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Impact 1 -->
+        <div class="text-center">
+          <div class="bg-green-100 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+            <i class="fas fa-seedling text-green-600 text-3xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-green-700 mb-3">Plant Trees</h3>
+          <p class="text-gray-600">
+            Your donation helps us grow and plant native trees to restore the Rwenzori ecosystem and combat climate change.
+          </p>
+          <div class="mt-4">
+            <span class="font-semibold">$10</span> = 10 tree seedlings
+          </div>
+        </div>
+        
+        <!-- Impact 2 -->
+        <div class="text-center">
+          <div class="bg-green-100 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+            <i class="fas fa-graduation-cap text-green-600 text-3xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-green-700 mb-3">Empower Women</h3>
+          <p class="text-gray-600">
+            Support vocational training for young mothers, providing them with skills for self-employment and financial independence.
+          </p>
+          <div class="mt-4">
+            <span class="font-semibold">$50</span> = Training materials for one woman
+          </div>
+        </div>
+        
+        <!-- Impact 3 -->
+        <div class="text-center">
+          <div class="bg-green-100 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+            <i class="fas fa-bug text-green-600 text-3xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-green-700 mb-3">Support Beekeeping</h3>
+          <p class="text-gray-600">
+            Help establish community apiaries that enhance biodiversity through pollination while providing sustainable income.
+          </p>
+          <div class="mt-4">
+            <span class="font-semibold">$100</span> = One complete beehive setup
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Form -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="md:flex">
+          <!-- Form Left Side -->
+          <div class="md:w-1/2 p-8">
+            <h2 class="text-2xl font-bold text-green-700 mb-6">Make a Donation</h2>
+            
+            <form>
+              <!-- Donation Amount -->
+              <div class="mb-6">
+                <label class="block text-gray-700 font-medium mb-2">Select Amount</label>
+                <div class="grid grid-cols-3 gap-2 mb-3">
+                  <button type="button" class="donation-amount-btn px-4 py-2 border border-gray-300 rounded-md text-center hover:bg-green-50 hover:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500">$10</button>
+                  <button type="button" class="donation-amount-btn px-4 py-2 border border-gray-300 rounded-md text-center hover:bg-green-50 hover:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500">$25</button>
+                  <button type="button" class="donation-amount-btn px-4 py-2 border border-gray-300 rounded-md text-center hover:bg-green-50 hover:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500">$50</button>
+                  <button type="button" class="donation-amount-btn px-4 py-2 border border-gray-300 rounded-md text-center hover:bg-green-50 hover:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500">$100</button>
+                  <button type="button" class="donation-amount-btn px-4 py-2 border border-gray-300 rounded-md text-center hover:bg-green-50 hover:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500">$250</button>
+                  <button type="button" class="donation-amount-btn px-4 py-2 border border-gray-300 rounded-md text-center hover:bg-green-50 hover:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500">Other</button>
+                </div>
+                <div class="custom-amount hidden">
+                  <input type="number" placeholder="Enter amount" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+              </div>
+              
+              <!-- Donation Type -->
+              <div class="mb-6">
+                <label class="block text-gray-700 font-medium mb-2">Donation Type</label>
+                <div class="flex space-x-4">
+                  <label class="flex items-center">
+                    <input type="radio" name="donation-type" class="mr-2" checked>
+                    <span>One-time</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="radio" name="donation-type" class="mr-2">
+                    <span>Monthly</span>
+                  </label>
+                </div>
+              </div>
+              
+              <!-- Donation Purpose -->
+              <div class="mb-6">
+                <label for="donation-purpose" class="block text-gray-700 font-medium mb-2">Purpose (Optional)</label>
+                <select id="donation-purpose" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                  <option value="">General Support</option>
+                  <option value="trees">Tree Planting</option>
+                  <option value="women">Women's Empowerment</option>
+                  <option value="beekeeping">Beekeeping Program</option>
+                  <option value="education">Environmental Education</option>
+                </select>
+              </div>
+              
+              <!-- Personal Information -->
+              <div class="mb-6">
+                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
+              
+              <div class="mb-6">
+                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
+              
+              <div class="mb-6">
+                <label class="flex items-center">
+                  <input type="checkbox" class="mr-2">
+                  <span class="text-sm text-gray-600">I would like to receive updates about RMCI's work</span>
+                </label>
+              </div>
+              
+              <button type="submit" class="btn-primary w-full">Proceed to Payment</button>
+            </form>
+          </div>
+          
+          <!-- Right Side -->
+          <div class="md:w-1/2 bg-green-700 text-white p-8">
+            <h3 class="text-2xl font-bold mb-6">Why Donate?</h3>
+            
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start">
+                <i class="fas fa-check-circle mt-1 mr-3 text-green-300"></i>
+                <p>Your donation directly supports conservation efforts in the Rwenzori Mountains.</p>
+              </div>
+              
+              <div class="flex items-start">
+                <i class="fas fa-check-circle mt-1 mr-3 text-green-300"></i>
+                <p>Help empower local communities, especially women and youth, through sustainable livelihoods.</p>
+              </div>
+              
+              <div class="flex items-start">
+                <i class="fas fa-check-circle mt-1 mr-3 text-green-300"></i>
+                <p>Support climate resilience through reforestation and sustainable land use practices.</p>
+              </div>
+              
+              <div class="flex items-start">
+                <i class="fas fa-check-circle mt-1 mr-3 text-green-300"></i>
+                <p>Contribute to biodiversity conservation in one of Africa's most unique mountain ecosystems.</p>
+              </div>
+            </div>
+            
+            <div class="bg-green-800 p-4 rounded-lg">
+              <h4 class="font-semibold mb-2">Other Ways to Donate</h4>
+              <p class="text-sm mb-3">
+                For bank transfers or mobile money donations, please use the following details:
+              </p>
+              <div class="space-y-2 text-sm">
+                <p><strong>Bank:</strong> Uganda National Bank</p>
+                <p><strong>Account Name:</strong> Rwenzori Mountains Conservation Initiative</p>
+                <p><strong>Account Number:</strong> 1234567890</p>
+                <p><strong>Mobile Money:</strong> +256 786 263 701 (MTN)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-center mb-12">What Our Supporters Say</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-green-50 p-6 rounded-lg">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1361&q=80" alt="Donor" class="w-16 h-16 rounded-full object-cover mr-4">
+            <div>
+              <h3 class="font-semibold">Emma Johnson</h3>
+              <p class="text-sm text-gray-600">Monthly Donor</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "I've been supporting RMCI for over a year now, and I'm impressed by how they combine conservation with community empowerment. Their regular updates show exactly how my donations are making a difference."
+          </p>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="bg-green-50 p-6 rounded-lg">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Donor" class="w-16 h-16 rounded-full object-cover mr-4">
+            <div>
+              <h3 class="font-semibold">Michael Chen</h3>
+              <p class="text-sm text-gray-600">Corporate Partner</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Our company chose to support RMCI because of their holistic approach to conservation. Their beekeeping program not only helps the environment but also creates sustainable livelihoods. It's a win-win for everyone."
+          </p>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="bg-green-50 p-6 rounded-lg">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Donor" class="w-16 h-16 rounded-full object-cover mr-4">
+            <div>
+              <h3 class="font-semibold">Sarah Ochieng</h3>
+              <p class="text-sm text-gray-600">One-time Donor</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "I donated to support the women's empowerment program, and I received a personal thank you note with photos of the training session my donation helped fund. It's wonderful to see the direct impact of my contribution."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-center mb-12">Donation FAQs</h2>
+      
+      <div class="max-w-3xl mx-auto">
+        <div class="space-y-6">
+          <!-- FAQ Item 1 -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+              <span class="font-semibold text-left">Is my donation tax-deductible?</span>
+              <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+              <p class="text-gray-600">
+                RMCI is registered as a non-profit organization in Uganda. For Ugandan donors, donations are tax-deductible according to local regulations. For international donors, tax deductibility depends on your country's laws regarding foreign charitable donations. We recommend consulting with a tax professional for specific advice.
+              </p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 2 -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+              <span class="font-semibold text-left">How is my donation used?</span>
+              <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+              <p class="text-gray-600">
+                Your donation directly supports our conservation and community development programs. Approximately 85% of donations go directly to program implementation, including tree nursery operations, beekeeping equipment, vocational training materials, and community outreach activities. The remaining 15% supports essential administrative costs to ensure effective program management and reporting.
+              </p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 3 -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+              <span class="font-semibold text-left">Can I specify how my donation is used?</span>
+              <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+              <p class="text-gray-600">
+                Yes, you can designate your donation for a specific program by selecting the purpose in the donation form. Options include tree planting, women's empowerment, beekeeping, and environmental education. If you have a specific project in mind that is not listed, please contact us directly to discuss your interests.
+              </p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 4 -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+              <span class="font-semibold text-left">How do I cancel or modify my monthly donation?</span>
+              <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+              <p class="text-gray-600">
+                To cancel or modify your monthly donation, please email us at donations@rmci.org with your name and the changes you would like to make. You can also call us at +256 786 263 701. We will process your request within 2-3 business days and send you a confirmation.
+              </p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 5 -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+              <span class="font-semibold text-left">Will I receive updates about how my donation is used?</span>
+              <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+              <p class="text-gray-600">
+                Yes, all donors receive quarterly email updates about our programs and the impact of donations. Monthly donors also receive special reports with more detailed information about project progress. If you opt in during the donation process, you will be added to our newsletter list for regular updates about our work.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white pt-12 pb-6">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <!-- About -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">About RMCI</h4>
+          <p class="text-gray-300 mb-4">Conserving the Rwenzori Mountains and empowering local communities in Western Uganda since 2016.</p>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com" class="text-gray-300 hover:text-white" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" class="text-gray-300 hover:text-white" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" class="text-gray-300 hover:text-white" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://youtube.com" class="text-gray-300 hover:text-white" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+            <li><a href="projects.html" class="text-gray-300 hover:text-white">Our Work</a></li>
+            <li><a href="get-involved.html" class="text-gray-300 hover:text-white">Get Involved</a></li>
+            <li><a href="blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+              <span>Kyatsi II Village, Kitholhu County, Kasese District, Western Uganda</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone mr-3"></i>
+              <span>+256 786 263 701</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3"></i>
+              <span>info@rmci.org</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Working Hours -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Working Hours</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li>Monday - Friday: 8:00 AM - 5:00 PM</li>
+            <li>Saturday: 9:00 AM - 1:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 pt-6 text-center text-gray-400">
+        <p>&copy; 2023 Rwenzori Mountains Conservation Initiative. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/256786263701" class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors z-50" aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pullman Safaris and Car Rentals Ltd | Explore Africa with Confidence</title>
+    <meta name="description" content="Premier safari tours and car rental services in Uganda. Explore Bwindi, Queen Elizabeth, Murchison Falls and more with our expert guides.">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body class="font-sans bg-beige-50">
+
+    <!-- WhatsApp Integration -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/256702551090" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+        </a>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="relative">
+        <div class="hero-image h-96 w-full bg-cover bg-center flex items-center justify-center">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="container mx-auto px-4 z-10">
+                <nav class="flex justify-between items-center py-4">
+                    <div class="logo">
+                        <a href="index.html" class="text-white text-2xl font-bold">
+                            <img src="images/logo.png" alt="Pullman Safaris Logo" class="h-16">
+                        </a>
+                    </div>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="index.html" class="text-white hover:text-gold-400 font-medium">Home</a>
+                        <a href="about.html" class="text-white hover:text-gold-400 font-medium">About Us</a>
+                        <a href="safaris.html" class="text-white hover:text-gold-400 font-medium">Safaris</a>
+                        <a href="rentals.html" class="text-white hover:text-gold-400 font-medium">Car Rentals</a>
+                        <a href="testimonials.html" class="text-white hover:text-gold-400 font-medium">Testimonials</a>
+                        <a href="blog.html" class="text-white hover:text-gold-400 font-medium">Blog</a>
+                        <a href="contact.html" class="text-white hover:text-gold-400 font-medium">Contact</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="text-white focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </nav>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden absolute top-20 right-4 bg-white rounded-md shadow-lg z-20 w-48 py-2">
+                    <a href="index.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Home</a>
+                    <a href="about.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">About Us</a>
+                    <a href="safaris.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Safaris</a>
+                    <a href="rentals.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Car Rentals</a>
+                    <a href="testimonials.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Testimonials</a>
+                    <a href="blog.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Blog</a>
+                    <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Contact</a>
+                </div>
+                <!-- Hero Content -->
+                <div class="text-center mt-12 z-10">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Explore Africa with Confidence</h1>
+                    <p class="text-xl text-white mb-8 max-w-2xl mx-auto">Discover Uganda's breathtaking landscapes and wildlife with our expert-guided safaris and reliable car rental services.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="safaris.html" class="bg-gold-500 hover:bg-gold-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Book a Safari</a>
+                        <a href="rentals.html" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Rent a Car</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Introduction Section -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Welcome to Pullman Safaris and Car Rentals</h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">We are your premier tour operator and car rental service in Uganda, offering unforgettable experiences in some of Africa's most spectacular destinations. From gorilla trekking in Bwindi to game drives in Queen Elizabeth National Park, we craft personalized adventures that create lifelong memories.</p>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-gold-500 mb-4">
+                        <i class="fas fa-map-marked-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Expert Safari Guides</h3>
+                    <p class="text-gray-600">Our knowledgeable guides will take you to Uganda's most breathtaking locations while sharing insights about wildlife and local culture.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-gold-500 mb-4">
+                        <i class="fas fa-car text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Reliable Vehicles</h3>
+                    <p class="text-gray-600">Choose from our well-maintained fleet of safari vehicles, SUVs, and saloon cars for all your transportation needs.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-gold-500 mb-4">
+                        <i class="fas fa-heart text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Personalized Service</h3>
+                    <p class="text-gray-600">We tailor every experience to your preferences, ensuring your Ugandan adventure is exactly what you dreamed of.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Safaris Section -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Popular Safari Destinations</h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Explore Uganda's diverse ecosystems and wildlife with our expertly crafted safari packages.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Safari Destination 1 -->
+                <div class="relative overflow-hidden rounded-lg shadow-lg group">
+                    <img src="images/bwindi.jpg" alt="Bwindi Impenetrable National Park" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Bwindi Impenetrable Forest</h3>
+                        <p class="text-gold-300 mb-3">Gorilla Trekking Adventure</p>
+                        <a href="safaris.html#bwindi" class="text-white hover:text-gold-300 font-medium flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Safari Destination 2 -->
+                <div class="relative overflow-hidden rounded-lg shadow-lg group">
+                    <img src="images/queen-elizabeth.jpg" alt="Queen Elizabeth National Park" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Queen Elizabeth NP</h3>
+                        <p class="text-gold-300 mb-3">Tree-Climbing Lions & Boat Safaris</p>
+                        <a href="safaris.html#queen-elizabeth" class="text-white hover:text-gold-300 font-medium flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Safari Destination 3 -->
+                <div class="relative overflow-hidden rounded-lg shadow-lg group">
+                    <img src="images/murchison.jpg" alt="Murchison Falls National Park" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Murchison Falls</h3>
+                        <p class="text-gold-300 mb-3">The Mighty Nile's Spectacular Show</p>
+                        <a href="safaris.html#murchison" class="text-white hover:text-gold-300 font-medium flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="safaris.html" class="inline-block bg-gold-500 hover:bg-gold-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                    View All Safari Packages
+                </a>
+            </div>
+        </section>
+
+        <!-- Car Rental Section -->
+        <section class="mb-16 bg-gray-100 rounded-lg p-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Car Rental Services</h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Whether you need a comfortable saloon for city travel or a rugged 4x4 for safari adventures, we have the perfect vehicle for your needs.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Vehicle Type 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <div class="text-gold-500 mb-4">
+                        <i class="fas fa-car-side text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Saloon Cars</h3>
+                    <p class="text-gray-600 mb-4">Perfect for city travel and business trips.</p>
+                    <p class="font-bold text-green-700">From $50/day</p>
+                </div>
+                
+                <!-- Vehicle Type 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <div class="text-gold-500 mb-4">
+                        <i class="fas fa-truck text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">SUVs & Safari Vehicles</h3>
+                    <p class="text-gray-600 mb-4">Ideal for family trips and safari adventures.</p>
+                    <p class="font-bold text-green-700">From $80/day</p>
+                </div>
+                
+                <!-- Vehicle Type 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <div class="text-gold-500 mb-4">
+                        <i class="fas fa-bus text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Vans & Buses</h3>
+                    <p class="text-gray-600 mb-4">Great for groups and corporate events.</p>
+                    <p class="font-bold text-green-700">From $120/day</p>
+                </div>
+                
+                <!-- Vehicle Type 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <div class="text-gold-500 mb-4">
+                        <i class="fas fa-truck-pickup text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Pickup Trucks</h3>
+                    <p class="text-gray-600 mb-4">For heavy-duty and off-road needs.</p>
+                    <p class="font-bold text-green-700">From $70/day</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="rentals.html" class="inline-block bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 mr-4">
+                    View All Vehicles
+                </a>
+                <a href="booking.html" class="inline-block bg-gold-500 hover:bg-gold-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                    Book Now
+                </a>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Don't just take our word for it - hear from travelers who've experienced Uganda with us.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-500 mr-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-500 text-sm">March 15, 2023</p>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The gorilla trekking experience in Bwindi organized by Pullman Safaris was absolutely incredible. Our guide was knowledgeable and ensured we had the best possible experience. The accommodations were comfortable and the food delicious. Can't recommend them enough!"</p>
+                    <div class="flex items-center">
+                        <img src="images/client1.jpg" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-gray-500 text-sm">From USA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-500 mr-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-500 text-sm">January 28, 2023</p>
+                    </div>
+                    <p class="text-gray-600 mb-4">"We rented a 4x4 from Pullman for our self-drive safari to Murchison Falls. The vehicle was in excellent condition and their team was very helpful with route suggestions and park information. The whole process was smooth from booking to return. Will definitely use them again!"</p>
+                    <div class="flex items-center">
+                        <img src="images/client2.jpg" alt="Michael Brown" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael Brown</h4>
+                            <p class="text-gray-500 text-sm">From UK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="testimonials.html" class="inline-block bg-gold-500 hover:bg-gold-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                    Read More Reviews
+                </a>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-green-700 rounded-lg p-8 text-center text-white">
+            <h2 class="text-3xl font-bold mb-4">Ready for Your Ugandan Adventure?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Contact us today to start planning your dream safari or to book your rental vehicle.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="booking.html" class="bg-white hover:bg-gray-100 text-green-700 font-bold py-3 px-6 rounded-lg transition duration-300">
+                    Book Now
+                </a>
+                <a href="contact.html" class="bg-transparent hover:bg-green-800 border-2 border-white text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- About Column -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold-400">About Pullman Safaris</h3>
+                    <p class="mb-4">We are a premier tour operator and car rental service in Uganda, dedicated to providing exceptional travel experiences and reliable transportation solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-gold-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-gold-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-gold-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-gold-400"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-gold-400"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links Column -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold-400">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-gold-400">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gold-400">About Us</a></li>
+                        <li><a href="safaris.html" class="hover:text-gold-400">Safari Packages</a></li>
+                        <li><a href="rentals.html" class="hover:text-gold-400">Car Rentals</a></li>
+                        <li><a href="testimonials.html" class="hover:text-gold-400">Testimonials</a></li>
+                        <li><a href="blog.html" class="hover:text-gold-400">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-gold-400">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Safari Packages Column -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold-400">Popular Safaris</h3>
+                    <ul class="space-y-2">
+                        <li><a href="safaris.html#bwindi" class="hover:text-gold-400">Bwindi Gorilla Trekking</a></li>
+                        <li><a href="safaris.html#queen-elizabeth" class="hover:text-gold-400">Queen Elizabeth NP</a></li>
+                        <li><a href="safaris.html#murchison" class="hover:text-gold-400">Murchison Falls</a></li>
+                        <li><a href="safaris.html#kibale" class="hover:text-gold-400">Kibale Chimpanzees</a></li>
+                        <li><a href="safaris.html#lake-mburo" class="hover:text-gold-400">Lake Mburo Wildlife</a></li>
+                        <li><a href="safaris.html#rwenzori" class="hover:text-gold-400">Rwenzori Mountains</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Column -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gold-400">Contact Us</h3>
+                    <address class="not-italic">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2 text-gold-400"></i> Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</p>
+                        <p class="mb-2"><i class="fas fa-phone-alt mr-2 text-gold-400"></i> +256 702 551 090</p>
+                        <p class="mb-2"><i class="fas fa-envelope mr-2 text-gold-400"></i> info@pullmansafaris.com</p>
+                        <p class="mb-2"><i class="fas fa-clock mr-2 text-gold-400"></i> Mon-Sat: 8:00 AM - 6:00 PM</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+                <div class="flex justify-center space-x-4 mt-4">
+                    <a href="terms.html" class="hover:text-white">Terms of Service</a>
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

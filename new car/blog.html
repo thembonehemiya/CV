@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Pullman Safaris and Car Rentals Ltd</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="Pullman Safaris Logo" class="h-12">
+                <span class="ml-2 text-xl font-bold text-green-800">Pullman Safaris</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-green-600 font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-green-600 font-medium">About Us</a>
+                <a href="safaris/index.html" class="text-gray-600 hover:text-green-600 font-medium">Safaris</a>
+                <a href="cars/index.html" class="text-gray-600 hover:text-green-600 font-medium">Car Rentals</a>
+                <a href="testimonials.html" class="text-gray-600 hover:text-green-600 font-medium">Testimonials</a>
+                <a href="blog.html" class="text-green-800 font-medium">Blog</a>
+                <a href="contact.html" class="text-gray-600 hover:text-green-600 font-medium">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-green-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-green-600">About Us</a>
+            <a href="safaris/index.html" class="block py-2 text-gray-600 hover:text-green-600">Safaris</a>
+            <a href="cars/index.html" class="block py-2 text-gray-600 hover:text-green-600">Car Rentals</a>
+            <a href="testimonials.html" class="block py-2 text-gray-600 hover:text-green-600">Testimonials</a>
+            <a href="blog.html" class="block py-2 text-green-800">Blog</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-green-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-cover bg-center" style="background-image: url('images/blog-hero.jpg');">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Blog</h1>
+            <p class="text-xl md:text-2xl mb-8">Travel tips, company updates, and conservation stories</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-2/3">
+                    <!-- Featured Post -->
+                    <div class="mb-16">
+                        <div class="relative rounded-lg overflow-hidden mb-6">
+                            <img src="images/blog-featured.jpg" alt="Gorilla trekking in Bwindi" class="w-full h-96 object-cover">
+                            <div class="absolute bottom-0 left-0 bg-green-800 text-white px-4 py-2">
+                                <span class="text-sm">Featured Post</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center text-gray-500 text-sm mb-4">
+                            <span class="mr-4"><i class="far fa-calendar-alt mr-1"></i> March 15, 2023</span>
+                            <span><i class="far fa-user mr-1"></i> By Robert Mugabe</span>
+                        </div>
+                        <h2 class="text-3xl font-bold text-green-800 mb-4">The Ultimate Guide to Gorilla Trekking in Uganda</h2>
+                        <p class="text-gray-700 mb-6">Gorilla trekking in Uganda's Bwindi Impenetrable National Park is a bucket-list experience for many travelers. In this comprehensive guide, we cover everything you need to know to prepare for this incredible adventure...</p>
+                        <a href="blog/gorilla-trekking-guide.html" class="inline-block bg-green-700 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">Read More</a>
+                    </div>
+                    
+                    <!-- Recent Posts -->
+                    <h3 class="text-2xl font-bold text-green-800 mb-8 border-b pb-2">Recent Posts</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Post 1 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="images/blog1.jpg" alt="Queen Elizabeth National Park" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="flex items-center text-gray-500 text-xs mb-2">
+                                    <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i> February 28, 2023</span>
+                                    <span><i class="far fa-user mr-1"></i> By Sarah Kintu</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-green-800 mb-2">Spotting Tree-Climbing Lions in Queen Elizabeth National Park</h3>
+                                <p class="text-gray-600 mb-4">One of Uganda's most unique wildlife experiences is observing the famous tree-climbing lions of Ishasha sector...</p>
+                                <a href="blog/tree-climbing-lions.html" class="text-green-700 hover:text-green-600 font-medium text-sm">Read More</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Post 2 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="images/blog2.jpg" alt="Road trip in Uganda" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="flex items-center text-gray-500 text-xs mb-2">
+                                    <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i> February 15, 2023</span>
+                                    <span><i class="far fa-user mr-1"></i> By David Okello</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-green-800 mb-2">Road Trip Uganda: Best Routes and Tips</h3>
+                                <p class="text-gray-600 mb-4">Uganda offers some of Africa's most scenic road trips. From the rolling hills of Kabale to the savannas of Murchison Falls...</p>
+                                <a href="blog/uganda-road-trip.html" class="text-green-700 hover:text-green-600 font-medium text-sm">Read More</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Post 3 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="images/blog3.jpg" alt="Batwa cultural experience" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="flex items-center text-gray-500 text-xs mb-2">
+                                    <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i> January 30, 2023</span>
+                                    <span><i class="far fa-user mr-1"></i> By Emily Nalwoga</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-green-800 mb-2">Cultural Encounters: Visiting the Batwa Pygmies</h3>
+                                <p class="text-gray-600 mb-4">The Batwa people, original inhabitants of Uganda's forests, offer visitors a unique glimpse into their traditional way of life...</p>
+                                <a href="blog/batwa-culture.html" class="text-green-700 hover:text-green-600 font-medium text-sm">Read More</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Post 4 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="images/blog4.jpg" alt="Bird watching in Uganda" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="flex items-center text-gray-500 text-xs mb-2">
+                                    <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i> January 18, 2023</span>
+                                    <span><i class="far fa-user mr-1"></i> By Mark Turyamureba</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-green-800 mb-2">Birding in Uganda: Africa's Best Kept Secret</h3>
+                                <p class="text-gray-600 mb-4">With over 1,000 bird species, Uganda is a paradise for bird watchers. Here are our top spots for incredible avian diversity...</p>
+                                <a href="blog/uganda-birding.html" class="text-green-700 hover:text-green-600 font-medium text-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="flex justify-center mt-12">
+                        <nav class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded bg-green-700 text-white font-medium">&laquo; Prev</a>
+                            <a href="#" class="px-3 py-1 rounded bg-green-100 text-green-800 font-medium">1</a>
+                            <a href="#" class="px-3 py-1 rounded hover:bg-green-100 text-green-800 font-medium">2</a>
+                            <a href="#" class="px-3 py-1 rounded hover:bg-green-100 text-green-800 font-medium">3</a>
+                            <a href="#" class="px-3 py-1 rounded bg-green-100 text-green-800 font-medium">Next &raquo;</a>
+                        </nav>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="lg:w-1/3">
+                    <div class="bg-gray-100 p-6 rounded-lg sticky top-24">
+                        <!-- Search -->
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-green-800 mb-4">Search</h3>
+                            <form class="flex">
+                                <input type="text" placeholder="Search..." class="px-4 py-2 w-full rounded-l-lg focus:outline-none">
+                                <button type="submit" class="bg-green-700 hover:bg-green-600 px-4 py-2 rounded-r-lg text-white">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <!-- Categories -->
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-green-800 mb-4">Categories</h3>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#" class="flex justify-between items-center text-gray-700 hover:text-green-700">
+                                        <span>Safari Tips</span>
+                                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex justify-between items-center text-gray-700 hover:text-green-700">
+                                        <span>Travel Guides</span>
+                                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">8</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex justify-between items-center text-gray-700 hover:text-green-700">
+                                        <span>Wildlife</span>
+                                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">15</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex justify-between items-center text-gray-700 hover:text-green-700">
+                                        <span>Culture</span>
+                                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">6</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex justify-between items-center text-gray-700 hover:text-green-700">
+                                        <span>Conservation</span>
+                                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">9</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex justify-between items-center text-gray-700 hover:text-green-700">
+                                        <span>Company News</span>
+                                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">4</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Popular Posts -->
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-green-800 mb-4">Popular Posts</h3>
+                            <ul class="space-y-4">
+                                <li>
+                                    <a href="#" class="flex items-start group">
+                                        <img src="images/blog-thumb1.jpg" alt="Gorilla trekking" class="w-16 h-16 object-cover rounded mr-3">
+                                        <div>
+                                            <h4 class="font-bold text-green-800 group-hover:text-green-600">What to Pack for Gorilla Trekking</h4>
+                                            <span class="text-gray-500 text-sm">January 5, 2023</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-start group">
+                                        <img src="images/blog-thumb2.jpg" alt="Uganda roads" class="w-16 h-16 object-cover rounded mr-3">
+                                        <div>
+                                            <h4 class="font-bold text-green-800 group-hover:text-green-600">Driving in Uganda: What to Expect</h4>
+                                            <span class="text-gray-500 text-sm">December 20, 2022</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-start group">
+                                        <img src="images/blog-thumb3.jpg" alt="Chimpanzee" class="w-16 h-16 object-cover rounded mr-3">
+                                        <div>
+                                            <h4 class="font-bold text-green-800 group-hover:text-green-600">Chimpanzee vs Gorilla Trekking: Which is Right for You?</h4>
+                                            <span class="text-gray-500 text-sm">December 8, 2022</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Tags -->
+                        <div>
+                            <h3 class="text-xl font-bold text-green-800 mb-4">Tags</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <a href="#" class="bg-gray-200 hover:bg-green-200 text-gray-800 hover:text-green-800 px-3 py-1 rounded-full text-sm">Gorillas</a>
+                                <a href="#" class="bg-gray-200 hover:bg-green-200 text-gray-800 hover:text-green-800 px-3 py-1 rounded-full text-sm">Safari</a>
+                                <a href="#" class="bg-gray-200 hover:bg-green-200 text-gray-800 hover:text-green-800 px-3 py-1 rounded-full text-sm">Travel Tips</a>
+                                <a href="#" class="bg-gray-200 hover:bg-green-200 text-gray-800 hover:text-green-800 px-3 py-1 rounded-full text-sm">Wildlife</a>
+                                <a href="#" class="bg-gray-200 hover:bg-green-200 text-gray-800 hover:text-green-800 px-3 py-1 rounded-full text-sm">Adventure</a>
+                                <a href="#" class="bg-gray-200 hover:bg-green-200 text-gray-800 hover:text-green-800 px-3 py-1 rounded-full text-sm">Culture</a>
+                                <a href="#" class="bg-gray-200 hover:bg-green-200 text-gray-800 hover:text-green-800 px-3 py-1 rounded-full text-sm">Birding</a>
+                                <a href="#" class="bg-gray-200 hover:bg-green-200 text-gray-800 hover:text-green-800 px-3 py-1 rounded-full text-sm">Conservation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-green-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Subscribe to Our Newsletter</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Get travel tips, special offers, and updates on new safari packages directly to your inbox.</p>
+            <form class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address" class="px-4 py-3 w-full rounded-l-lg focus:outline-none text-gray-900">
+                <button type="submit" class="bg-yellow-600 hover:bg-yellow-500 px-6 py-3 rounded-r-lg font-bold">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="images/logo-white.png" alt="Pullman Safaris Logo" class="h-12 mb-4">
+                    <p class="mb-4">Explore Africa with confidence through our safari packages and reliable car rental services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-400">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-400">About Us</a></li>
+                        <li><a href="safaris/index.html" class="hover:text-green-400">Safari Packages</a></li>
+                        <li><a href="cars/index.html" class="hover:text-green-400">Car Rentals</a></li>
+                        <li><a href="testimonials.html" class="hover:text-green-400">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>+256 702 551 090</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@pullmansafaris.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Recent Blog Posts</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-green-400">The Ultimate Guide to Gorilla Trekking</a></li>
+                        <li><a href="#" class="hover:text-green-400">Spotting Tree-Climbing Lions</a></li>
+                        <li><a href="#" class="hover:text-green-400">Road Trip Uganda: Best Routes</a></li>
+                        <li><a href="#" class="hover:text-green-400">Cultural Encounters: The Batwa Pygmies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/256702551090" class="fixed bottom-6 right-6 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

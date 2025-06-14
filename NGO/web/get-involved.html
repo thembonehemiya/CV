@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved - Rwenzori Mountains Conservation Initiative</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="https://via.placeholder.com/50" alt="RMCI Logo" class="h-10 mr-3">
+            <span class="text-xl font-bold text-green-700">RMCI</span>
+          </a>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="projects.html" class="nav-link">Our Work</a>
+          <a href="get-involved.html" class="nav-link active">Get Involved</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="donate.html" class="btn-donate">Donate</a>
+        </div>
+        
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-500 hover:text-green-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <a href="index.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Home</a>
+        <a href="about.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">About Us</a>
+        <a href="projects.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Our Work</a>
+        <a href="get-involved.html" class="block py-2 px-4 text-green-700 font-medium">Get Involved</a>
+        <a href="blog.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Blog</a>
+        <a href="contact.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Contact</a>
+        <a href="donate.html" class="block py-2 px-4 mt-2 bg-green-600 text-white rounded-md text-center">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="relative">
+    <div class="hero-image h-screen-50 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2021&q=80');">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+        <div class="max-w-2xl text-white">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Get Involved</h1>
+          <p class="text-xl">Join us in our mission to conserve the Rwenzori Mountains and empower local communities</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Ways to Get Involved -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-center mb-12">Ways to Support Our Work</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Donate -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+          <div class="h-48 bg-green-600 flex items-center justify-center text-white">
+            <i class="fas fa-hand-holding-heart text-6xl"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3 text-green-700">Make a Donation</h3>
+            <p class="text-gray-600 mb-4">
+              Your financial support helps us expand our conservation efforts and community programs in the Rwenzori region.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-600">
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                <span>Fund tree planting initiatives</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                <span>Support beekeeping training</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                <span>Sponsor vocational training for young mothers</span>
+              </li>
+            </ul>
+            <a href="donate.html" class="btn-primary w-full text-center">Donate Now</a>
+          </div>
+        </div>
+        
+        <!-- Volunteer -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+          <div class="h-48 bg-green-600 flex items-center justify-center text-white">
+            <i class="fas fa-users text-6xl"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3 text-green-700">Volunteer With Us</h3>
+            <p class="text-gray-600 mb-4">
+              Share your skills and time to support our conservation and community development initiatives.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-600">
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                <span>Join tree planting events</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                <span>Assist with community workshops</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                <span>Share your professional expertise</span>
+              </li>
+            </ul>
+            <a href="#volunteer-form" class="btn-primary w-full text-center">Volunteer</a>
+          </div>
+        </div>
+        
+        <!-- Partner -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+          <div class="h-48 bg-green-600 flex items-center justify-center text-white">
+            <i class="fas fa-handshake text-6xl"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3 text-green-700">Partner With Us</h3>
+            <p class="text-gray-600 mb-4">
+              Collaborate with RMCI to create meaningful impact through strategic partnerships and joint initiatives.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-600">
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                <span>Corporate social responsibility projects</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                <span>Research collaborations</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                <span>Technical and financial partnerships</span>
+              </li>
+            </ul>
+            <a href="#partner-form" class="btn-primary w-full text-center">Partner With Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Needs -->
+  <section class="py-16 bg-green-50">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-center mb-12">Current Needs</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Material Needs -->
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h3 class="text-2xl font-bold text-green-700 mb-6">Material Donations</h3>
+          <p class="text-gray-600 mb-6">
+            We welcome donations of equipment and materials to support our conservation and community programs.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-tools text-green-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">Beekeeping Equipment</h4>
+                <p class="text-gray-600">Protective gear, hive tools, and honey processing equipment.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-cut text-green-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">Tailoring Supplies</h4>
+                <p class="text-gray-600">Sewing machines, fabric, thread, and other materials for our women's training program.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-seedling text-green-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">Nursery Supplies</h4>
+                <p class="text-gray-600">Seedling bags, watering equipment, and gardening tools for our tree nursery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Volunteer Needs -->
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h3 class="text-2xl font-bold text-green-700 mb-6">Volunteer Opportunities</h3>
+          <p class="text-gray-600 mb-6">
+            We are currently looking for volunteers with the following skills and expertise:
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-chalkboard-teacher text-green-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">Skills Trainers</h4>
+                <p class="text-gray-600">Experienced tailors, craftspeople, and soap makers to train young mothers.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-laptop-code text-green-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">Digital Skills</h4>
+                <p class="text-gray-600">Help with website maintenance, social media, and digital marketing.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-chart-line text-green-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">Business Development</h4>
+                <p class="text-gray-600">Support in developing business plans and market access strategies for community products.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Form -->
+  <section id="volunteer-form" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-center mb-12">Volunteer Application</h2>
+      
+      <div class="max-w-3xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md">
+        <form>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name</label>
+              <input type="text" id="first-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+            
+            <div>
+              <label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name</label>
+              <input type="text" id="last-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+            
+            <div>
+              <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+              <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+            
+            <div>
+              <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+              <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <label class="block text-gray-700 font-medium mb-2">Areas of Interest</label>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+              <div class="flex items-center">
+                <input type="checkbox" id="tree-planting" class="mr-2">
+                <label for="tree-planting">Tree Planting</label>
+              </div>
+              <div class="flex items-center">
+                <input type="checkbox" id="beekeeping" class="mr-2">
+                <label for="beekeeping">Beekeeping</label>
+              </div>
+              <div class="flex items-center">
+                <input type="checkbox" id="skills-training" class="mr-2">
+                <label for="skills-training">Skills Training</label>
+              </div>
+              <div class="flex items-center">
+                <input type="checkbox" id="community-outreach" class="mr-2">
+                <label for="community-outreach">Community Outreach</label>
+              </div>
+              <div class="flex items-center">
+                <input type="checkbox" id="admin-support" class="mr-2">
+                <label for="admin-support">Administrative Support</label>
+              </div>
+              <div class="flex items-center">
+                <input type="checkbox" id="digital-marketing" class="mr-2">
+                <label for="digital-marketing">Digital Marketing</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <label for="availability" class="block text-gray-700 font-medium mb-2">Availability</label>
+            <select id="availability" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+              <option value="">Select your availability</option>
+              <option value="weekdays">Weekdays</option>
+              <option value="weekends">Weekends</option>
+              <option value="flexible">Flexible</option>
+              <option value="remote">Remote Only</option>
+            </select>
+          </div>
+          
+          <div class="mb-6">
+            <label for="skills" class="block text-gray-700 font-medium mb-2">Skills & Experience</label>
+            <textarea id="skills" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+          </div>
+          
+          <div class="mb-6">
+            <label for="message" class="block text-gray-700 font-medium mb-2">Why do you want to volunteer with RMCI?</label>
+            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+          </div>
+          
+          <button type="submit" class="btn-primary w-full">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Form -->
+  <section id="partner-form" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-center mb-12">Partnership Inquiry</h2>
+      
+      <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <form>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label for="org-name" class="block text-gray-700 font-medium mb-2">Organization Name</label>
+              <input type="text" id="org-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+            
+            <div>
+              <label for="org-type" class="block text-gray-700 font-medium mb-2">Organization Type</label>
+              <select id="org-type" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                <option value="">Select organization type</option>
+                <option value="ngo">Non-profit/NGO</option>
+                <option value="business">Business</option>
+                <option value="government">Government Agency</option>
+                <option value="academic">Academic Institution</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="contact-name" class="block text-gray-700 font-medium mb-2">Contact Person</label>
+              <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+            
+            <div>
+              <label for="contact-position" class="block text-gray-700 font-medium mb-2">Position/Title</label>
+              <input type="text" id="contact-position" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+            
+            <div>
+              <label for="contact-email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+              <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+            
+            <div>
+              <label for="contact-phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+              <input type="tel" id="contact-phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <label class="block text-gray-700 font-medium mb-2">Partnership Interest</label>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+              <div class="flex items-center">
+                <input type="checkbox" id="funding" class="mr-2">
+                <label for="funding">Funding Support</label>
+              </div>
+              <div class="flex items-center">
+                <input type="checkbox" id="technical" class="mr-2">
+                <label for="technical">Technical Assistance</label>
+              </div>
+              <div class="flex items-center">
+                <input type="checkbox" id="joint-project" class="mr-2">
+                <label for="joint-project">Joint Project Implementation</label>
+              </div>
+              <div class="flex items-center">
+                <input type="checkbox" id="research" class="mr-2">
+                <label for="research">Research Collaboration</label>
+              </div>
+              <div class="flex items-center">
+                <input type="checkbox" id="csr" class="mr-2">
+                <label for="csr">Corporate Social Responsibility</label>
+              </div>
+              <div class="flex items-center">
+                <input type="checkbox" id="other-interest" class="mr-2">
+                <label for="other-interest">Other</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mb-6">
+            <label for="partnership-description" class="block text-gray-700 font-medium mb-2">Describe your proposed partnership or collaboration</label>
+            <textarea id="partnership-description" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+          </div>
+          
+          <div class="mb-6">
+            <label for="timeline" class="block text-gray-700 font-medium mb-2">Proposed Timeline</label>
+            <input type="text" id="timeline" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="e.g., 6 months, 1 year, ongoing">
+          </div>
+          
+          <button type="submit" class="btn-primary w-full">Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-center mb-12">Volunteer Experiences</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-green-50 p-6 rounded-lg">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Volunteer" class="w-16 h-16 rounded-full object-cover mr-4">
+            <div>
+              <h3 class="font-semibold">Sarah Johnson</h3>
+              <p class="text-sm text-gray-600">Environmental Scientist, UK</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Volunteering with RMCI was an incredible experience. I spent three months helping with their tree nursery and learned so much about the unique ecosystem of the Rwenzori Mountains. The team's dedication to both conservation and community empowerment is inspiring."
+          </p>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="bg-green-50 p-6 rounded-lg">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Volunteer" class="w-16 h-16 rounded-full object-cover mr-4">
+            <div>
+              <h3 class="font-semibold">Michael Okello</h3>
+              <p class="text-sm text-gray-600">Business Consultant, Kampala</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "I volunteered remotely to help RMCI develop a business plan for their honey products. It was rewarding to use my skills to support such a meaningful cause, and I continue to advise them on marketing strategies for their community products."
+          </p>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="bg-green-50 p-6 rounded-lg">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Volunteer" class="w-16 h-16 rounded-full object-cover mr-4">
+            <div>
+              <h3 class="font-semibold">Emily Nakato</h3>
+              <p class="text-sm text-gray-600">Tailor & Trainer, Kasese</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "As a local tailor, I volunteer my time to teach young mothers sewing skills. Seeing these women gain confidence and develop skills that can support their families is incredibly fulfilling. RMCI's approach to combining conservation with community development is what makes their work so effective."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white pt-12 pb-6">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <!-- About -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">About RMCI</h4>
+          <p class="text-gray-300 mb-4">Conserving the Rwenzori Mountains and empowering local communities in Western Uganda since 2016.</p>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com" class="text-gray-300 hover:text-white" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" class="text-gray-300 hover:text-white" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" class="text-gray-300 hover:text-white" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://youtube.com" class="text-gray-300 hover:text-white" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+            <li><a href="projects.html" class="text-gray-300 hover:text-white">Our Work</a></li>
+            <li><a href="get-involved.html" class="text-gray-300 hover:text-white">Get Involved</a></li>
+            <li><a href="blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+              <span>Kyatsi II Village, Kitholhu County, Kasese District, Western Uganda</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone mr-3"></i>
+              <span>+256 786 263 701</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3"></i>
+              <span>info@rmci.org</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Working Hours -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Working Hours</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li>Monday - Friday: 8:00 AM - 5:00 PM</li>
+            <li>Saturday: 9:00 AM - 1:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 pt-6 text-center text-gray-400">
+        <p>&copy; 2023 Rwenzori Mountains Conservation Initiative. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/256786263701" class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors z-50" aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

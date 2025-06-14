@@ -1,0 +1,158 @@
+/* Custom CSS for Pullman Safaris */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Color Palette */
+:root {
+    --gold-400: #d4af37;
+    --gold-500: #c9a227;
+    --gold-600: #be9717;
+    --green-700: #2e7d32;
+    --green-800: #1b5e20;
+    --beige-50: #f5f5f0;
+}
+
+.bg-gold-400 { background-color: var(--gold-400); }
+.bg-gold-500 { background-color: var(--gold-500); }
+.bg-gold-600 { background-color: var(--gold-600); }
+.bg-green-700 { background-color: var(--green-700); }
+.bg-green-800 { background-color: var(--green-800); }
+.bg-beige-50 { background-color: var(--beige-50); }
+
+.text-gold-400 { color: var(--gold-400); }
+.text-gold-500 { color: var(--gold-500); }
+.text-gold-600 { color: var(--gold-600); }
+.text-green-700 { color: var(--green-700); }
+.text-green-800 { color: var(--green-800); }
+
+.border-gold-400 { border-color: var(--gold-400); }
+
+/* Hero Image */
+.hero-image {
+    background-image: url('../images/hero-bg.jpg');
+}
+
+/* Cookie Consent Banner Styles */
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2e7d32;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+.cookie-consent-banner p {
+    margin: 0;
+    flex: 1;
+    min-width: 250px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.cookie-consent-banner-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.cookie-consent-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.cookie-consent-accept {
+    background-color: #d4af37;
+    color: #000;
+}
+
+.cookie-consent-decline {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.cookie-consent-learn-more {
+    color: #d4af37;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+/* Hide banner when declined */
+.cookie-consent-banner.hidden {
+    display: none;
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+}
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+}
+
+.whatsapp-icon {
+    font-size: 30px;
+}
+
+/* Safari Destination Cards */
+.safari-card {
+    transition: transform 0.3s ease;
+}
+
+.safari-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    transition: box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-image {
+        height: 500px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}

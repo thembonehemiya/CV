@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Pullman Safaris and Car Rentals Ltd</title>
+    <meta name="description" content="Learn about Pullman Safaris - Uganda's trusted safari and car rental company. Our story, mission, and commitment to exceptional African adventures.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'safari-green': '#2D5016',
+                        'safari-gold': '#D4A574',
+                        'safari-brown': '#8B4513',
+                        'safari-beige': '#F5E6D3',
+                        'safari-dark': '#1A2F0A'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(45, 80, 22, 0.7), rgba(26, 47, 10, 0.8)), url('https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-bg {
+            background: linear-gradient(135deg, #F5E6D3 0%, #E8D5B7 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-safari-green shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-mountain text-safari-gold text-2xl mr-3"></i>
+                    <span class="text-white font-bold text-xl">Pullman Safaris</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-safari-gold hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="safaris.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Safaris</a>
+                        <a href="car-rentals.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Car Rentals</a>
+                        <a href="contact.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-safari-gold">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-safari-dark">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-safari-gold block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="safaris.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Safaris</a>
+                <a href="car-rentals.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Car Rentals</a>
+                <a href="contact.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-96 flex items-center justify-center text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">About Pullman Safaris</h1>
+            <p class="text-xl text-white">Your trusted partner for unforgettable African adventures</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-safari-green mb-6">Our Story</h2>
+                    <p class="text-lg text-safari-brown mb-6 leading-relaxed">
+                        Founded with a passion for showcasing the natural beauty and wildlife of East Africa, Pullman Safaris and Car Rentals Ltd has grown to become one of Uganda's most trusted tourism companies. Our journey began with a simple mission: to provide authentic, safe, and memorable experiences that connect travelers with the heart of Africa.
+                    </p>
+                    <p class="text-lg text-safari-brown mb-6 leading-relaxed">
+                        Based in Kampala, Uganda, we specialize in creating personalized safari experiences that range from thrilling gorilla trekking adventures in Bwindi Impenetrable National Park to comprehensive wildlife tours across Uganda's pristine national parks. Our extensive knowledge of local cultures, wildlife patterns, and hidden gems ensures that every journey with us is unique and transformative.
+                    </p>
+                    <p class="text-lg text-safari-brown leading-relaxed">
+                        Beyond safaris, we provide reliable car rental services for self-drive adventures, corporate travel, and special occasions. Our commitment to excellence, safety, and customer satisfaction has made us the preferred choice for tourists, NGOs, and business travelers throughout East Africa.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="h-48 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('https://images.pexels.com/photos/3551542/pexels-photo-3551542.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                        <div class="h-32 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('https://images.pexels.com/photos/2529159/pexels-photo-2529159.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop')"></div>
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <div class="h-32 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('https://images.pexels.com/photos/3475586/pexels-photo-3475586.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop')"></div>
+                        <div class="h-48 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 section-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-lg p-8 shadow-lg card-hover">
+                    <div class="text-safari-gold text-5xl mb-4">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-safari-green mb-4">Our Mission</h3>
+                    <p class="text-safari-brown leading-relaxed">
+                        To provide exceptional safari experiences and reliable transportation services that showcase the natural beauty, wildlife, and cultural heritage of East Africa while promoting sustainable tourism and contributing to local conservation efforts.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg p-8 shadow-lg card-hover">
+                    <div class="text-safari-gold text-5xl mb-4">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-safari-green mb-4">Our Vision</h3>
+                    <p class="text-safari-brown leading-relaxed">
+                        To be the leading safari and car rental company in East Africa, recognized for our commitment to excellence, environmental conservation, and creating transformative travel experiences that connect people with Africa's incredible natural heritage.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-safari-green mb-4">Why Choose Pullman Safaris?</h2>
+                <p class="text-lg text-safari-brown max-w-3xl mx-auto">
+                    Our commitment to excellence and deep understanding of East African tourism sets us apart as your ideal travel partner.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-safari-beige rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-safari-green text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-safari-green mb-4">Expert Local Guides</h3>
+                    <p class="text-safari-brown">Our experienced guides are passionate conservationists with deep knowledge of wildlife behavior, local cultures, and hidden gems that make your safari truly special.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-safari-beige rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-safari-green text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-safari-green mb-4">Safety & Reliability</h3>
+                    <p class="text-safari-brown">Your safety is our priority. We maintain our vehicles to the highest standards and follow strict safety protocols to ensure worry-free adventures throughout your journey.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-safari-beige rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-safari-green text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-safari-green mb-4">Sustainable Tourism</h3>
+                    <p class="text-safari-brown">We're committed to responsible tourism practices that support local communities and conservation efforts, ensuring that future generations can enjoy Africa's natural wonders.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-safari-beige rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-safari-green text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-safari-green mb-4">Personalized Service</h3>
+                    <p class="text-safari-brown">Every traveler is unique. We customize our services to match your interests, budget, and travel style, creating personalized experiences that exceed expectations.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-safari-beige rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-safari-green text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-safari-green mb-4">24/7 Support</h3>
+                    <p class="text-safari-brown">Our dedicated support team is available around the clock to assist you before, during, and after your safari, ensuring seamless travel experiences from start to finish.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-safari-beige rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-safari-green text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-safari-green mb-4">Proven Excellence</h3>
+                    <p class="text-safari-brown">Years of experience and hundreds of satisfied customers have established our reputation for delivering outstanding safari experiences and reliable car rental services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-20 section-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-safari-green mb-4">Our Core Values</h2>
+                <p class="text-lg text-safari-brown max-w-3xl mx-auto">
+                    These principles guide everything we do and shape the way we serve our clients and communities.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-lg text-center card-hover">
+                    <div class="text-safari-gold text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-safari-green mb-2">Integrity</h3>
+                    <p class="text-safari-brown text-sm">Honest, transparent, and ethical in all our dealings</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-lg text-center card-hover">
+                    <div class="text-safari-gold text-4xl mb-4">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-safari-green mb-2">Excellence</h3>
+                    <p class="text-safari-brown text-sm">Striving for the highest quality in every service we provide</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-lg text-center card-hover">
+                    <div class="text-safari-gold text-4xl mb-4">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-safari-green mb-2">Conservation</h3>
+                    <p class="text-safari-brown text-sm">Protecting Africa's wildlife and supporting sustainable tourism</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-lg text-center card-hover">
+                    <div class="text-safari-gold text-4xl mb-4">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-safari-green mb-2">Passion</h3>
+                    <p class="text-safari-brown text-sm">Genuine love for Africa and creating memorable experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-safari-green text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Experience the Pullman Difference?</h2>
+            <p class="text-xl mb-8">Join thousands of satisfied travelers who have discovered the magic of Africa with us. Let's plan your perfect adventure today.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-safari-gold hover:bg-safari-brown text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                    <i class="fas fa-paper-plane mr-2"></i>Start Planning
+                </a>
+                <a href="safaris.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-safari-green px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                    <i class="fas fa-binoculars mr-2"></i>View Safaris
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-safari-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mountain text-safari-gold text-2xl mr-3"></i>
+                        <span class="text-white font-bold text-xl">Pullman Safaris</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Explore Africa with confidence. Your premier safari and car rental partner in East Africa.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-safari-gold transition-colors">About Us</a></li>
+                        <li><a href="safaris.html" class="text-gray-400 hover:text-safari-gold transition-colors">Safari Packages</a></li>
+                        <li><a href="car-rentals.html" class="text-gray-400 hover:text-safari-gold transition-colors">Car Rentals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-safari-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Gorilla Trekking</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Wildlife Safaris</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Cultural Tours</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Airport Transfers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-location-dot text-safari-gold mr-3"></i>
+                            <span class="text-gray-400">Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-safari-gold mr-3"></i>
+                            <span class="text-gray-400">+256 702 551 090</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-safari-gold mr-3"></i>
+                            <span class="text-gray-400">info@pullmansafaris.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/256702551090" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors z-40">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('backdrop-blur-sm');
+            } else {
+                navbar.classList.remove('backdrop-blur-sm');
+            }
+        });
+    </script>
+</body>
+</html>

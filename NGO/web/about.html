@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Rwenzori Mountains Conservation Initiative</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="https://via.placeholder.com/50" alt="RMCI Logo" class="h-10 mr-3">
+            <span class="text-xl font-bold text-green-700">RMCI</span>
+          </a>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link active">About Us</a>
+          <a href="projects.html" class="nav-link">Our Work</a>
+          <a href="get-involved.html" class="nav-link">Get Involved</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="donate.html" class="btn-donate">Donate</a>
+        </div>
+        
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-500 hover:text-green-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <a href="index.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Home</a>
+        <a href="about.html" class="block py-2 px-4 text-green-700 font-medium">About Us</a>
+        <a href="projects.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Our Work</a>
+        <a href="get-involved.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Get Involved</a>
+        <a href="blog.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Blog</a>
+        <a href="contact.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Contact</a>
+        <a href="donate.html" class="block py-2 px-4 mt-2 bg-green-600 text-white rounded-md text-center">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="relative">
+    <div class="hero-image h-screen-50 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2021&q=80');">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+        <div class="max-w-2xl text-white">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
+          <p class="text-xl">Learn about our mission, vision, and the team behind RMCI</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mission & Vision Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Mission -->
+        <div>
+          <h2 class="text-3xl font-bold text-green-700 mb-6">Our Mission</h2>
+          <p class="text-lg mb-6">
+            To conserve and restore the unique ecosystems of the Rwenzori Mountains while empowering local communities—especially women and youth—through sustainable land use, nature-based livelihoods, and self-employment skills training.
+          </p>
+          <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
+            <h3 class="text-xl font-semibold mb-3">Our Approach</h3>
+            <p>
+              We believe that conservation and community development must go hand in hand. By creating sustainable livelihoods that depend on healthy ecosystems, we ensure long-term protection of the Rwenzori region.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Vision -->
+        <div>
+          <h2 class="text-3xl font-bold text-green-700 mb-6">Our Vision</h2>
+          <p class="text-lg mb-6">
+            A thriving, biodiverse, and climate-resilient Rwenzori region where nature and communities—especially women and youth—flourish together.
+          </p>
+          <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
+            <h3 class="text-xl font-semibold mb-3">Our Values</h3>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Environmental stewardship</li>
+              <li>Community empowerment</li>
+              <li>Gender equality</li>
+              <li>Sustainable development</li>
+              <li>Transparency and accountability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-center mb-12">Our Story</h2>
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="relative">
+          <!-- Timeline -->
+          <div class="absolute left-0 md:left-1/2 h-full w-1 bg-green-600 transform md:translate-x-0.5"></div>
+          
+          <!-- 2016 -->
+          <div class="relative mb-12">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="flex-1 md:pr-8 md:text-right order-2 md:order-1">
+                <h3 class="text-2xl font-bold text-green-700 mb-2">2016</h3>
+                <p class="text-gray-600">
+                  RMCI was founded in Kyatsi II village, Kitholhu County, with a mission to address deforestation and support local livelihoods in the Rwenzori region.
+                </p>
+              </div>
+              <div class="md:mx-4 my-4 md:my-0 order-1 md:order-2">
+                <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white font-bold">
+                  <i class="fas fa-seedling"></i>
+                </div>
+              </div>
+              <div class="flex-1 md:pl-8 order-3">
+                <!-- Empty for layout -->
+              </div>
+            </div>
+          </div>
+          
+          <!-- 2018 -->
+          <div class="relative mb-12">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="flex-1 md:pr-8 order-2 md:order-1">
+                <!-- Empty for layout -->
+              </div>
+              <div class="md:mx-4 my-4 md:my-0 order-1 md:order-2">
+                <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white font-bold">
+                  <i class="fas fa-tree"></i>
+                </div>
+              </div>
+              <div class="flex-1 md:pl-8 md:text-left order-3">
+                <h3 class="text-2xl font-bold text-green-700 mb-2">2018</h3>
+                <p class="text-gray-600">
+                  Launched our first community tree nursery, focusing on native species for riverbank restoration and erosion control.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 2020 -->
+          <div class="relative mb-12">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="flex-1 md:pr-8 md:text-right order-2 md:order-1">
+                <h3 class="text-2xl font-bold text-green-700 mb-2">2020</h3>
+                <p class="text-gray-600">
+                  Established the community apiary program, training local farmers in beekeeping techniques and sustainable honey production.
+                </p>
+              </div>
+              <div class="md:mx-4 my-4 md:my-0 order-1 md:order-2">
+                <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white font-bold">
+                  <i class="fas fa-bug"></i>
+                </div>
+              </div>
+              <div class="flex-1 md:pl-8 order-3">
+                <!-- Empty for layout -->
+              </div>
+            </div>
+          </div>
+          
+          <!-- 2022 -->
+          <div class="relative mb-12">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="flex-1 md:pr-8 order-2 md:order-1">
+                <!-- Empty for layout -->
+              </div>
+              <div class="md:mx-4 my-4 md:my-0 order-1 md:order-2">
+                <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white font-bold">
+                  <i class="fas fa-users"></i>
+                </div>
+              </div>
+              <div class="flex-1 md:pl-8 md:text-left order-3">
+                <h3 class="text-2xl font-bold text-green-700 mb-2">2022</h3>
+                <p class="text-gray-600">
+                  Expanded our focus to include vocational training for young mothers, recognizing the need for economic empowerment alongside conservation efforts.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 2023 -->
+          <div class="relative">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="flex-1 md:pr-8 md:text-right order-2 md:order-1">
+                <h3 class="text-2xl font-bold text-green-700 mb-2">2023</h3>
+                <p class="text-gray-600">
+                  Distributed over 1,000 coffee seedlings to local farmers in partnership with the government, boosting sustainable livelihoods and reforestation efforts.
+                </p>
+              </div>
+              <div class="md:mx-4 my-4 md:my-0 order-1 md:order-2">
+                <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white font-bold">
+                  <i class="fas fa-leaf"></i>
+                </div>
+              </div>
+              <div class="flex-1 md:pl-8 order-3">
+                <!-- Empty for layout -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Team -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-center mb-12">Our Team</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Team Member 1 -->
+        <div class="text-center">
+          <div class="mb-4 relative mx-auto w-48 h-48 rounded-full overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1507152832244-10d45c7eda57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Team Member" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold text-green-700">John Muhindo</h3>
+          <p class="text-gray-600 mb-2">Founder & Executive Director</p>
+          <p class="text-gray-500 mb-4">Conservation specialist with 10+ years of experience in community-based natural resource management.</p>
+          <div class="flex justify-center space-x-3">
+            <a href="#" class="text-gray-400 hover:text-green-600"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-green-600"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-gray-400 hover:text-green-600"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="text-center">
+          <div class="mb-4 relative mx-auto w-48 h-48 rounded-full overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Team Member" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold text-green-700">Sarah Biira</h3>
+          <p class="text-gray-600 mb-2">Programs Manager</p>
+          <p class="text-gray-500 mb-4">Passionate about women's empowerment and sustainable agriculture with a background in community development.</p>
+          <div class="flex justify-center space-x-3">
+            <a href="#" class="text-gray-400 hover:text-green-600"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-green-600"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-gray-400 hover:text-green-600"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="text-center">
+          <div class="mb-4 relative mx-auto w-48 h-48 rounded-full overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Team Member" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold text-green-700">David Baluku</h3>
+          <p class="text-gray-600 mb-2">Field Coordinator</p>
+          <p class="text-gray-500 mb-4">Expert in agroforestry and beekeeping with deep knowledge of the Rwenzori ecosystem and local farming practices.</p>
+          <div class="flex justify-center space-x-3">
+            <a href="#" class="text-gray-400 hover:text-green-600"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-green-600"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-gray-400 hover:text-green-600"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="py-16 bg-green-50">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-center mb-12">Our Achievements</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-start">
+            <div class="bg-green-100 rounded-full p-3 mr-4">
+              <i class="fas fa-seedling text-green-600 text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-green-700 mb-2">Established Nursery</h3>
+              <p class="text-gray-600">
+                Created a thriving nursery for bamboo, cocoa, and native riverine trees, providing seedlings for reforestation efforts throughout the region.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-start">
+            <div class="bg-green-100 rounded-full p-3 mr-4">
+              <i class="fas fa-bug text-green-600 text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-green-700 mb-2">Community Apiary</h3>
+              <p class="text-gray-600">
+                Launched a successful community apiary, enhancing biodiversity through pollination while providing sustainable income for local families.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-start">
+            <div class="bg-green-100 rounded-full p-3 mr-4">
+              <i class="fas fa-water text-green-600 text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-green-700 mb-2">Riverbank Restoration</h3>
+              <p class="text-gray-600">
+                Restored critical riverbank ecosystems with native vegetation, reducing erosion and improving water quality in the Rwenzori region.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-start">
+            <div class="bg-green-100 rounded-full p-3 mr-4">
+              <i class="fas fa-users text-green-600 text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-green-700 mb-2">Vocational Training</h3>
+              <p class="text-gray-600">
+                Initiated planning for vocational training programs to support young mothers' self-employment and economic independence.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-start">
+            <div class="bg-green-100 rounded-full p-3 mr-4">
+              <i class="fas fa-leaf text-green-600 text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-green-700 mb-2">Coffee Distribution</h3>
+              <p class="text-gray-600">
+                Distributed over 1,000 coffee seedlings to local farmers in partnership with the government—boosting sustainable livelihoods and reforestation efforts.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex items-start">
+            <div class="bg-green-100 rounded-full p-3 mr-4">
+              <i class="fas fa-hands-helping text-green-600 text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-green-700 mb-2">Community Partnerships</h3>
+              <p class="text-gray-600">
+                Established strong partnerships with local government, schools, and community groups to expand our conservation impact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Join Our Mission</h2>
+      <p class="text-lg max-w-3xl mx-auto mb-8">Help us continue our work in conserving the Rwenzori Mountains and empowering local communities.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="donate.html" class="btn-primary">Support Our Work</a>
+        <a href="contact.html" class="btn-secondary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white pt-12 pb-6">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <!-- About -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">About RMCI</h4>
+          <p class="text-gray-300 mb-4">Conserving the Rwenzori Mountains and empowering local communities in Western Uganda since 2016.</p>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com" class="text-gray-300 hover:text-white" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" class="text-gray-300 hover:text-white" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" class="text-gray-300 hover:text-white" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://youtube.com" class="text-gray-300 hover:text-white" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+            <li><a href="projects.html" class="text-gray-300 hover:text-white">Our Work</a></li>
+            <li><a href="get-involved.html" class="text-gray-300 hover:text-white">Get Involved</a></li>
+            <li><a href="blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+              <span>Kyatsi II Village, Kitholhu County, Kasese District, Western Uganda</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone mr-3"></i>
+              <span>+256 786 263 701</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3"></i>
+              <span>info@rmci.org</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Working Hours -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Working Hours</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li>Monday - Friday: 8:00 AM - 5:00 PM</li>
+            <li>Saturday: 9:00 AM - 1:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 pt-6 text-center text-gray-400">
+        <p>&copy; 2023 Rwenzori Mountains Conservation Initiative. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/256786263701" class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors z-50" aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Pullman Safaris and Car Rentals Ltd</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="Pullman Safaris Logo" class="h-12">
+                <span class="ml-2 text-xl font-bold text-green-800">Pullman Safaris</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-green-600 font-medium">Home</a>
+                <a href="about.html" class="text-green-800 font-medium">About Us</a>
+                <a href="safaris/index.html" class="text-gray-600 hover:text-green-600 font-medium">Safaris</a>
+                <a href="cars/index.html" class="text-gray-600 hover:text-green-600 font-medium">Car Rentals</a>
+                <a href="testimonials.html" class="text-gray-600 hover:text-green-600 font-medium">Testimonials</a>
+                <a href="blog.html" class="text-gray-600 hover:text-green-600 font-medium">Blog</a>
+                <a href="contact.html" class="text-gray-600 hover:text-green-600 font-medium">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-green-600">Home</a>
+            <a href="about.html" class="block py-2 text-green-800">About Us</a>
+            <a href="safaris/index.html" class="block py-2 text-gray-600 hover:text-green-600">Safaris</a>
+            <a href="cars/index.html" class="block py-2 text-gray-600 hover:text-green-600">Car Rentals</a>
+            <a href="testimonials.html" class="block py-2 text-gray-600 hover:text-green-600">Testimonials</a>
+            <a href="blog.html" class="block py-2 text-gray-600 hover:text-green-600">Blog</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-green-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-cover bg-center" style="background-image: url('images/about-hero.jpg');">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Our Story</h1>
+            <p class="text-xl md:text-2xl mb-8">Discover the passion behind Pullman Safaris and Car Rentals</p>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Who We Are</h2>
+                
+                <div class="prose max-w-none">
+                    <p class="text-gray-700 mb-6">Founded in 2010, Pullman Safaris and Car Rentals Ltd has grown from a small local operator to one of Uganda's most respected safari and transportation companies. Our journey began with a single 4x4 vehicle and a passion for sharing Uganda's incredible wildlife with visitors.</p>
+                    
+                    <p class="text-gray-700 mb-6">Today, we operate a fleet of modern safari vehicles and offer comprehensive tour packages across Uganda, Rwanda, Kenya, and Tanzania. Despite our growth, we've maintained the personal touch and attention to detail that characterized our early days.</p>
+                    
+                    <h3 class="text-2xl font-bold text-green-800 mt-8 mb-4">Our Mission</h3>
+                    <p class="text-gray-700 mb-6">To provide unforgettable African experiences through exceptional safari adventures and reliable transportation services, while promoting sustainable tourism that benefits local communities and conserves wildlife.</p>
+                    
+                    <h3 class="text-2xl font-bold text-green-800 mt-8 mb-4">Why Choose Us</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Local Expertise</h4>
+                                <p class="text-gray-600">Our team has intimate knowledge of East Africa's parks and hidden gems.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Quality Vehicles</h4>
+                                <p class="text-gray-600">Well-maintained fleet with regular safety inspections.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Professional Guides</h4>
+                                <p class="text-gray-600">Certified, experienced, and passionate about wildlife.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Responsible Tourism</h4>
+                                <p class="text-gray-600">We support conservation and community projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-green-800 mt-8 mb-4">Our Team</h3>
+                    <p class="text-gray-700 mb-8">At the heart of Pullman Safaris is our dedicated team of safari experts, drivers, and support staff. We're proud to employ local professionals who bring authentic knowledge and enthusiasm to every trip.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12">
+                    <!-- Team Member 1 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                        <img src="images/team1.jpg" alt="Robert Mugabe - Founder" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg text-green-800">Robert Mugabe</h4>
+                            <p class="text-yellow-600 font-medium mb-2">Founder & CEO</p>
+                            <p class="text-gray-600 text-sm">With over 20 years in the tourism industry, Robert's vision drives our company's success.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 2 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                        <img src="images/team2.jpg" alt="Sarah Kintu - Operations Manager" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg text-green-800">Sarah Kintu</h4>
+                            <p class="text-yellow-600 font-medium mb-2">Operations Manager</p>
+                            <p class="text-gray-600 text-sm">Ensures every safari runs smoothly with her exceptional organizational skills.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 3 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                        <img src="images/team3.jpg" alt="David Okello - Head Guide" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg text-green-800">David Okello</h4>
+                            <p class="text-yellow-600 font-medium mb-2">Head Guide</p>
+                            <p class="text-gray-600 text-sm">UGTA-certified guide with unparalleled knowledge of Uganda's wildlife.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Awards & Recognition</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
+                <div class="flex justify-center">
+                    <img src="images/award1.png" alt="Uganda Tourism Excellence Award" class="h-24 object-contain">
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/award2.png" alt="Sustainable Tourism Certification" class="h-24 object-contain">
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/award3.png" alt="TripAdvisor Certificate of Excellence" class="h-24 object-contain">
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/award4.png" alt="Eco Tourism Gold Standard" class="h-24 object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-green-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Experience Uganda with Us?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today to start planning your customized safari adventure.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="booking.html" class="bg-white hover:bg-gray-100 text-green-800 font-bold py-3 px-6 rounded-lg transition duration-300">Book Now</a>
+                <a href="contact.html" class="bg-transparent hover:bg-green-700 border-2 border-white text-white font-bold py-3 px-6 rounded-lg transition duration-300">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="images/logo-white.png" alt="Pullman Safaris Logo" class="h-12 mb-4">
+                    <p class="mb-4">Explore Africa with confidence through our safari packages and reliable car rental services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-400">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-400">About Us</a></li>
+                        <li><a href="safaris/index.html" class="hover:text-green-400">Safari Packages</a></li>
+                        <li><a href="cars/index.html" class="hover:text-green-400">Car Rentals</a></li>
+                        <li><a href="testimonials.html" class="hover:text-green-400">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>+256 702 551 090</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@pullmansafaris.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe to our newsletter for updates and special offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-green-700 hover:bg-green-600 px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/256702551090" class="fixed bottom-6 right-6 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

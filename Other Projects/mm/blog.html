@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog & News | Pullman Safaris and Car Rentals Ltd</title>
+    <meta name="description" content="Read our blog for travel tips, company updates, and stories about Uganda's wildlife, culture, and conservation efforts.">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body class="font-sans bg-beige-50">
+    <!-- WhatsApp Integration -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/256702551090" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+        </a>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="relative">
+        <div class="hero-image h-96 w-full bg-cover bg-center flex items-center justify-center">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="container mx-auto px-4 z-10">
+                <nav class="flex justify-between items-center py-4">
+                    <div class="logo">
+                        <a href="index.html" class="text-white text-2xl font-bold">
+                            <img src="images/logo.png" alt="Pullman Safaris Logo" class="h-16">
+                        </a>
+                    </div>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="index.html" class="text-white hover:text-gold-400 font-medium">Home</a>
+                        <a href="about.html" class="text-white hover:text-gold-400 font-medium">About Us</a>
+                        <a href="safaris.html" class="text-white hover:text-gold-400 font-medium">Safaris</a>
+                        <a href="rentals.html" class="text-white hover:text-gold-400 font-medium">Car Rentals</a>
+                        <a href="testimonials.html" class="text-white hover:text-gold-400 font-medium">Testimonials</a>
+                        <a href="blog.html" class="text-white hover:text-gold-400 font-medium">Blog</a>
+                        <a href="contact.html" class="text-white hover:text-gold-400 font-medium">Contact</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="text-white focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </nav>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden absolute top-20 right-4 bg-white rounded-md shadow-lg z-20 w-48 py-2">
+                    <a href="index.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Home</a>
+                    <a href="about.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">About Us</a>
+                    <a href="safaris.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Safaris</a>
+                    <a href="rentals.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Car Rentals</a>
+                    <a href="testimonials.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Testimonials</a>
+                    <a href="blog.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Blog</a>
+                    <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Contact</a>
+                </div>
+                <!-- Hero Content -->
+                <div class="text-center mt-12 z-10">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Travel Blog & News</h1>
+                    <p class="text-xl text-white mb-8 max-w-2xl mx-auto">Discover Uganda through our stories, tips, and updates from the field</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Blog Section -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Latest Posts</h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Read our latest articles about Uganda's wildlife, culture, travel tips, and conservation efforts.</p>
+            </div>
+            
+            <!-- Featured Post -->
+            <div class="mb-16">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="images/featured-blog.jpg" alt="Featured Blog Post" class="w-full h-96 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded mr-3">Featured</span>
+                            <span><i class="far fa-calendar-alt mr-1"></i> June 15, 2023</span>
+                            <span class="mx-3">•</span>
+                            <span><i class="far fa-user mr-1"></i> By Robert Mugabe</span>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">The Ultimate Guide to Gorilla Trekking in Bwindi</h2>
+                        <p class="text-gray-600 mb-6">Everything you need to know before embarking on this once-in-a-lifetime experience, from physical preparation to photography tips and cultural etiquette.</p>
+                        <a href="blog/gorilla-trekking-guide.html" class="inline-flex items-center text-gold-500 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Blog Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="images/blog1.jpg" alt="Blog Post 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span><i class="far fa-calendar-alt mr-1"></i> May 28, 2023</span>
+                            <span class="mx-3">•</span>
+                            <span><i class="far fa-user mr-1"></i> By Sarah Kintu</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Best Time to Visit Uganda's National Parks</h3>
+                        <p class="text-gray-600 mb-4">A month-by-month guide to wildlife viewing, weather conditions, and special events across Uganda's diverse ecosystems.</p>
+                        <a href="blog/best-time-to-visit.html" class="inline-flex items-center text-gold-500 font-medium text-sm">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="images/blog2.jpg" alt="Blog Post 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span><i class="far fa-calendar-alt mr-1"></i> April 15, 2023</span>
+                            <span class="mx-3">•</span>
+                            <span><i class="far fa-user mr-1"></i> By David Omondi</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Conservation Success: Rhinos Return to Uganda</h3>
+                        <p class="text-gray-600 mb-4">How Ziwa Rhino Sanctuary is leading efforts to reintroduce rhinos to Uganda's wilderness after decades of extinction.</p>
+                        <a href="blog/rhino-conservation.html" class="inline-flex items-center text-gold-500 font-medium text-sm">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="images/blog3.jpg" alt="Blog Post 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span><i class="far fa-calendar-alt mr-1"></i> March 22, 2023</span>
+                            <span class="mx-3">•</span>
+                            <span><i class="far fa-user mr-1"></i> By Grace Nakimera</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Uganda's Hidden Gem: Lake Bunyonyi</h3>
+                        <p class="text-gray-600 mb-4">Discover why this stunning lake with its 29 islands is becoming a must-visit destination for travelers seeking tranquility.</p>
+                        <a href="blog/lake-bunyonyi.html" class="inline-flex items-center text-gold-500 font-medium text-sm">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 4 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="images/blog4.jpg" alt="Blog Post 4" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span><i class="far fa-calendar-alt mr-1"></i> February 10, 2023</span>
+                            <span class="mx-3">•</span>
+                            <span><i class="far fa-user mr-1"></i> By Robert Mugabe</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Self-Drive vs Guided Safaris: Which is Right for You?</h3>
+                        <p class="text-gray-600 mb-4">We compare the pros and cons of both options to help you decide the best way to experience Uganda's wildlife.</p>
+                        <a href="blog/self-drive-vs-guided.html" class="inline-flex items-center text-gold-500 font-medium text-sm">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 5 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="images/blog5.jpg" alt="Blog Post 5" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span><i class="far fa-calendar-alt mr-1"></i> January 18, 2023</span>
+                            <span class="mx-3">•</span>
+                            <span><i class="far fa-user mr-1"></i> By David Omondi</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Birdwatching in Uganda: A Birder's Paradise</h3>
+                        <p class="text-gray-600 mb-4">With over 1,000 bird species, Uganda offers incredible avian diversity. Here are the top spots for bird enthusiasts.</p>
+                        <a href="blog/birdwatching-uganda.html" class="inline-flex items-center text-gold-500 font-medium text-sm">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 6 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="images/blog6.jpg" alt="Blog Post 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span><i class="far fa-calendar-alt mr-1"></i> December 5, 2022</span>
+                            <span class="mx-3">•</span>
+                            <span><i class="far fa-user mr-1"></i> By Sarah Kintu</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Packing List for an African Safari</h3>
+                        <p class="text-gray-600 mb-4">The essential items you'll need for comfort and convenience on your Ugandan adventure, plus what to leave at home.</p>
+                        <a href="blog/safari-packing-list.html" class="inline-flex items-center text-gold-500 font-medium text-sm">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="flex justify-center">
+                <nav class="flex items-center space-x-2">
+                    <a href="#" class="px-3 py-1 rounded-lg bg-gray-200 text-gray-700 hover:bg-gold-500 hover:text-white">&laquo; Previous</a>
+                    <a href="#" class="px-3 py-1 rounded-lg bg-gold-500 text-white">1</a>
+                    <a href="#" class="px-3 py-1 rounded-lg bg-gray-200 text-gray-700 hover:bg-gold-500 hover:text-white">2</a>
+                    <a href="#" class="px-3 py-1 rounded-lg bg-gray-200 text-gray-700 hover:bg-gold-500 hover:text-white">3</a>
+                    <a href="#" class="px-3 py-1 rounded-lg bg-gray-200 text-gray-700 hover:bg-gold-500 hover:text-white">Next &raquo;</a>
+                </nav>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="bg-green-700 rounded-lg p-8 text-white mb-16">
+            <div class="max-w-2xl mx-auto text-center">
+                <h3 class="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+                <p class="mb-6">Get travel tips, special offers, and updates about Uganda's wildlife and conservation efforts delivered to your inbox.</p>
+                <form class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-lg focus:outline-none text-gray-800">
+                    <button type="submit" class="bg-gold-500 hover:bg-gold-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                        Subscribe
+                    </button>
+                </form>
+                <p class="text-sm text-green-200 mt-3">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </section>
+        
+        <!-- Categories Section -->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Explore by Category</h3>
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="blog/category/travel-tips.html" class="bg-white hover:bg-gold-500 hover:text-white text-gray-800 font-medium py-4 px-6 rounded-lg shadow-sm text-center transition duration-300">
+                    <i class="fas fa-lightbulb mr-2"></i> Travel Tips
+                </a>
+                <a href="blog/category/wildlife.html" class="bg-white hover:bg-gold-500 hover:text-white text-gray-800 font-medium py-4 px-6 rounded-lg shadow-sm text-center transition duration-300">
+                    <i class="fas fa-paw mr-2"></i> Wildlife
+                </a>
+                <a href="blog/category/conservation.html" class="bg-white hover:bg-gold-500 hover:text-white text-gray-800 font-medium py-4 px-6 rounded-lg shadow-sm text-center transition duration-300">
+                    <i class="fas fa-leaf mr-2"></i> Conservation
+                </a>
+                <a href="blog/category/culture.html" class="bg-white hover:bg-gold-500 hover:text-white text-gray-800 font-medium py-4 px-6 rounded-lg shadow-sm text-center transition duration-300">
+                    <i class="fas fa-music mr-2"></i> Culture
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

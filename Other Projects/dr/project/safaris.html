@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Packages - Pullman Safaris and Car Rentals Ltd</title>
+    <meta name="description" content="Discover Uganda's incredible wildlife with our premium safari packages. Gorilla trekking, Big Five safaris, and cultural experiences with expert guides.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'safari-green': '#2D5016',
+                        'safari-gold': '#D4A574',
+                        'safari-brown': '#8B4513',
+                        'safari-beige': '#F5E6D3',
+                        'safari-dark': '#1A2F0A'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(45, 80, 22, 0.7), rgba(26, 47, 10, 0.8)), url('https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-bg {
+            background: linear-gradient(135deg, #F5E6D3 0%, #E8D5B7 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-safari-green shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-mountain text-safari-gold text-2xl mr-3"></i>
+                    <span class="text-white font-bold text-xl">Pullman Safaris</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="safaris.html" class="text-safari-gold hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Safaris</a>
+                        <a href="car-rentals.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Car Rentals</a>
+                        <a href="contact.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-safari-gold">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-safari-dark">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="safaris.html" class="text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Safaris</a>
+                <a href="car-rentals.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Car Rentals</a>
+                <a href="contact.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-96 flex items-center justify-center text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">Safari Adventures</h1>
+            <p class="text-xl text-white">Discover Uganda's incredible wildlife with our expertly guided safari experiences</p>
+        </div>
+    </section>
+
+    <!-- Featured Safari Packages -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-safari-green mb-4">Featured Safari Packages</h2>
+                <p class="text-lg text-safari-brown max-w-3xl mx-auto">
+                    Choose from our carefully crafted safari experiences, each designed to showcase the best of Uganda's diverse ecosystems and wildlife.
+                </p>
+            </div>
+
+            <!-- Murchison Falls 3-Day Package -->
+            <div class="bg-safari-beige rounded-lg p-8 mb-12 shadow-lg">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="bg-safari-gold text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                            FEATURED PACKAGE
+                        </div>
+                        <h3 class="text-3xl font-bold text-safari-green mb-4">3 Days Murchison Falls National Park</h3>
+                        <div class="text-safari-brown mb-6">
+                            <p class="mb-4"><strong>Highlights:</strong></p>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>Visit Ziwa Rhino Sanctuary in Nakitoma</li>
+                                <li>Witness the Devil's Cauldron (Murchison Falls)</li>
+                                <li>Launch cruise on the Nile (Hippos, Crocs, Birds)</li>
+                                <li>Game drives (Lions, Giraffes, Elephants)</li>
+                                <li>Beautiful flora and fauna viewing</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 mb-6">
+                            <h4 class="font-bold text-safari-green mb-2">Package Includes:</h4>
+                            <ul class="text-safari-brown text-sm space-y-1">
+                                <li>• 2 nights accommodation with meals</li>
+                                <li>• Game drives and launch cruise</li>
+                                <li>• Park entrance charges</li>
+                                <li>• Water throughout the trip</li>
+                                <li>• Professional guide</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-2xl font-bold text-safari-green">From $450 per person</div>
+                            <a href="contact.html" class="bg-safari-green hover:bg-safari-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="h-80 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('https://images.pexels.com/photos/2529159/pexels-photo-2529159.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop')"></div>
+                </div>
+            </div>
+
+            <!-- 9-Day Kenya-Uganda Safari -->
+            <div class="bg-white rounded-lg p-8 mb-12 shadow-lg border border-safari-beige">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="h-80 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('https://images.pexels.com/photos/3551548/pexels-photo-3551548.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop')"></div>
+                    <div>
+                        <div class="bg-safari-brown text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                            PREMIUM PACKAGE
+                        </div>
+                        <h3 class="text-3xl font-bold text-safari-green mb-4">9 Days Nairobi / Sweetwaters / Nakuru / Maasai Mara / Mombasa</h3>
+                        <div class="text-safari-brown mb-6">
+                            <p class="mb-4"><strong>Experience the best of Kenya and East Africa:</strong></p>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>Sweetwater's Game Reserve with Big Five</li>
+                                <li>Lake Nakuru's famous flamingos</li>
+                                <li>Maasai Mara - Great Migration witness</li>
+                                <li>Relaxing beach time in Mombasa</li>
+                                <li>Chimpanzee sanctuary visit</li>
+                            </ul>
+                        </div>
+                        <div class="bg-safari-beige rounded-lg p-4 mb-6">
+                            <h4 class="font-bold text-safari-green mb-2">Package Includes:</h4>
+                            <ul class="text-safari-brown text-sm space-y-1">
+                                <li>• All accommodation and meals</li>
+                                <li>• Transport in safari land cruiser</li>
+                                <li>• Return train tickets to Mombasa</li>
+                                <li>• All park entrance fees</li>
+                                <li>• Professional driver-guide</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-2xl font-bold text-safari-green">$1,556 per person sharing</div>
+                            <a href="contact.html" class="bg-safari-gold hover:bg-safari-brown text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                                Inquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="py-20 section-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-safari-green mb-4">Explore Uganda's Premier Destinations</h2>
+                <p class="text-lg text-safari-brown max-w-3xl mx-auto">
+                    From gorilla trekking to mountain climbing, discover the diverse landscapes and wildlife that make Uganda the Pearl of Africa.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Bwindi -->
+                <div id="bwindi" class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/3475586/pexels-photo-3475586.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Bwindi Impenetrable National Park</h3>
+                        <p class="text-safari-brown mb-4">Mountain Gorilla trekking in this UNESCO World Heritage Site. Home to over half of the world's remaining mountain gorillas.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Activities:</strong> Gorilla tracking, birding, forest walks, Batwa cultural visits
+                        </div>
+                        <a href="contact.html" class="text-safari-gold hover:text-safari-brown font-semibold">Plan Your Visit <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Queen Elizabeth -->
+                <div id="queen-elizabeth" class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/3551548/pexels-photo-3551548.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Queen Elizabeth National Park</h3>
+                        <p class="text-safari-brown mb-4">Famous for tree-climbing lions and Kazinga Channel boat safaris. Diverse wildlife in stunning crater landscapes.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Activities:</strong> Game drives, boat cruises, chimp trekking in Kyambura Gorge
+                        </div>
+                        <a href="contact.html" class="text-safari-gold hover:text-safari-brown font-semibold">Plan Your Visit <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Kibale Forest -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Kibale Forest National Park</h3>
+                        <p class="text-safari-brown mb-4">Chimpanzee capital of the world with 13 primate species. Perfect for primate enthusiasts and nature lovers.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Activities:</strong> Chimpanzee tracking, primate watching, birding, nature walks
+                        </div>
+                        <a href="contact.html" class="text-safari-gold hover:text-safari-brown font-semibold">Plan Your Visit <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Rwenzori Mountains -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/2743287/pexels-photo-2743287.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Rwenzori Mountains National Park</h3>
+                        <p class="text-safari-brown mb-4">Snow-capped peaks and glacier hiking in Africa! The legendary Mountains of the Moon offer incredible trekking experiences.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Activities:</strong> Mountaineering, multi-day hikes, photography, cultural tours
+                        </div>
+                        <a href="contact.html" class="text-safari-gold hover:text-safari-brown font-semibold">Plan Your Visit <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Lake Mburo -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Lake Mburo National Park</h3>
+                        <p class="text-safari-brown mb-4">Closest park to Kampala with zebras and antelopes. Perfect for walking safaris and unique wildlife experiences.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Activities:</strong> Walking safaris, biking, boat rides, horse riding
+                        </div>
+                        <a href="contact.html" class="text-safari-gold hover:text-safari-brown font-semibold">Plan Your Visit <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Kidepo Valley -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1670766/pexels-photo-1670766.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Kidepo Valley National Park</h3>
+                        <p class="text-safari-brown mb-4">Remote and untouched wilderness with spectacular landscapes. One of Africa's most pristine national parks.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Activities:</strong> Game drives, cultural tours (Karamojong), scenic landscapes
+                        </div>
+                        <a href="contact.html" class="text-safari-gold hover:text-safari-brown font-semibold">Plan Your Visit <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Ssese Islands -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Ssese Islands</h3>
+                        <p class="text-safari-brown mb-4">Tropical paradise on Lake Victoria. 84 lush islands perfect for relaxation and water activities.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Activities:</strong> Beach relaxation, fishing tours, nature walks, biking
+                        </div>
+                        <a href="contact.html" class="text-safari-gold hover:text-safari-brown font-semibold">Plan Your Visit <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Lake Bunyonyi -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1574842/pexels-photo-1574842.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Lake Bunyonyi</h3>
+                        <p class="text-safari-brown mb-4">Uganda's most scenic lake, often called "the Switzerland of Africa." Perfect for relaxation after gorilla trekking.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Activities:</strong> Canoeing, island hopping, swimming, cultural tours
+                        </div>
+                        <a href="contact.html" class="text-safari-gold hover:text-safari-brown font-semibold">Plan Your Visit <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Jinja - Source of the Nile -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Source of the Nile - Jinja</h3>
+                        <p class="text-safari-brown mb-4">Historic source of River Nile and adventure capital of East Africa. Perfect for thrill-seekers and water sports enthusiasts.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Activities:</strong> White-water rafting, bungee jumping, boat cruises, quad biking
+                        </div>
+                        <a href="contact.html" class="text-safari-gold hover:text-safari-brown font-semibold">Plan Your Visit <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA -->
+    <section class="py-20 bg-safari-green text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready for Your Safari Adventure?</h2>
+            <p class="text-xl mb-8">Let our expert guides create a personalized safari experience that will leave you with memories to last a lifetime.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-safari-gold hover:bg-safari-brown text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                    <i class="fab fa-whatsapp mr-2"></i>Get Custom Quote
+                </a>
+                <a href="tel:+256702551090" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-safari-green px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                    <i class="fas fa-phone mr-2"></i>Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-safari-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mountain text-safari-gold text-2xl mr-3"></i>
+                        <span class="text-white font-bold text-xl">Pullman Safaris</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Explore Africa with confidence. Your premier safari and car rental partner in East Africa.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-safari-gold transition-colors">About Us</a></li>
+                        <li><a href="safaris.html" class="text-gray-400 hover:text-safari-gold transition-colors">Safari Packages</a></li>
+                        <li><a href="car-rentals.html" class="text-gray-400 hover:text-safari-gold transition-colors">Car Rentals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-safari-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Gorilla Trekking</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Wildlife Safaris</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Cultural Tours</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Airport Transfers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-location-dot text-safari-gold mr-3"></i>
+                            <span class="text-gray-400">Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-safari-gold mr-3"></i>
+                            <span class="text-gray-400">+256 702 551 090</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-safari-gold mr-3"></i>
+                            <span class="text-gray-400">info@pullmansafaris.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/256702551090" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors z-40">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('backdrop-blur-sm');
+            } else {
+                navbar.classList.remove('backdrop-blur-sm');
+            }
+        });
+    </script>
+</body>
+</html>

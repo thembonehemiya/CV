@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work - Rwenzori Mountains Conservation Initiative</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="https://via.placeholder.com/50" alt="RMCI Logo" class="h-10 mr-3">
+            <span class="text-xl font-bold text-green-700">RMCI</span>
+          </a>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="projects.html" class="nav-link active">Our Work</a>
+          <a href="get-involved.html" class="nav-link">Get Involved</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="donate.html" class="btn-donate">Donate</a>
+        </div>
+        
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-500 hover:text-green-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <a href="index.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Home</a>
+        <a href="about.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">About Us</a>
+        <a href="projects.html" class="block py-2 px-4 text-green-700 font-medium">Our Work</a>
+        <a href="get-involved.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Get Involved</a>
+        <a href="blog.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Blog</a>
+        <a href="contact.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Contact</a>
+        <a href="donate.html" class="block py-2 px-4 mt-2 bg-green-600 text-white rounded-md text-center">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="relative">
+    <div class="hero-image h-screen-50 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2021&q=80');">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+        <div class="max-w-2xl text-white">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Work</h1>
+          <p class="text-xl">Discover our conservation and community empowerment projects</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Project Navigation -->
+  <section class="py-8 bg-white border-b">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#reforestation" class="px-6 py-3 bg-green-50 hover:bg-green-100 text-green-700 rounded-full transition-colors">Reforestation</a>
+        <a href="#apiary" class="px-6 py-3 bg-green-50 hover:bg-green-100 text-green-700 rounded-full transition-colors">Apiary Program</a>
+        <a href="#women" class="px-6 py-3 bg-green-50 hover:bg-green-100 text-green-700 rounded-full transition-colors">Women's Empowerment</a>
+        <a href="#community" class="px-6 py-3 bg-green-50 hover:bg-green-100 text-green-700 rounded-full transition-colors">Community Outreach</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reforestation Project -->
+  <section id="reforestation" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-green-600 font-semibold">Conservation</span>
+          <h2 class="text-3xl font-bold text-green-700 mt-2 mb-6">Reforestation & Nursery Program</h2>
+          <p class="text-gray-600 mb-6">
+            Our reforestation efforts focus on restoring the unique ecosystems of the Rwenzori Mountains through the establishment of tree nurseries and community planting initiatives.
+          </p>
+          
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-seedling text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Native Tree Nursery</h3>
+                <p class="text-gray-600">We grow indigenous tree species that are well-adapted to the local environment and support biodiversity.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-water text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Riverbank Restoration</h3>
+                <p class="text-gray-600">Planting native vegetation along riverbanks to prevent erosion and protect water sources.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-leaf text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Agroforestry</h3>
+                <p class="text-gray-600">Promoting sustainable farming practices that integrate trees with crops and livestock.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
+            <h3 class="font-semibold text-lg mb-2">Impact</h3>
+            <p class="text-gray-600">
+              Our nursery has produced thousands of seedlings, contributing to the restoration of degraded areas and providing sustainable income opportunities for local communities.
+            </p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Tree nursery" class="rounded-lg shadow-md h-64 w-full object-cover">
+          <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Tree planting" class="rounded-lg shadow-md h-64 w-full object-cover">
+          <img src="https://images.unsplash.com/photo-1572401511270-07221cf1e5b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Riverbank restoration" class="rounded-lg shadow-md h-64 w-full object-cover">
+          <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Agroforestry" class="rounded-lg shadow-md h-64 w-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apiary Program -->
+  <section id="apiary" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Beehives" class="rounded-lg shadow-md h-64 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1567696911980-2eed69a46042?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Honey harvest" class="rounded-lg shadow-md h-64 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1473973266408-ed4e9c94c2aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Bee on flower" class="rounded-lg shadow-md h-64 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1558642891-54be180ea339?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Honey products" class="rounded-lg shadow-md h-64 w-full object-cover">
+          </div>
+        </div>
+        
+        <div class="order-1 lg:order-2">
+          <span class="text-green-600 font-semibold">Sustainable Livelihoods</span>
+          <h2 class="text-3xl font-bold text-green-700 mt-2 mb-6">Community Apiary Program</h2>
+          <p class="text-gray-600 mb-6">
+            Our apiary program supports biodiversity through pollination while providing sustainable income opportunities for local communities through honey production.
+          </p>
+          
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-graduation-cap text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Beekeeping Training</h3>
+                <p class="text-gray-600">We provide comprehensive training in modern beekeeping techniques to community members.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-box text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Hive Distribution</h3>
+                <p class="text-gray-600">Providing beehives and equipment to trained beekeepers to establish their own apiaries.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-store text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Market Access</h3>
+                <p class="text-gray-600">Helping beekeepers access markets for their honey and other bee products.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
+            <h3 class="font-semibold text-lg mb-2">Impact</h3>
+            <p class="text-gray-600">
+              Our apiary program has successfully established community-managed beehives, resulting in increased pollination of crops and natural vegetation, while providing a sustainable source of income.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Women's Empowerment -->
+  <section id="women" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-green-600 font-semibold">Community Development</span>
+          <h2 class="text-3xl font-bold text-green-700 mt-2 mb-6">Women's Empowerment Program</h2>
+          <p class="text-gray-600 mb-6">
+            Our women's empowerment program focuses on providing young mothers with vocational skills for self-employment and financial independence.
+          </p>
+          
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-cut text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Tailoring Skills</h3>
+                <p class="text-gray-600">Training in sewing and garment making to create marketable clothing and accessories.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-hands text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Handicraft Production</h3>
+                <p class="text-gray-600">Teaching traditional and modern craft techniques using locally available materials.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-soap text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Soap Making</h3>
+                <p class="text-gray-600">Training in the production of natural soaps using local ingredients.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
+            <h3 class="font-semibold text-lg mb-2">Future Plans</h3>
+            <p class="text-gray-600">
+              We are working to establish a dedicated training center for women's skills development, with expanded programs in mushroom growing, financial literacy, and entrepreneurship.
+            </p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Women's training" class="rounded-lg shadow-md h-64 w-full object-cover">
+          <img src="https://images.unsplash.com/photo-1594708053019-5c73b2d1c598?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tailoring" class="rounded-lg shadow-md h-64 w-full object-cover">
+          <img src="https://images.unsplash.com/photo-1607344645866-009c320c5ab8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Handicrafts" class="rounded-lg shadow-md h-64 w-full object-cover">
+          <img src="https://images.unsplash.com/photo-1584949514490-73fc1a2faa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Soap making" class="rounded-lg shadow-md h-64 w-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Outreach -->
+  <section id="community" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="https://images.unsplash.com/photo-1526976668912-1a811878dd37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Community meeting" class="rounded-lg shadow-md h-64 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="School outreach" class="rounded-lg shadow-md h-64 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Environmental education" class="rounded-lg shadow-md h-64 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f8e1c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Community garden" class="rounded-lg shadow-md h-64 w-full object-cover">
+          </div>
+        </div>
+        
+        <div class="order-1 lg:order-2">
+          <span class="text-green-600 font-semibold">Education & Awareness</span>
+          <h2 class="text-3xl font-bold text-green-700 mt-2 mb-6">Community Outreach Program</h2>
+          <p class="text-gray-600 mb-6">
+            Our community outreach program focuses on raising awareness about environmental conservation and sustainable practices among local communities.
+          </p>
+          
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-school text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">School Programs</h3>
+                <p class="text-gray-600">Environmental education in local schools to inspire the next generation of conservation leaders.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-users text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Community Workshops</h3>
+                <p class="text-gray-600">Regular workshops on sustainable farming, waste management, and conservation practices.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-2 mr-4 mt-1">
+                <i class="fas fa-calendar-alt text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Environmental Events</h3>
+                <p class="text-gray-600">Organizing community events like tree planting days and clean-up campaigns.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
+            <h3 class="font-semibold text-lg mb-2">Impact</h3>
+            <p class="text-gray-600">
+              Our outreach programs have reached thousands of community members, increasing awareness and participation in conservation efforts throughout the Rwenzori region.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title text-center mb-12">Community Voices</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-green-50 p-6 rounded-lg">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Community member" class="w-16 h-16 rounded-full object-cover mr-4">
+            <div>
+              <h3 class="font-semibold">Mary Birungi</h3>
+              <p class="text-sm text-gray-600">Beekeeper, Kyatsi Village</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "The beekeeping training changed my life. I now have a steady income from honey sales, which helps me support my children's education. The bees also help pollinate my crops, increasing my harvest."
+          </p>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="bg-green-50 p-6 rounded-lg">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1507152832244-10d45c7eda57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Community member" class="w-16 h-16 rounded-full object-cover mr-4">
+            <div>
+              <h3 class="font-semibold">Joseph Muhindo</h3>
+              <p class="text-sm text-gray-600">Farmer, Kitholhu County</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "The coffee seedlings I received have grown well, and I'm expecting my first harvest soon. RMCI also taught us how to integrate trees with our crops, which has improved soil fertility on my farm."
+          </p>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="bg-green-50 p-6 rounded-lg">
+          <div class="flex items-center mb-4">
+            <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Community member" class="w-16 h-16 rounded-full object-cover mr-4">
+            <div>
+              <h3 class="font-semibold">Grace Kabugho</h3>
+              <p class="text-sm text-gray-600">Young Mother, Kasese</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "I'm excited about the upcoming tailoring program. As a young mother, it's difficult to find employment, but learning a skill will help me start my own business and support my family."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-16 bg-green-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Support Our Projects</h2>
+      <p class="text-lg max-w-3xl mx-auto mb-8">Your contribution can help us expand our conservation and community empowerment initiatives in the Rwenzori region.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="donate.html" class="btn-primary">Make a Donation</a>
+        <a href="get-involved.html" class="btn-secondary">Volunteer With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white pt-12 pb-6">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <!-- About -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">About RMCI</h4>
+          <p class="text-gray-300 mb-4">Conserving the Rwenzori Mountains and empowering local communities in Western Uganda since 2016.</p>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com" class="text-gray-300 hover:text-white" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" class="text-gray-300 hover:text-white" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" class="text-gray-300 hover:text-white" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://youtube.com" class="text-gray-300 hover:text-white" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+            <li><a href="projects.html" class="text-gray-300 hover:text-white">Our Work</a></li>
+            <li><a href="get-involved.html" class="text-gray-300 hover:text-white">Get Involved</a></li>
+            <li><a href="blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+              <span>Kyatsi II Village, Kitholhu County, Kasese District, Western Uganda</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone mr-3"></i>
+              <span>+256 786 263 701</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3"></i>
+              <span>info@rmci.org</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Working Hours -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Working Hours</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li>Monday - Friday: 8:00 AM - 5:00 PM</li>
+            <li>Saturday: 9:00 AM - 1:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 pt-6 text-center text-gray-400">
+        <p>&copy; 2023 Rwenzori Mountains Conservation Initiative. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/256786263701" class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors z-50" aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

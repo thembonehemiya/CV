@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - LUCTO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-leaf me-2"></i>LUCTO
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinations.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html">Book Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="page-header">
+      <div class="overlay"></div>
+      <div class="container">
+        <h1>Contact Us</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Contact Information -->
+    <section class="contact-info-section py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="contact-info-card">
+              <div class="icon-container">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Visit Us</h3>
+              <p>Kanyatsi 2 Village, Kanyatsi Parish,<br> Kitholhu Sub County, Uganda</p>
+              <p class="text-muted small">Reception office open Wednesday</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-info-card">
+              <div class="icon-container">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h3>Call Us</h3>
+              <p>+256 (0) 777 594 107</p>
+              <p>+256 (0) 789 939 311</p>
+              <p class="text-muted small">Available 8am-6pm (EAT), Monday-Saturday</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-info-card">
+              <div class="icon-container">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Email Us</h3>
+              <p><a href="mailto:info@lucto.org">info@lucto.org</a></p>
+              <p class="text-muted small">We'll respond within 24 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-form-container">
+              <h2 class="section-title mb-4">Send Us a Message</h2>
+              <form id="contactForm" action="#" method="POST">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                      <label for="email">Email Address</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                      <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                      <label for="phone">Phone Number (Optional)</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                      <select class="form-select" id="subject" required>
+                        <option value="" selected disabled>Select a subject</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Tour Information">Tour Information</option>
+                        <option value="Booking Question">Booking Question</option>
+                        <option value="Conservation Activities">Conservation Activities</option>
+                        <option value="SACCO Inquiry">SACCO Inquiry</option>
+                        <option value="Partnership Opportunity">Partnership Opportunity</option>
+                        <option value="Other">Other</option>
+                      </select>
+                      <label for="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                      <label for="message">Your Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="map-container">
+              <h2 class="section-title mb-4">Our Location</h2>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127356.55570927267!2d29.866266346313477!3d0.16245279999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1761c2866c49a1b5%3A0xa47b0a1ecd17fa8e!2sRwenzori%20Mountains%20National%20Park!5e0!3m2!1sen!2sus!4v1682333456782!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="location-details mt-3">
+                <p><i class="fas fa-info-circle me-2"></i> Our office is located in Kanyatsi 2 Village near the boundary of Rwenzori Mountains National Park.</p>
+                <p><i class="fas fa-car me-2"></i> From Kasese town, take the road towards Bwera. At Kitholhu trading center, ask for directions to Kanyatsi Parish.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">Message Sent</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center mb-4">
+              <i class="fas fa-check-circle success-icon"></i>
+            </div>
+            <p>Thank you for your message! We have received your inquiry and will get back to you within 24 hours.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <section class="social-media-section py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Connect With Us</h2>
+        <div class="social-media-links text-center">
+          <a href="#" class="social-link" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="#" class="social-link" target="_blank">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+          <a href="#" class="social-link" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="#" class="social-link" target="_blank">
+            <i class="fab fa-youtube"></i>
+            <span>YouTube</span>
+          </a>
+        </div>
+        <p class="text-center mt-4">Follow us on social media for updates, beautiful photos, and conservation news!</p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Frequently Asked Questions</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What is the best time to visit the Rwenzori region?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    The best time to visit is during the dry seasons (December-February and June-August). These months offer clearer views of the mountains and more comfortable hiking conditions. However, we operate tours throughout the year, and the region's lush greenery is particularly vibrant after the rains.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How can I book a tour with LUCTO?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    You can book a tour through our <a href="booking.html">online booking form</a>, by sending us an email at info@lucto.org, or by calling us directly. We recommend booking at least two weeks in advance, especially during peak season, to ensure availability.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What should I bring for a tour in the Rwenzori Mountains?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    We recommend bringing comfortable walking shoes or hiking boots, weather-appropriate clothing (layers are best), a hat, sunscreen, insect repellent, a water bottle, and a camera. For overnight stays, bring warm clothing as temperatures can drop significantly at night. A detailed packing list will be provided upon booking.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    How does LUCTO contribute to conservation efforts?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    A portion of all tour fees goes directly to our conservation initiatives, including reforestation, environmental education, and park boundary maintenance. We also work closely with local communities to promote sustainable practices and reduce environmental degradation. Our staff and guides are trained in conservation principles and share this knowledge with visitors.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Can I volunteer with LUCTO?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, we welcome volunteers who are interested in contributing to our conservation and community development efforts. Opportunities include environmental education, tree planting, trail maintenance, and community outreach. Please contact us with your interests, skills, and availability, and we'll discuss how you can get involved.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Our Partners</h2>
+        <div class="row align-items-center">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="partner-logo">
+              <img src="https://images.pexels.com/photos/16129877/pexels-photo-16129877/free-photo-of-uganda-wildlife-authority-logo.jpeg" alt="Uganda Wildlife Authority" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="partner-logo">
+              <img src="https://images.pexels.com/photos/3943841/pexels-photo-3943841.jpeg" alt="Liberty Development Foundation" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="partner-logo">
+              <img src="https://images.pexels.com/photos/3758846/pexels-photo-3758846.jpeg" alt="Kitholhu Sub County" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="partner-logo">
+              <img src="https://images.pexels.com/photos/3831823/pexels-photo-3831823.jpeg" alt="Rwenzori Mountains National Park" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5">
+      <div class="container">
+        <div class="cta-content text-center">
+          <h2>Ready to Experience the Rwenzori Mountains?</h2>
+          <p>Contact us today or book your tour online to start your adventure</p>
+          <a href="booking.html" class="btn btn-primary btn-lg">Book Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="footer-title">About LUCTO</h3>
+          <p>Lhubiriha Conservation and Tourism Organisation (LUCTO) is dedicated to eco-tourism, natural environmental conservation and sustainable human development in the Rwenzori Mountains region.</p>
+          <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Book Online</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 class="footer-title">Contact Us</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> Kanyatsi 2 Village, Kanyatsi Parish, Kitholhu Sub County, Uganda</li>
+            <li><i class="fas fa-phone"></i> +256 (0) XXX XXX XXX</li>
+            <li><i class="fas fa-envelope"></i> info@lucto.org</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Lhubiriha Conservation and Tourism Organisation (LUCTO). All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

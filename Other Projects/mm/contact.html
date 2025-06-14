@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pullman Safaris and Car Rentals Ltd</title>
+    <meta name="description" content="Get in touch with Pullman Safaris for safari bookings, car rentals, or any questions about travel in Uganda. We're here to help!">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body class="font-sans bg-beige-50">
+    <!-- WhatsApp Integration -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/256702551090" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+        </a>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="relative">
+        <div class="hero-image h-96 w-full bg-cover bg-center flex items-center justify-center">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="container mx-auto px-4 z-10">
+                <nav class="flex justify-between items-center py-4">
+                    <div class="logo">
+                        <a href="index.html" class="text-white text-2xl font-bold">
+                            <img src="images/logo.png" alt="Pullman Safaris Logo" class="h-16">
+                        </a>
+                    </div>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="index.html" class="text-white hover:text-gold-400 font-medium">Home</a>
+                        <a href="about.html" class="text-white hover:text-gold-400 font-medium">About Us</a>
+                        <a href="safaris.html" class="text-white hover:text-gold-400 font-medium">Safaris</a>
+                        <a href="rentals.html" class="text-white hover:text-gold-400 font-medium">Car Rentals</a>
+                        <a href="testimonials.html" class="text-white hover:text-gold-400 font-medium">Testimonials</a>
+                        <a href="blog.html" class="text-white hover:text-gold-400 font-medium">Blog</a>
+                        <a href="contact.html" class="text-white hover:text-gold-400 font-medium">Contact</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="text-white focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </nav>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden absolute top-20 right-4 bg-white rounded-md shadow-lg z-20 w-48 py-2">
+                    <a href="index.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Home</a>
+                    <a href="about.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">About Us</a>
+                    <a href="safaris.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Safaris</a>
+                    <a href="rentals.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Car Rentals</a>
+                    <a href="testimonials.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Testimonials</a>
+                    <a href="blog.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Blog</a>
+                    <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Contact</a>
+                </div>
+                <!-- Hero Content -->
+                <div class="text-center mt-12 z-10">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
+                    <p class="text-xl text-white mb-8 max-w-2xl mx-auto">We're here to answer your questions and help plan your Ugandan adventure</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Contact Information -->
+        <section class="mb-16">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Details -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-gold-500 mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-1">Our Office</h3>
+                                <p class="text-gray-600">Plot 12B Sir Apollo Kaggwa Road<br>Kampala, Uganda</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-gold-500 mr-4 mt-1">
+                                <i class="fas fa-phone-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-1">Phone</h3>
+                                <p class="text-gray-600 mb-1">+256 702 551 090</p>
+                                <p class="text-gray-600">+256 414 234 567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-gold-500 mr-4 mt-1">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-1">Email</h3>
+                                <p class="text-gray-600 mb-1">info@pullmansafaris.com</p>
+                                <p class="text-gray-600">bookings@pullmansafaris.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-gold-500 mr-4 mt-1">
+                                <i class="fas fa-clock text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-1">Operating Hours</h3>
+                                <p class="text-gray-600 mb-1">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                <p class="text-gray-600">Saturday: 9:00 AM - 4:00 PM</p>
+                                <p class="text-gray-600">Sunday: Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-gold-500 mr-4 mt-1">
+                                <i class="fas fa-share-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-1">Follow Us</h3>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-600 hover:text-gold-500 text-2xl"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="text-gray-600 hover:text-gold-500 text-2xl"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-gray-600 hover:text-gold-500 text-2xl"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-gray-600 hover:text-gold-500 text-2xl"><i class="fab fa-youtube"></i></a>
+                                    <a href="#" class="text-gray-600 hover:text-gold-500 text-2xl"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+                    <form class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name*</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address*</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject*</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required>
+                                <option value="">Select a subject</option>
+                                <option value="safari">Safari Inquiry</option>
+                                <option value="rental">Car Rental Inquiry</option>
+                                <option value="custom">Custom Tour Request</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message*</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required></textarea>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="w-full bg-gold-500 hover:bg-gold-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Our Location</h2>
+            <div class="h-96 w-full bg-gray-200 rounded-lg overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7536223157963!2d32.58281351475395!3d0.3135999999999966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc1d8e6a0e8d%3A0xf9b7bf8e3a1b5b8c!2sPullman%20Safaris%20and%20Car%20Rentals%20Ltd!5e0!3m2!1sen!2sug!4v1623838281814!5m2!1sen!2sug" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        
+        <!-- Emergency Contact -->
+        <section class="bg-red-100 rounded-lg p-8 text-center">
+            <div class="max-w-2xl mx-auto">
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Emergency Contact</h3>
+                <p class="text-gray-600 mb-4">For urgent assistance outside of business hours, please call:</p>
+                <a href="tel:+256772551090" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                    <i class="fas fa-phone-alt mr-2"></i> +256 772 551 090
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

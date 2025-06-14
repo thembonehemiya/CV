@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Rwenzori Mountains Conservation Initiative</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="https://via.placeholder.com/50" alt="RMCI Logo" class="h-10 mr-3">
+            <span class="text-xl font-bold text-green-700">RMCI</span>
+          </a>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="projects.html" class="nav-link">Our Work</a>
+          <a href="get-involved.html" class="nav-link">Get Involved</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+          <a href="donate.html" class="btn-donate">Donate</a>
+        </div>
+        
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-500 hover:text-green-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <a href="index.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Home</a>
+        <a href="about.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">About Us</a>
+        <a href="projects.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Our Work</a>
+        <a href="get-involved.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Get Involved</a>
+        <a href="blog.html" class="block py-2 px-4 text-gray-600 hover:text-green-700">Blog</a>
+        <a href="contact.html" class="block py-2 px-4 text-green-700 font-medium">Contact</a>
+        <a href="donate.html" class="block py-2 px-4 mt-2 bg-green-600 text-white rounded-md text-center">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="relative">
+    <div class="hero-image h-screen-50 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2021&q=80');">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+        <div class="max-w-2xl text-white">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+          <p class="text-xl">Get in touch with our team to learn more about our work or how you can get involved</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-3xl font-bold text-green-700 mb-6">Send Us a Message</h2>
+          <p class="text-gray-600 mb-8">
+            Have questions about our work or how you can get involved? Fill out the form below and we'll get back to you as soon as possible.
+          </p>
+          
+          <form>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
+              
+              <div>
+                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+              </div>
+            </div>
+            
+            <div class="mb-6">
+              <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+              <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            </div>
+            
+            <div class="mb-6">
+              <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+              <textarea id="message" rows="6" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+        
+        <!-- Contact Information -->
+        <div>
+          <h2 class="text-3xl font-bold text-green-700 mb-6">Contact Information</h2>
+          <p class="text-gray-600 mb-8">
+            You can reach us through the following channels or visit our office during working hours.
+          </p>
+          
+          <div class="space-y-6 mb-8">
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-3 mr-4">
+                <i class="fas fa-map-marker-alt text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Our Location</h3>
+                <p class="text-gray-600">Kyatsi II Village, Kitholhu County, Kasese District, Western Uganda</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-3 mr-4">
+                <i class="fas fa-phone text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Phone Number</h3>
+                <p class="text-gray-600">+256 786 263 701</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-3 mr-4">
+                <i class="fas fa-envelope text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Email Address</h3>
+                <p class="text-gray-600">info@rmci.org</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="bg-green-100 rounded-full p-3 mr-4">
+                <i class="fas fa-clock text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg">Working Hours</h3>
+                <p class="text-gray-600">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                <p class="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
+                <p class="text-gray-600">Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+          
+          <h3 class="font-semibold text-lg mb-4">Connect With Us</h3>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com" class="bg-gray-100 hover:bg-green-100 text-gray-600 hover:text-green-600 p-3 rounded-full transition-colors" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" class="bg-gray-100 hover:bg-green-100 text-gray-600 hover:text-green-600 p-3 rounded-full transition-colors" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" class="bg-gray-100 hover:bg-green-100 text-gray-600 hover:text-green-600 p-3 rounded-full transition-colors" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://youtube.com" class="bg-gray-100 hover:bg-green-100 text-gray-600 hover:text-green-600 p-3 rounded-full transition-colors" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://wa.me/256786263701" class="bg-gray-100 hover:bg-green-100 text-gray-600 hover:text-green-600 p-3 rounded-full transition-colors" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Find Us</h2>
+      
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255281.19891733372!2d29.8241455!3d0.3053508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1761c66201b39c15%3A0x7e3f5d4c0a7c4b8e!2sRwenzori%20Mountains%20National%20Park!5e0!3m2!1sen!2sus!4v1623345678901!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Frequently Asked Questions</h2>
+      
+      <div class="max-w-3xl mx-auto">
+        <div class="space-y-6">
+          <!-- FAQ Item 1 -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+              <span class="font-semibold text-left">How can I volunteer with RMCI?</span>
+              <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+              <p class="text-gray-600">
+                You can volunteer with RMCI by filling out the volunteer application form on our "Get Involved" page. We welcome both local and international volunteers with various skills and backgrounds. Depending on your interests and expertise, you can help with tree planting, beekeeping, skills training, or administrative support.
+              </p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 2 -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+              <span class="font-semibold text-left">How is my donation used?</span>
+              <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+              <p class="text-gray-600">
+                Your donation directly supports our conservation and community development programs. Funds are used for tree nursery operations, beekeeping equipment, vocational training materials, and community outreach activities. We ensure that donations are used efficiently and transparently, with regular updates provided to our supporters.
+              </p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 3 -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+              <span class="font-semibold text-left">Can I visit your projects in person?</span>
+              <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+              <p class="text-gray-600">
+                Yes, we welcome visitors who are interested in learning more about our work. Please contact us in advance to arrange a visit to our tree nursery, community apiary, or other project sites. We can organize guided tours that provide insights into our conservation efforts and community initiatives in the Rwenzori region.
+              </p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 4 -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+              <span class="font-semibold text-left">How can my organization partner with RMCI?</span>
+              <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+              <p class="text-gray-600">
+                We are open to partnerships with organizations that share our values and goals. Partnerships can take various forms, including funding support, technical collaboration, joint project implementation, or knowledge exchange. Please fill out the partnership inquiry form on our "Get Involved" page or contact us directly to discuss potential collaboration opportunities.
+              </p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 5 -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button class="faq-toggle w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+              <span class="font-semibold text-left">What areas do you work in?</span>
+              <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden p-4 bg-gray-50 border-t border-gray-200">
+              <p class="text-gray-600">
+                We primarily work in Kyatsi II village and surrounding communities in Kitholhu County, Kasese District, Western Uganda. Our focus is on the foothills and buffer zones of the Rwenzori Mountains, where we implement conservation and community development initiatives to protect the unique ecosystem while supporting sustainable livelihoods.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white pt-12 pb-6">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <!-- About -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">About RMCI</h4>
+          <p class="text-gray-300 mb-4">Conserving the Rwenzori Mountains and empowering local communities in Western Uganda since 2016.</p>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com" class="text-gray-300 hover:text-white" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" class="text-gray-300 hover:text-white" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" class="text-gray-300 hover:text-white" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://youtube.com" class="text-gray-300 hover:text-white" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-white">About Us</a></li>
+            <li><a href="projects.html" class="text-gray-300 hover:text-white">Our Work</a></li>
+            <li><a href="get-involved.html" class="text-gray-300 hover:text-white">Get Involved</a></li>
+            <li><a href="blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+            <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+              <span>Kyatsi II Village, Kitholhu County, Kasese District, Western Uganda</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone mr-3"></i>
+              <span>+256 786 263 701</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3"></i>
+              <span>info@rmci.org</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Working Hours -->
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Working Hours</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li>Monday - Friday: 8:00 AM - 5:00 PM</li>
+            <li>Saturday: 9:00 AM - 1:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 pt-6 text-center text-gray-400">
+        <p>&copy; 2023 Rwenzori Mountains Conservation Initiative. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/256786263701" class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors z-50" aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

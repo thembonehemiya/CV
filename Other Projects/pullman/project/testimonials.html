@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - Pullman Safaris and Car Rentals Ltd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="./src/styles.css" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-green-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-mountain text-2xl text-yellow-400"></i>
+                    <span class="text-xl font-bold">Pullman Safaris & Car Rentals</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="safaris.html" class="nav-link">Safaris</a>
+                    <a href="car-rentals.html" class="nav-link">Car Rentals</a>
+                    <a href="booking.html" class="nav-link">Book Now</a>
+                    <a href="testimonials.html" class="nav-link active">Reviews</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden text-white" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-2 space-y-2">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-green-800">Home</a>
+                    <a href="about.html" class="block px-4 py-2 hover:bg-green-800">About Us</a>
+                    <a href="safaris.html" class="block px-4 py-2 hover:bg-green-800">Safaris</a>
+                    <a href="car-rentals.html" class="block px-4 py-2 hover:bg-green-800">Car Rentals</a>
+                    <a href="booking.html" class="block px-4 py-2 hover:bg-green-800">Book Now</a>
+                    <a href="testimonials.html" class="block px-4 py-2 hover:bg-green-800">Reviews</a>
+                    <a href="contact.html" class="block px-4 py-2 hover:bg-green-800">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Image -->
+    <div class="header-image">
+        <div class="header-overlay">
+            <div class="container mx-auto px-4 py-20 text-center text-white">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fade-in">What Our Customers Say</h1>
+                <p class="text-xl md:text-2xl animate-slide-up">Real Stories from Real Adventures</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="stats-card">
+                    <div class="text-4xl font-bold text-green-600 mb-2">500+</div>
+                    <div class="text-gray-600">Happy Customers</div>
+                </div>
+                <div class="stats-card">
+                    <div class="text-4xl font-bold text-yellow-600 mb-2">4.9</div>
+                    <div class="text-gray-600">Average Rating</div>
+                    <div class="flex justify-center mt-2">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="text-4xl font-bold text-green-600 mb-2">95%</div>
+                    <div class="text-gray-600">Return Customers</div>
+                </div>
+                <div class="stats-card">
+                    <div class="text-4xl font-bold text-yellow-600 mb-2">5</div>
+                    <div class="text-gray-600">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-green-900 mb-4">Featured Reviews</h2>
+                <p class="text-xl text-gray-600">Hear from travelers who experienced Uganda with us</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-semibold text-green-900">Sarah Johnson</div>
+                            <div class="text-sm text-gray-600">United Kingdom</div>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The gorilla trekking experience was absolutely life-changing! The team at Pullman Safaris organized everything perfectly. Our guide was knowledgeable and made sure we felt safe throughout the entire journey. I can't recommend them enough!"</p>
+                    <div class="mt-4 text-sm text-green-600 font-semibold">3-Day Gorilla Safari</div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-semibold text-green-900">Michael Roberts</div>
+                            <div class="text-sm text-gray-600">Australia</div>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Excellent car rental service! The Land Cruiser was in perfect condition for our self-drive safari. The team was very professional and helped us plan our entire route. Great value for money and exceptional customer service."</p>
+                    <div class="mt-4 text-sm text-green-600 font-semibold">Land Cruiser Rental - 7 Days</div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-semibold text-green-900">Emma Thompson</div>
+                            <div class="text-sm text-gray-600">Canada</div>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Our 10-day grand safari exceeded all expectations! From Queen Elizabeth to Bwindi, every moment was magical. The accommodation, food, and guides were all top-notch. Thank you for making our dream trip come true!"</p>
+                    <div class="mt-4 text-sm text-green-600 font-semibold">10-Day Grand Safari</div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-semibold text-green-900">James Wilson</div>
+                            <div class="text-sm text-gray-600">United States</div>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Professional airport transfer service made our arrival so smooth. The driver was waiting for us with a sign, helped with luggage, and gave us great tips about Kampala during the ride. Highly recommend for airport transfers!"</p>
+                    <div class="mt-4 text-sm text-green-600 font-semibold">Airport Transfer Service</div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-semibold text-green-900">Maria Gonzalez</div>
+                            <div class="text-sm text-gray-600">Spain</div>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Amazing wildlife safari! We saw tree-climbing lions, elephants, hippos, and so many birds at Queen Elizabeth National Park. The boat cruise on Kazinga Channel was unforgettable. Our guide was fantastic and very knowledgeable about the animals."</p>
+                    <div class="mt-4 text-sm text-green-600 font-semibold">5-Day Wildlife Safari</div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Customer" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-semibold text-green-900">David Chen</div>
+                            <div class="text-sm text-gray-600">Singapore</div>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                                <i class="fas fa-star text-yellow-400 text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Pullman Safaris provided excellent chauffeur service for our business trip. The driver was punctual, professional, and knew Kampala very well. The vehicle was clean and comfortable. Perfect for corporate travel!"</p>
+                    <div class="mt-4 text-sm text-green-600 font-semibold">Corporate Chauffeur Service</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-green-900 mb-4">Video Reviews</h2>
+                <p class="text-xl text-gray-600">Watch our customers share their experiences</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="video-testimonial">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle text-6xl text-white"></i>
+                        <div class="overlay-text">
+                            <h3 class="text-xl font-bold text-white mb-2">Gorilla Trekking Experience</h3>
+                            <p class="text-white">Customer shares their amazing gorilla encounter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-testimonial">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle text-6xl text-white"></i>
+                        <div class="overlay-text">
+                            <h3 class="text-xl font-bold text-white mb-2">Safari Adventure</h3>
+                            <p class="text-white">Family's memorable Uganda safari journey</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Form -->
+    <section class="py-16 bg-green-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-green-900 mb-4">Share Your Experience</h2>
+                    <p class="text-xl text-gray-600">Help others by sharing your Pullman Safaris experience</p>
+                </div>
+
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="form-label">Your Name</label>
+                            <input type="text" class="form-input" placeholder="Enter your name" required>
+                        </div>
+                        <div>
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="form-label">Country</label>
+                            <input type="text" class="form-input" placeholder="Enter your country" required>
+                        </div>
+                        <div>
+                            <label class="form-label">Service Used</label>
+                            <select class="form-input" required>
+                                <option value="">Select Service</option>
+                                <option value="safari">Safari Package</option>
+                                <option value="car-rental">Car Rental</option>
+                                <option value="airport-transfer">Airport Transfer</option>
+                                <option value="chauffeur">Chauffeur Service</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="form-label">Overall Rating</label>
+                        <div class="rating-stars">
+                            <i class="fas fa-star rating-star" data-rating="1"></i>
+                            <i class="fas fa-star rating-star" data-rating="2"></i>
+                            <i class="fas fa-star rating-star" data-rating="3"></i>
+                            <i class="fas fa-star rating-star" data-rating="4"></i>
+                            <i class="fas fa-star rating-star" data-rating="5"></i>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="form-label">Your Review</label>
+                        <textarea class="form-input" rows="6" placeholder="Share your experience with Pullman Safaris. What did you enjoy most? Any recommendations for future travelers?" required></textarea>
+                    </div>
+
+                    <div>
+                        <label class="checkbox-label">
+                            <input type="checkbox" required> I agree to allow Pullman Safaris to use my review for marketing purposes
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary w-full">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-green-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Create Your Own Story?</h2>
+            <p class="text-xl mb-8">Join hundreds of satisfied customers who chose Pullman Safaris for their Uganda adventure</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="booking.html" class="btn-primary">Book Your Experience</a>
+                <a href="contact.html" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-mountain text-2xl text-yellow-400"></i>
+                        <span class="text-xl font-bold">Pullman Safaris</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your trusted partner for unforgettable African adventures and reliable transportation services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="safaris.html" class="hover:text-white">Safari Packages</a></li>
+                        <li><a href="car-rentals.html" class="hover:text-white">Car Rentals</a></li>
+                        <li><a href="testimonials.html" class="hover:text-white">Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Gorilla Trekking</a></li>
+                        <li><a href="#" class="hover:text-white">Wildlife Safaris</a></li>
+                        <li><a href="#" class="hover:text-white">Car Hire</a></li>
+                        <li><a href="#" class="hover:text-white">Airport Transfers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</li>
+                        <li><i class="fas fa-phone mr-2"></i>0702 551 090</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@pullmansafaris.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/256702551090" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>

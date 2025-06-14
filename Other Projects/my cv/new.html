@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maliba Alumni Premier League</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Premier League-inspired CSS */
+        :root {
+            --epl-purple: #38003c;
+            --epl-green: #00ff85;
+            --epl-red: #e90052;
+            --epl-blue: #04f5ff;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 25px;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--epl-purple);
+            padding-bottom: 15px;
+        }
+        
+        .header h1 {
+            color: var(--epl-purple);
+            font-size: 28px;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+        
+        .header-icon {
+            font-size: 32px;
+            color: var(--epl-green);
+            margin-right: 15px;
+        }
+        
+        h2 {
+            color: var(--epl-purple);
+            font-size: 22px;
+            border-left: 4px solid var(--epl-green);
+            padding-left: 10px;
+            margin: 25px 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Tabs Navigation */
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            font-weight: 600;
+        }
+        
+        .tab.active {
+            border-bottom-color: var(--epl-purple);
+            color: var(--epl-purple);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Tables */
+        .league-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        .league-table th {
+            background-color: var(--epl-purple);
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        .league-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .league-table tr:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .pos {
+            font-weight: bold;
+            width: 30px;
+        }
+        
+        .team {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .team-logo {
+            width: 20px;
+            height: 20px;
+            background-color: #eee;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        .home-team {
+            font-weight: bold;
+            color: var(--epl-purple);
+        }
+        
+        .match-score {
+            font-weight: bold;
+            color: var(--epl-purple);
+        }
+        
+        .win {
+            background-color: #e8f5e9;
+        }
+        
+        .loss {
+            background-color: #ffebee;
+        }
+        
+        .draw {
+            background-color: #fff8e1;
+        }
+        
+        /* Results */
+        .result-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .win-badge {
+            background-color: var(--epl-green);
+            color: white;
+        }
+        
+        .loss-badge {
+            background-color: var(--epl-red);
+            color: white;
+        }
+        
+        .draw-badge {
+            background-color: #ffc107;
+            color: #333;
+        }
+        
+        /* Scorers */
+        .scorers-list {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .scorer-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .scorer-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .scorer-rank {
+            font-weight: bold;
+            width: 25px;
+            color: var(--epl-purple);
+        }
+        
+        .scorer-name {
+            font-weight: 600;
+            margin: 0 15px 0 10px;
+            min-width: 150px;
+        }
+        
+        .scorer-club {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .scorer-goals {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 22px;
+            }
+            
+            .league-table {
+                font-size: 14px;
+            }
+            
+            .league-table th, 
+            .league-table td {
+                padding: 8px 10px;
+            }
+            
+            .team {
+                gap: 5px;
+            }
+            
+            .team-logo {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-trophy header-icon"></i>
+            <h1>Maliba Alumni Premier League - Season 2024</h1>
+        </div>
+        
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+            <div class="tab active" onclick="openTab('standings')">Standings</div>
+            <div class="tab" onclick="openTab('fixtures')">Fixtures</div>
+            <div class="tab" onclick="openTab('results')">Results</div>
+            <div class="tab" onclick="openTab('scorers')">Top Scorers</div>
+        </div>
+        
+        <!-- Standings Tab -->
+        <div id="standings" class="tab-content active">
+            <h2><i class="fas fa-table"></i> League Table</h2>
+            <table class="league-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Team</th>
+                        <th>P</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GF</th>
+                        <th>GA</th>
+                        <th>GD</th>
+                        <th>Pts</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="win">
+                        <td class="pos">1</td>
+                        <td class="team">
+                            <span class="team-logo"></span>
+                            Class of 2010 Strikers
+                        </td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>12</td>
+                        <td>3</td>
+                        <td>+9</td>
+                        <td><strong>13</strong></td>
+                        <td>
+                            <span class="result-badge win-badge">W</span>
+                            <span class="result-badge win-badge">W</span>
+                            <span class="result-badge draw-badge">D</span>
+                            <span class="result-badge win-badge">W</span>
+                            <span class="result-badge win-badge">W</span>
+                        </td>
+                    </tr>
+                    <tr class="win">
+                        <td class="pos">2</td>
+                        <td class="team">
+                            <span class="team-logo"></span>
+                            Maliba Legends FC
+                        </td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>+6</td>
+                        <td><strong>11</strong></td>
+                        <td>
+                            <span class="result-badge win-badge">W</span>
+                            <span class="result-badge draw-badge">D</span>
+                            <span class="result-badge win-badge">W</span>
+                            <span class="result-badge draw-badge">D</span>
+                            <span class="result-badge win-badge">W</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pos">3</td>
+                        <td class="team">
+                            <span class="team-logo"></span>
+                            Thunderbolts SC
+                        </td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>+3</td>
+                        <td><strong>10</strong></td>
+                        <td>
+                            <span class="result-badge loss-badge">L</span>
+                            <span class="result-badge win-badge">W</span>
+                            <span class="result-badge win-badge">W</span>
+                            <span class="result-badge draw-badge">D</span>
+                            <span class="result-badge win-badge">W</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pos">4</td>
+                        <td class="team">
+                            <span class="team-logo"></span>
+                            Golden Eagles FC
+                        </td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>+1</td>
+                        <td><strong>7</strong></td>
+                        <td>
+                            <span class="result-badge win-badge">W</span>
+                            <span class="result-badge loss-badge">L</span>
+                            <span class="result-badge draw-badge">D</span>
+                            <span class="result-badge win-badge">W</span>
+                            <span class="result-badge loss-badge">L</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pos">5</td>
+                        <td class="team">
+                            <span class="team-logo"></span>
+                            Old Boys United
+                        </td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>9</td>
+                        <td>-4</td>
+                        <td><strong>4</strong></td>
+                        <td>
+                            <span class="result-badge loss-badge">L</span>
+                            <span class="result-badge draw-badge">D</span>
+                            <span class="result-badge loss-badge">L</span>
+                            <span class="result-badge win-badge">W</span>
+                            <span class="result-badge loss-badge">L</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pos">6</td>
+                        <td class="team">
+                            <span class="team-logo"></span>
+                            Alumni Warriors
+                        </td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>15</td>
+                        <td>-13</td>
+                        <td><strong>0</strong></td>
+                        <td>
+                            <span class="result-badge loss-badge">L</span>
+                            <span class="result-badge loss-badge">L</span>
+                            <span class="result-badge loss-badge">L</span>
+                            <span class="result-badge loss-badge">L</span>
+                            <span class="result-badge loss-badge">L</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="legend">
+                <h3>Legend:</h3>
+                <div style="display: flex; gap: 15px; margin-top: 10px;">
+                    <div><span class="result-badge win-badge">W</span> Win</div>
+                    <div><span class="result-badge draw-badge">D</span> Draw</div>
+                    <div><span class="result-badge loss-badge">L</span> Loss</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fixtures Tab -->
+        <div id="fixtures" class="tab-content">
+            <h2><i class="fas fa-calendar-alt"></i> Upcoming Fixtures</h2>
+            <table class="league-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Fixture</th>
+                        <th>Venue</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sat, Jun 15</td>
+                        <td><span class="home-team">Maliba Legends FC</span> vs Thunderbolts SC</td>
+                        <td>Maliba Main Field</td>
+                        <td>15:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sun, Jun 16</td>
+                        <td><span class="home-team">Class of 2010 Strikers</span> vs Old Boys United</td>
+                        <td>Alumni Arena</td>
+                        <td>14:30</td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Jun 19</td>
+                        <td><span class="home-team">Golden Eagles FC</span> vs Alumni Warriors</td>
+                        <td>East Campus Pitch</td>
+                        <td>16:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sat, Jun 22</td>
+                        <td><span class="home-team">Thunderbolts SC</span> vs Class of 2010 Strikers</td>
+                        <td>Thunder Stadium</td>
+                        <td>15:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sun, Jun 23</td>
+                        <td><span class="home-team">Old Boys United</span> vs Maliba Legends FC</td>
+                        <td>Old Boys Ground</td>
+                        <td>14:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Results Tab -->
+        <div id="results" class="tab-content">
+            <h2><i class="fas fa-futbol"></i> Recent Results</h2>
+            <table class="league-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Match</th>
+                        <th>Score</th>
+                        <th>Venue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sat, Jun 8</td>
+                        <td>Class of 2010 Strikers <span class="home-team">(H)</span> vs Golden Eagles FC</td>
+                        <td class="match-score">2-0</td>
+                        <td>Alumni Arena</td>
+                    </tr>
+                    <tr>
+                        <td>Sun, Jun 9</td>
+                        <td>Maliba Legends FC <span class="home-team">(H)</span> vs Alumni Warriors</td>
+                        <td class="match-score">3-0</td>
+                        <td>Maliba Main Field</td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Jun 12</td>
+                        <td>Thunderbolts SC <span class="home-team">(H)</span> vs Old Boys United</td>
+                        <td class="match-score">1-1</td>
+                        <td>Thunder Stadium</td>
+                    </tr>
+                    <tr>
+                        <td>Sat, May 25</td>
+                        <td>Golden Eagles FC <span class="home-team">(H)</span> vs Maliba Legends FC</td>
+                        <td class="match-score">1-1</td>
+                        <td>East Campus Pitch</td>
+                    </tr>
+                    <tr>
+                        <td>Sun, May 26</td>
+                        <td>Alumni Warriors <span class="home-team">(H)</span> vs Thunderbolts SC</td>
+                        <td class="match-score">0-3</td>
+                        <td>Warriors Ground</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Top Scorers Tab -->
+        <div id="scorers" class="tab-content">
+            <h2><i class="fas fa-star"></i> Top Scorers</h2>
+            <div class="scorers-list">
+                <div class="scorer-item">
+                    <div class="scorer-info">
+                        <span class="scorer-rank">1.</span>
+                        <span class="scorer-name">Musa Kamara</span>
+                        <span class="scorer-club">Class of 2010 Strikers</span>
+                    </div>
+                    <span class="scorer-goals">5 goals</span>
+                </div>
+                <div class="scorer-item">
+                    <div class="scorer-info">
+                        <span class="scorer-rank">2.</span>
+                        <span class="scorer-name">Samuel Koroma</span>
+                        <span class="scorer-club">Thunderbolts SC</span>
+                    </div>
+                    <span class="scorer-goals">4 goals</span>
+                </div>
+                <div class="scorer-item">
+                    <div class="scorer-info">
+                        <span class="scorer-rank">3.</span>
+                        <span class="scorer-name">Ibrahim Sesay</span>
+                        <span class="scorer-club">Maliba Legends FC</span>
+                    </div>
+                    <span class="scorer-goals">3 goals</span>
+                </div>
+                <div class="scorer-item">
+                    <div class="scorer-info">
+                        <span class="scorer-rank">4.</span>
+                        <span class="scorer-name">Alusine Bangura</span>
+                        <span class="scorer-club">Golden Eagles FC</span>
+                    </div>
+                    <span class="scorer-goals">3 goals</span>
+                </div>
+                <div class="scorer-item">
+                    <div class="scorer-info">
+                        <span class="scorer-rank">5.</span>
+                        <span class="scorer-name">Mohamed Conteh</span>
+                        <span class="scorer-club">Old Boys United</span>
+                    </div>
+                    <span class="scorer-goals">2 goals</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.getElementsByClassName('tab-content');
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove('active');
+            }
+            
+            // Deactivate all tabs
+            const tabs = document.getElementsByClassName('tab');
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+            
+            // Activate the selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

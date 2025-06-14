@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Adventure | Pullman Safaris and Car Rentals Ltd</title>
+    <meta name="description" content="Book your safari or car rental with Pullman Safaris. Fill out our inquiry form and we'll help plan your perfect Ugandan adventure.">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <!-- Date Picker CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="font-sans bg-beige-50">
+    <!-- WhatsApp Integration -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/256702551090" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+        </a>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="relative">
+        <div class="hero-image h-96 w-full bg-cover bg-center flex items-center justify-center">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="container mx-auto px-4 z-10">
+                <nav class="flex justify-between items-center py-4">
+                    <div class="logo">
+                        <a href="index.html" class="text-white text-2xl font-bold">
+                            <img src="images/logo.png" alt="Pullman Safaris Logo" class="h-16">
+                        </a>
+                    </div>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="index.html" class="text-white hover:text-gold-400 font-medium">Home</a>
+                        <a href="about.html" class="text-white hover:text-gold-400 font-medium">About Us</a>
+                        <a href="safaris.html" class="text-white hover:text-gold-400 font-medium">Safaris</a>
+                        <a href="rentals.html" class="text-white hover:text-gold-400 font-medium">Car Rentals</a>
+                        <a href="testimonials.html" class="text-white hover:text-gold-400 font-medium">Testimonials</a>
+                        <a href="blog.html" class="text-white hover:text-gold-400 font-medium">Blog</a>
+                        <a href="contact.html" class="text-white hover:text-gold-400 font-medium">Contact</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="text-white focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </nav>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden absolute top-20 right-4 bg-white rounded-md shadow-lg z-20 w-48 py-2">
+                    <a href="index.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Home</a>
+                    <a href="about.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">About Us</a>
+                    <a href="safaris.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Safaris</a>
+                    <a href="rentals.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Car Rentals</a>
+                    <a href="testimonials.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Testimonials</a>
+                    <a href="blog.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Blog</a>
+                    <a href="contact.html" class="block px-4 py-2 text-gray-800 hover:bg-gold-100">Contact</a>
+                </div>
+                <!-- Hero Content -->
+                <div class="text-center mt-12 z-10">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Book Your Adventure</h1>
+                    <p class="text-xl text-white mb-8 max-w-2xl mx-auto">Start planning your perfect Ugandan safari or car rental experience</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Booking Form Section -->
+        <section class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Inquiry Form</h2>
+                <form id="booking-form" class="space-y-6">
+                    <!-- Service Selection -->
+                    <div>
+                        <label for="service-type" class="block text-gray-700 font-medium mb-2">I'm interested in*</label>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <input type="radio" id="safari" name="service-type" value="safari" class="mr-2" checked>
+                                <label for="safari" class="text-gray-700">Safari/Tour Package</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="rental" name="service-type" value="rental" class="mr-2">
+                                <label for="rental" class="text-gray-700">Car Rental</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Safari Package Selection (shown by default) -->
+                    <div id="safari-fields">
+                        <div class="mb-6">
+                            <label for="safari-package" class="block text-gray-700 font-medium mb-2">Safari Package*</label>
+                            <select id="safari-package" name="safari-package" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500">
+                                <option value="">Select a package</option>
+                                <option value="bwindi">Bwindi Gorilla Trekking (3 Days)</option>
+                                <option value="queen-elizabeth">Queen Elizabeth Wildlife (4 Days)</option>
+                                <option value="murchison">Murchison Falls Adventure (5 Days)</option>
+                                <option value="kibale">Kibale Chimpanzee Tracking (2 Days)</option>
+                                <option value="custom">Custom Safari (Let us design for you)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="safari-date" class="block text-gray-700 font-medium mb-2">Preferred Start Date*</label>
+                                <input type="text" id="safari-date" name="safari-date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 datepicker" placeholder="Select date">
+                            </div>
+                            <div>
+                                <label for="duration" class="block text-gray-700 font-medium mb-2">Duration (Days)*</label>
+                                <input type="number" id="duration" name="duration" min="1" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" placeholder="Number of days">
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <label for="group-size" class="block text-gray-700 font-medium mb-2">Number of Travelers*</label>
+                            <div class="grid sm:grid-cols-4 gap-4">
+                                <div>
+                                    <label for="adults" class="block text-gray-600 text-sm mb-1">Adults</label>
+                                    <input type="number" id="adults" name="adults" min="1" value="2" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500">
+                                </div>
+                                <div>
+                                    <label for="children" class="block text-gray-600 text-sm mb-1">Children (5-12)</label>
+                                    <input type="number" id="children" name="children" min="0" value="0" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500">
+                                </div>
+                                <div>
+                                    <label for="infants" class="block text-gray-600 text-sm mb-1">Infants (<5)</label>
+                                    <input type="number" id="infants" name="infants" min="0" value="0" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500">
+                                </div>
+                                <div>
+                                    <label for="rooms" class="block text-gray-600 text-sm mb-1">Rooms Needed</label>
+                                    <input type="number" id="rooms" name="rooms" min="1" value="1" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Car Rental Fields (hidden by default) -->
+                    <div id="rental-fields" class="hidden">
+                        <div class="mb-6">
+                            <label for="vehicle-type" class="block text-gray-700 font-medium mb-2">Vehicle Type*</label>
+                            <select id="vehicle-type" name="vehicle-type" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500">
+                                <option value="">Select vehicle</option>
+                                <option value="saloon">Saloon Car (Toyota Corolla, etc.)</option>
+                                <option value="suv">SUV (Toyota RAV4, etc.)</option>
+                                <option value="landcruiser">4x4 Safari Vehicle (Land Cruiser)</option>
+                                <option value="minivan">Minivan (7 Seater)</option>
+                                <option value="bus">Bus (14+ Seater)</option>
+                                <option value="pickup">Pickup Truck</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="pickup-date" class="block text-gray-700 font-medium mb-2">Pickup Date*</label>
+                                <input type="text" id="pickup-date" name="pickup-date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 datepicker" placeholder="Select date">
+                            </div>
+                            <div>
+                                <label for="return-date" class="block text-gray-700 font-medium mb-2">Return Date*</label>
+                                <input type="text" id="return-date" name="return-date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 datepicker" placeholder="Select date">
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <label class="block text-gray-700 font-medium mb-2">Rental Options</label>
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="driver" name="driver" class="mr-2">
+                                    <label for="driver" class="text-gray-700">With Driver</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="gps" name="gps" class="mr-2">
+                                    <label for="gps" class="text-gray-700">GPS Navigation</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="insurance" name="insurance" class="mr-2" checked>
+                                    <label for="insurance" class="text-gray-700">Full Insurance</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="airport" name="airport" class="mr-2">
+                                    <label for="airport" class="text-gray-700">Airport Pickup/Dropoff</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Personal Information -->
+                    <div class="pt-6 border-t border-gray-200">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Your Information</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name*</label>
+                                <input type="text" id="first-name" name="first-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required>
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name*</label>
+                                <input type="text" id="last-name" name="last-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required>
+                            </div>
+                        </div>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6 mt-6">
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address*</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number*</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <label for="country" class="block text-gray-700 font-medium mb-2">Country*</label>
+                            <select id="country" name="country" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" required>
+                                <option value="">Select your country</option>
+                                <option value="uganda">Uganda</option>
+                                <option value="kenya">Kenya</option>
+                                <option value="tanzania">Tanzania</option>
+                                <option value="rwanda">Rwanda</option>
+                                <option value="usa">United States</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="canada">Canada</option>
+                                <option value="australia">Australia</option>
+                                <option value="germany">Germany</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <label for="special-requests" class="block text-gray-700 font-medium mb-2">Special Requests</label>
+                            <textarea id="special-requests" name="special-requests" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" placeholder="Dietary restrictions, accessibility needs, specific interests, etc."></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <div class="pt-6">
+                        <button type="submit" class="w-full bg-gold-500 hover:bg-gold-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                            Submit Inquiry
+                        </button>
+                        <p class="text-gray-500 text-sm mt-3">We'll respond to your inquiry within 24 hours to discuss your booking details.</p>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Booking Assistance -->
+            <div class="bg-green-700 rounded-lg p-8 text-white text-center">
+                <h3 class="text-2xl font-bold mb-4">Need Help Booking?</h3>
+                <p class="mb-6 max-w-2xl mx-auto">Our travel specialists are available 24/7 to assist with your booking and answer any questions about our safaris or car rentals.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="tel:+256702551090" class="bg-white hover:bg-gray-100 text-green-700 font-bold py-3 px-6 rounded-lg transition duration-300">
+                        <i class="fas fa-phone-alt mr-2"></i> Call Us
+                    </a>
+                    <a href="mailto:info@pullmansafaris.com" class="bg-transparent hover:bg-green-800 border-2 border-white text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                        <i class="fas fa-envelope mr-2"></i> Email Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <!-- Date Picker JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        // Initialize date pickers
+        flatpickr(".datepicker", {
+            minDate: "today",
+            dateFormat: "Y-m-d"
+        });
+        
+        // Toggle between safari and rental fields
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceTypeRadios = document.querySelectorAll('input[name="service-type"]');
+            const safariFields = document.getElementById('safari-fields');
+            const rentalFields = document.getElementById('rental-fields');
+            
+            serviceTypeRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    if (this.value === 'safari') {
+                        safariFields.classList.remove('hidden');
+                        rentalFields.classList.add('hidden');
+                    } else {
+                        safariFields.classList.add('hidden');
+                        rentalFields.classList.remove('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

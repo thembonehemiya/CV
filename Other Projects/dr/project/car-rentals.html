@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rentals - Pullman Safaris and Car Rentals Ltd</title>
+    <meta name="description" content="Rent reliable vehicles in Uganda with Pullman Safaris. Self-drive and chauffeur services with saloon cars, SUVs, safari cruisers, and luxury vehicles.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'safari-green': '#2D5016',
+                        'safari-gold': '#D4A574',
+                        'safari-brown': '#8B4513',
+                        'safari-beige': '#F5E6D3',
+                        'safari-dark': '#1A2F0A'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(45, 80, 22, 0.7), rgba(26, 47, 10, 0.8)), url('https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-bg {
+            background: linear-gradient(135deg, #F5E6D3 0%, #E8D5B7 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-safari-green shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-mountain text-safari-gold text-2xl mr-3"></i>
+                    <span class="text-white font-bold text-xl">Pullman Safaris</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="safaris.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Safaris</a>
+                        <a href="car-rentals.html" class="text-safari-gold hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Car Rentals</a>
+                        <a href="contact.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-safari-gold">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-safari-dark">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="safaris.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Safaris</a>
+                <a href="car-rentals.html" class="text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Car Rentals</a>
+                <a href="contact.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-96 flex items-center justify-center text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">Car Rental Services</h1>
+            <p class="text-xl text-white">Reliable vehicles for every journey across East Africa</p>
+        </div>
+    </section>
+
+    <!-- Service Options -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-safari-green mb-4">Choose Your Service</h2>
+                <p class="text-lg text-safari-brown max-w-3xl mx-auto">
+                    Whether you prefer the freedom of self-drive or the comfort of a chauffeur, we have the perfect solution for your travel needs.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-safari-beige rounded-lg p-8 text-center card-hover">
+                    <div class="text-safari-gold text-5xl mb-4">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-safari-green mb-4">Self-Drive</h3>
+                    <p class="text-safari-brown mb-6">Experience the freedom of driving yourself through East Africa. Perfect for independent travelers who want to explore at their own pace.</p>
+                    <ul class="text-safari-brown text-sm space-y-2 mb-6">
+                        <li>• Flexible scheduling</li>
+                        <li>• GPS navigation included</li>
+                        <li>• 24/7 roadside assistance</li>
+                        <li>• Comprehensive insurance</li>
+                    </ul>
+                    <a href="contact.html" class="bg-safari-green hover:bg-safari-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        Book Self-Drive
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg p-8 text-center shadow-lg card-hover border-2 border-safari-gold">
+                    <div class="text-safari-gold text-5xl mb-4">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-safari-green mb-4">Chauffeur Service</h3>
+                    <p class="text-safari-brown mb-6">Relax and enjoy the journey with our professional drivers. Ideal for business travelers and luxury experiences.</p>
+                    <ul class="text-safari-brown text-sm space-y-2 mb-6">
+                        <li>• Professional drivers</li>
+                        <li>• Local expertise</li>
+                        <li>• Door-to-door service</li>
+                        <li>• Multilingual drivers available</li>
+                    </ul>
+                    <div class="bg-safari-gold text-white px-3 py-1 rounded-full text-xs font-semibold mb-4">
+                        MOST POPULAR
+                    </div>
+                    <a href="contact.html" class="bg-safari-gold hover:bg-safari-brown text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        Book Chauffeur
+                    </a>
+                </div>
+                <div class="bg-safari-beige rounded-lg p-8 text-center card-hover">
+                    <div class="text-safari-gold text-5xl mb-4">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-safari-green mb-4">Long-Term Rental</h3>
+                    <p class="text-safari-brown mb-6">Extended stays and corporate contracts with special rates. Perfect for NGOs, businesses, and long-term visitors.</p>
+                    <ul class="text-safari-brown text-sm space-y-2 mb-6">
+                        <li>• Monthly/yearly rates</li>
+                        <li>• Corporate packages</li>
+                        <li>• Fleet management</li>
+                        <li>• Maintenance included</li>
+                    </ul>
+                    <a href="contact.html" class="bg-safari-green hover:bg-safari-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        Get Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicle Categories -->
+    <section class="py-20 section-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-safari-green mb-4">Our Vehicle Fleet</h2>
+                <p class="text-lg text-safari-brown max-w-3xl mx-auto">
+                    Choose from our diverse fleet of well-maintained vehicles, each perfect for different travel needs and occasions.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Saloon Cars -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Saloon Cars</h3>
+                        <p class="text-safari-brown mb-4">Comfortable and fuel-efficient vehicles perfect for city driving, airport transfers, and business travel.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Features:</strong> A/C, GPS, Bluetooth, Safety features
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-safari-gold font-bold">From $35/day</span>
+                            <a href="contact.html" class="text-safari-green hover:text-safari-gold font-semibold">Book Now <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safari Cruisers -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1319859/pexels-photo-1319859.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Safari Land Cruisers</h3>
+                        <p class="text-safari-brown mb-4">Rugged 4x4 vehicles with pop-up roofs, perfect for wildlife viewing and rough terrain navigation.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Features:</strong> 4WD, Pop-up roof, Game viewing windows
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-safari-gold font-bold">From $80/day</span>
+                            <a href="contact.html" class="text-safari-green hover:text-safari-gold font-semibold">Book Now <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUVs -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1131458/pexels-photo-1131458.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">SUVs</h3>
+                        <p class="text-safari-brown mb-4">Versatile vehicles offering comfort, space, and capability for both city and countryside adventures.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Features:</strong> Spacious interior, High ground clearance, Premium comfort
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-safari-gold font-bold">From $60/day</span>
+                            <a href="contact.html" class="text-safari-green hover:text-safari-gold font-semibold">Book Now <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vans -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/3608316/pexels-photo-3608316.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Vans & Minibuses</h3>
+                        <p class="text-safari-brown mb-4">Perfect for group travel, family safaris, and corporate transportation with seating for 7-14 passengers.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Features:</strong> Group seating, Luggage space, A/C
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-safari-gold font-bold">From $70/day</span>
+                            <a href="contact.html" class="text-safari-green hover:text-safari-gold font-semibold">Book Now <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buses -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1592045/pexels-photo-1592045.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Coaches & Buses</h3>
+                        <p class="text-safari-brown mb-4">Large capacity vehicles for school trips, corporate events, and group tours with 25-50 passenger capacity.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Features:</strong> High capacity, Comfortable seating, Entertainment systems
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-safari-gold font-bold">From $120/day</span>
+                            <a href="contact.html" class="text-safari-green hover:text-safari-gold font-semibold">Book Now <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bridal Cars -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-safari-green mb-2">Bridal & Luxury Cars</h3>
+                        <p class="text-safari-brown mb-4">Elegant and luxurious vehicles for weddings, special occasions, and VIP transportation needs.</p>
+                        <div class="text-sm text-safari-brown mb-4">
+                            <strong>Features:</strong> Luxury interior, Professional decoration, Chauffeur included
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-safari-gold font-bold">From $150/day</span>
+                            <a href="contact.html" class="text-safari-green hover:text-safari-gold font-semibold">Book Now <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Terms & Features -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-safari-green mb-6">Why Choose Our Rental Service?</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-safari-gold rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-safari-green mb-1">Well-Maintained Fleet</h3>
+                                <p class="text-safari-brown">All vehicles undergo regular maintenance and safety inspections to ensure reliability and safety.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-safari-gold rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-safari-green mb-1">Comprehensive Insurance</h3>
+                                <p class="text-safari-brown">Full insurance coverage included for peace of mind during your travels.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-safari-gold rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-safari-green mb-1">24/7 Support</h3>
+                                <p class="text-safari-brown">Round-the-clock customer support and roadside assistance throughout East Africa.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-safari-gold rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-safari-green mb-1">Flexible Terms</h3>
+                                <p class="text-safari-brown">Daily, weekly, monthly, and long-term rental options to suit your needs.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-safari-gold rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-safari-green mb-1">Airport Pickup</h3>
+                                <p class="text-safari-brown">Convenient vehicle pickup and drop-off services at major airports and hotels.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-safari-beige rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-safari-green mb-6">Rental Requirements</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-safari-green">Age Requirement</h4>
+                            <p class="text-safari-brown text-sm">Minimum age of 23 years with 2+ years driving experience</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-safari-green">Documentation</h4>
+                            <p class="text-safari-brown text-sm">Valid driving license, passport, and credit card required</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-safari-green">International License</h4>
+                            <p class="text-safari-brown text-sm">International driving permit required for foreign visitors</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-safari-green">Security Deposit</h4>
+                            <p class="text-safari-brown text-sm">Refundable security deposit based on vehicle category</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-safari-green">Fuel Policy</h4>
+                            <p class="text-safari-brown text-sm">Full-to-full fuel policy - return with same fuel level</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-safari-gold">
+                        <h4 class="font-semibold text-safari-green mb-2">Need Help?</h4>
+                        <p class="text-safari-brown text-sm mb-4">Our team is ready to assist you in choosing the perfect vehicle for your journey.</p>
+                        <a href="tel:+256702551090" class="text-safari-gold hover:text-safari-brown font-semibold">
+                            <i class="fas fa-phone mr-2"></i>Call +256 702 551 090
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-safari-green text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Hit the Road?</h2>
+            <p class="text-xl mb-8">Book your perfect vehicle today and explore East Africa with confidence and comfort.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-safari-gold hover:bg-safari-brown text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                    <i class="fas fa-car mr-2"></i>Book Vehicle Now
+                </a>
+                <a href="tel:+256702551090" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-safari-green px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                    <i class="fas fa-phone mr-2"></i>Call for Rates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-safari-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mountain text-safari-gold text-2xl mr-3"></i>
+                        <span class="text-white font-bold text-xl">Pullman Safaris</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Explore Africa with confidence. Your premier safari and car rental partner in East Africa.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-safari-gold transition-colors">About Us</a></li>
+                        <li><a href="safaris.html" class="text-gray-400 hover:text-safari-gold transition-colors">Safari Packages</a></li>
+                        <li><a href="car-rentals.html" class="text-gray-400 hover:text-safari-gold transition-colors">Car Rentals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-safari-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Gorilla Trekking</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Wildlife Safaris</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Cultural Tours</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Airport Transfers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-location-dot text-safari-gold mr-3"></i>
+                            <span class="text-gray-400">Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-safari-gold mr-3"></i>
+                            <span class="text-gray-400">+256 702 551 090</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-safari-gold mr-3"></i>
+                            <span class="text-gray-400">info@pullmansafaris.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/256702551090" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors z-40">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('backdrop-blur-sm');
+            } else {
+                navbar.classList.remove('backdrop-blur-sm');
+            }
+        });
+    </script>
+</body>
+</html>

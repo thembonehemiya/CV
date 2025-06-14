@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pullman Safaris and Car Rentals Ltd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="./src/styles.css" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-green-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-mountain text-2xl text-yellow-400"></i>
+                    <span class="text-xl font-bold">Pullman Safaris & Car Rentals</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="safaris.html" class="nav-link">Safaris</a>
+                    <a href="car-rentals.html" class="nav-link">Car Rentals</a>
+                    <a href="booking.html" class="nav-link">Book Now</a>
+                    <a href="testimonials.html" class="nav-link">Reviews</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+                <button class="md:hidden text-white" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-2 space-y-2">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-green-800">Home</a>
+                    <a href="about.html" class="block px-4 py-2 hover:bg-green-800">About Us</a>
+                    <a href="safaris.html" class="block px-4 py-2 hover:bg-green-800">Safaris</a>
+                    <a href="car-rentals.html" class="block px-4 py-2 hover:bg-green-800">Car Rentals</a>
+                    <a href="booking.html" class="block px-4 py-2 hover:bg-green-800">Book Now</a>
+                    <a href="testimonials.html" class="block px-4 py-2 hover:bg-green-800">Reviews</a>
+                    <a href="contact.html" class="block px-4 py-2 hover:bg-green-800">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Image -->
+    <div class="header-image">
+        <div class="header-overlay">
+            <div class="container mx-auto px-4 py-20 text-center text-white">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fade-in">Get in Touch</h1>
+                <p class="text-xl md:text-2xl animate-slide-up">We're Here to Help Plan Your Perfect Adventure</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-4xl font-bold text-green-900 mb-6">Contact Information</h2>
+                    <p class="text-gray-700 text-lg mb-8">Ready to start your Uganda adventure? Get in touch with us through any of the channels below. Our friendly team is available to answer your questions and help you plan the perfect safari or car rental experience.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-green-900 mb-2">Our Location</h3>
+                                <p class="text-gray-700">Plot 12B Sir Apollo Kaggwa Road<br>Kampala, Uganda</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-green-900 mb-2">Phone Number</h3>
+                                <p class="text-gray-700">
+                                    <a href="tel:0702551090" class="hover:text-green-600"> +256 702 551 090</a>
+                                </p>
+                                <p class="text-sm text-gray-600">Available 24/7 for emergencies</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-green-900 mb-2">Email Address</h3>
+                                <p class="text-gray-700">
+                                    <a href="mailto:info@pullmansafaris.com" class="hover:text-green-600">info@pullmansafaris.com</a>
+                                </p>
+                                <p class="text-sm text-gray-600">Response within 2 hours during business hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-green-900 mb-2">WhatsApp</h3>
+                                <p class="text-gray-700">
+                                    <a href="https://wa.me/256702551090" class="hover:text-green-600">+256 702 551 090</a>
+                                </p>
+                                <p class="text-sm text-gray-600">Quick responses for urgent inquiries</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-green-900 mb-2">Business Hours</h3>
+                                <p class="text-gray-700">
+                                    Monday - Friday: 8:00 AM - 6:00 PM<br>
+                                    Saturday: 9:00 AM - 4:00 PM<br>
+                                    Sunday: Emergency calls only
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="mt-8">
+                        <h3 class="text-xl font-bold text-green-900 mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-media-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-media-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-media-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-media-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <div class="service-card">
+                        <h2 class="text-3xl font-bold text-green-900 mb-6">Send Us a Message</h2>
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-input" placeholder="Enter your first name" required>
+                                </div>
+                                <div>
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-input" placeholder="Enter your last name" required>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-input" placeholder="Enter your email" required>
+                            </div>
+
+                            <div>
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-input" placeholder="Enter your phone number" required>
+                            </div>
+
+                            <div>
+                                <label class="form-label">Subject</label>
+                                <select class="form-input" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="safari-inquiry">Safari Inquiry</option>
+                                    <option value="car-rental">Car Rental Inquiry</option>
+                                    <option value="booking-support">Booking Support</option>
+                                    <option value="general-info">General Information</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="form-label">Message</label>
+                                <textarea class="form-input" rows="6" placeholder="Tell us about your trip plans, questions, or how we can help you..." required></textarea>
+                            </div>
+
+                            <div>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> I would like to receive updates about special offers and travel tips
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn-primary w-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-green-900 mb-4">Find Us</h2>
+                <p class="text-xl text-gray-600">Visit our office in the heart of Kampala</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-green-900 mb-4">Our Office Location</h3>
+                    <p class="text-gray-700 text-lg mb-6">
+                        We're conveniently located on Sir Apollo Kaggwa Road in Kampala, easily accessible from all parts of the city. Our office is open for consultations, bookings, and any assistance you might need for your Uganda adventure.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-car text-green-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-green-900">By Car</h4>
+                                <p class="text-gray-600">Parking available on-site</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-bus text-green-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-green-900">By Public Transport</h4>
+                                <p class="text-gray-600">Near major bus stops and taxi stages</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-plane text-green-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-green-900">From Airport</h4>
+                                <p class="text-gray-600">45 minutes from Entebbe International Airport</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7563434717756!2d32.57997031475419!3d0.31628999976785506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb7a5b3b6e47%3A0x5d3a4e8b9b7a7a5d!2sSir%20Apollo%20Kaggwa%20Rd%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1635789123456!5m2!1sen!2sus"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-green-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">Quick answers to common questions</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What's included in your safari packages?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our safari packages typically include accommodation, meals, transportation, park entrance fees, professional guide, and all activities mentioned in the itinerary. Gorilla permits and other special permits are clearly indicated.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you provide airport pickup?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer airport transfer services from Entebbe International Airport to Kampala and other destinations. This can be arranged as part of your safari package or as a standalone service.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What documents do I need for car rental?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>For car rental, you'll need a valid driver's license (international driving permit recommended), passport, and credit card for security deposit. Additional documentation may be required for long-term rentals.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How far in advance should I book?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We recommend booking safaris at least 2-3 months in advance, especially for gorilla trekking which requires permits. Car rentals can be booked with shorter notice, but advance booking ensures better vehicle availability.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What payment methods do you accept?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We accept bank transfers, mobile money (MTN and Airtel), and cash payments. For international clients, we also accept wire transfers and payments through our secure payment partners.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you offer travel insurance?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>While we don't directly provide travel insurance, we strongly recommend purchasing comprehensive travel insurance that covers medical emergencies, trip cancellation, and adventure activities. We can recommend trusted providers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-green-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Start Your Adventure?</h2>
+            <p class="text-xl mb-8">Contact us today and let's plan your perfect Uganda experience together</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="booking.html" class="btn-primary">Make a Booking</a>
+                <a href="tel:0702551090" class="btn-secondary">Call Now:  +256 702 551 090</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-mountain text-2xl text-yellow-400"></i>
+                        <span class="text-xl font-bold">Pullman Safaris</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your trusted partner for unforgettable African adventures and reliable transportation services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="safaris.html" class="hover:text-white">Safari Packages</a></li>
+                        <li><a href="car-rentals.html" class="hover:text-white">Car Rentals</a></li>
+                        <li><a href="testimonials.html" class="hover:text-white">Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Gorilla Trekking</a></li>
+                        <li><a href="#" class="hover:text-white">Wildlife Safaris</a></li>
+                        <li><a href="#" class="hover:text-white">Car Hire</a></li>
+                        <li><a href="#" class="hover:text-white">Airport Transfers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</li>
+                        <li><i class="fas fa-phone mr-2"></i> +256 702 551 090</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@pullmansafaris.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/256702551090" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pullman Safaris and Car Rentals Ltd</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="Pullman Safaris Logo" class="h-12">
+                <span class="ml-2 text-xl font-bold text-green-800">Pullman Safaris</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-green-600 font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-green-600 font-medium">About Us</a>
+                <a href="safaris/index.html" class="text-gray-600 hover:text-green-600 font-medium">Safaris</a>
+                <a href="cars/index.html" class="text-gray-600 hover:text-green-600 font-medium">Car Rentals</a>
+                <a href="testimonials.html" class="text-gray-600 hover:text-green-600 font-medium">Testimonials</a>
+                <a href="blog.html" class="text-gray-600 hover:text-green-600 font-medium">Blog</a>
+                <a href="contact.html" class="text-green-800 font-medium">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-green-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-green-600">About Us</a>
+            <a href="safaris/index.html" class="block py-2 text-gray-600 hover:text-green-600">Safaris</a>
+            <a href="cars/index.html" class="block py-2 text-gray-600 hover:text-green-600">Car Rentals</a>
+            <a href="testimonials.html" class="block py-2 text-gray-600 hover:text-green-600">Testimonials</a>
+            <a href="blog.html" class="block py-2 text-gray-600 hover:text-green-600">Blog</a>
+            <a href="contact.html" class="block py-2 text-green-800">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-cover bg-center" style="background-image: url('images/contact-hero.jpg');">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Contact Us</h1>
+            <p class="text-xl md:text-2xl mb-8">Get in touch to start planning your African adventure</p>
+        </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-green-800 mb-6">Send Us a Message</h2>
+                    <p class="text-gray-700 mb-8">Have questions about our safaris or car rentals? Fill out the form below and our team will get back to you within 24 hours.</p>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name*</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address*</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject*</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" required>
+                                <option value="">Select a subject</option>
+                                <option value="safari">Safari Inquiry</option>
+                                <option value="car-rental">Car Rental Inquiry</option>
+                                <option value="custom-tour">Custom Tour Request</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message*</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent" required></textarea>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="bg-green-700 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-green-800 mb-6">Our Contact Information</h2>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg mb-8">
+                        <div class="flex items-start mb-6">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-green-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-green-800 mb-1">Address</h3>
+                                <p class="text-gray-700">Plot 12B Sir Apollo Kaggwa Road</p>
+                                <p class="text-gray-700">Kampala, Uganda</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-green-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-green-800 mb-1">Phone</h3>
+                                <p class="text-gray-700">+256 702 551 090</p>
+                                <p class="text-gray-700">+256 414 234 567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-green-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-green-800 mb-1">Email</h3>
+                                <p class="text-gray-700">info@pullmansafaris.com</p>
+                                <p class="text-gray-700">bookings@pullmansafaris.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-green-700"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-green-800 mb-1">Working Hours</h3>
+                                <p class="text-gray-700">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                <p class="text-gray-700">Saturday: 9:00 AM - 4:00 PM</p>
+                                <p class="text-gray-700">Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-green-800 mb-4">Emergency Contact</h3>
+                        <p class="text-gray-700 mb-4">For urgent matters outside business hours, please call:</p>
+                        <div class="flex items-center">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-red-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 font-bold">+256 772 123 456</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-0 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="rounded-lg overflow-hidden shadow-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7536223157963!2d32.58264731475393!3d0.3135993640548502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc1a8e382d1d%3A0x5e4a6c1f3a0e3a1!2sSir%20Apollo%20Kaggwa%20Rd%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Our Team</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md text-center">
+                    <img src="images/team1.jpg" alt="Robert Mugabe" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-green-800 mb-1">Robert Mugabe</h3>
+                        <p class="text-yellow-600 font-medium mb-3">Founder & CEO</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="mailto:robert@pullmansafaris.com" class="text-gray-600 hover:text-green-700">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+256702551090" class="text-gray-600 hover:text-green-700">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                            <a href="https://wa.me/256702551090" class="text-gray-600 hover:text-green-700">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md text-center">
+                    <img src="images/team2.jpg" alt="Sarah Kintu" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-green-800 mb-1">Sarah Kintu</h3>
+                        <p class="text-yellow-600 font-medium mb-3">Operations Manager</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="mailto:sarah@pullmansafaris.com" class="text-gray-600 hover:text-green-700">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+256772123456" class="text-gray-600 hover:text-green-700">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                            <a href="https://wa.me/256772123456" class="text-gray-600 hover:text-green-700">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md text-center">
+                    <img src="images/team3.jpg" alt="David Okello" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-green-800 mb-1">David Okello</h3>
+                        <p class="text-yellow-600 font-medium mb-3">Head Guide</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="mailto:david@pullmansafaris.com" class="text-gray-600 hover:text-green-700">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+256752345678" class="text-gray-600 hover:text-green-700">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                            <a href="https://wa.me/256752345678" class="text-gray-600 hover:text-green-700">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md text-center">
+                    <img src="images/team4.jpg" alt="Grace Nakimera" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-green-800 mb-1">Grace Nakimera</h3>
+                        <p class="text-yellow-600 font-medium mb-3">Customer Service</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="mailto:grace@pullmansafaris.com" class="text-gray-600 hover:text-green-700">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+256782456789" class="text-gray-600 hover:text-green-700">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                            <a href="https://wa.me/256782456789" class="text-gray-600 hover:text-green-700">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-green-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Start Your Adventure?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today to book your safari or rental vehicle and begin planning your unforgettable African experience.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="booking.html" class="bg-white hover:bg-gray-100 text-green-800 font-bold py-3 px-6 rounded-lg transition duration-300">Book Now</a>
+                <a href="tel:+256702551090" class="bg-transparent hover:bg-green-700 border-2 border-white text-white font-bold py-3 px-6 rounded-lg transition duration-300">Call Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="images/logo-white.png" alt="Pullman Safaris Logo" class="h-12 mb-4">
+                    <p class="mb-4">Explore Africa with confidence through our safari packages and reliable car rental services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-green-400"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-green-400">Home</a></li>
+                        <li><a href="about.html" class="hover:text-green-400">About Us</a></li>
+                        <li><a href="safaris/index.html" class="hover:text-green-400">Safari Packages</a></li>
+                        <li><a href="cars/index.html" class="hover:text-green-400">Car Rentals</a></li>
+                        <li><a href="testimonials.html" class="hover:text-green-400">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>+256 702 551 090</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@pullmansafaris.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe to our newsletter for updates and special offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-green-700 hover:bg-green-600 px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/256702551090" class="fixed bottom-6 right-6 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value) {
+                    field.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    field.classList.remove('border-red-500');
+                }
+            });
+            
+            if (!isValid) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show a success message
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

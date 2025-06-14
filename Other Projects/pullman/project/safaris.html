@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Packages - Pullman Safaris and Car Rentals Ltd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="./src/styles.css" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-green-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-mountain text-2xl text-yellow-400"></i>
+                    <span class="text-xl font-bold">Pullman Safaris & Car Rentals</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="safaris.html" class="nav-link active">Safaris</a>
+                    <a href="car-rentals.html" class="nav-link">Car Rentals</a>
+                    <a href="booking.html" class="nav-link">Book Now</a>
+                    <a href="testimonials.html" class="nav-link">Reviews</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden text-white" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-2 space-y-2">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-green-800">Home</a>
+                    <a href="about.html" class="block px-4 py-2 hover:bg-green-800">About Us</a>
+                    <a href="safaris.html" class="block px-4 py-2 hover:bg-green-800">Safaris</a>
+                    <a href="car-rentals.html" class="block px-4 py-2 hover:bg-green-800">Car Rentals</a>
+                    <a href="booking.html" class="block px-4 py-2 hover:bg-green-800">Book Now</a>
+                    <a href="testimonials.html" class="block px-4 py-2 hover:bg-green-800">Reviews</a>
+                    <a href="contact.html" class="block px-4 py-2 hover:bg-green-800">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Image -->
+    <div class="header-image">
+        <div class="header-overlay">
+            <div class="container mx-auto px-4 py-20 text-center text-white">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fade-in">Uganda Safari Adventures</h1>
+                <p class="text-xl md:text-2xl animate-slide-up">Discover the Pearl of Africa's Wildlife & Natural Wonders</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Safari Packages Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-green-900 mb-4">Our Safari Destinations</h2>
+                <p class="text-xl text-gray-600">Explore Uganda's most spectacular wildlife destinations and natural wonders</p>
+            </div>
+
+            <!-- Bwindi Impenetrable National Park -->
+            <div id="bwindi" class="destination-section">
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <h3 class="text-3xl font-bold text-green-900 mb-4">1. Bwindi Impenetrable National Park</h3>
+                        <div class="mb-4">
+                            <span class="badge-highlight">UNESCO World Heritage Site</span>
+                            <span class="badge-location">Southwestern Uganda</span>
+                        </div>
+                        <p class="text-gray-700 text-lg mb-4">
+                            Home to nearly half of the world's endangered mountain gorillas, Bwindi offers an unforgettable gorilla trekking experience in one of Africa's most biodiverse forests.
+                        </p>
+                        <h4 class="text-xl font-semibold text-green-800 mb-3">Activities:</h4>
+                        <ul class="activity-list">
+                            <li><i class="fas fa-check text-green-600"></i>Mountain Gorilla Trekking</li>
+                            <li><i class="fas fa-check text-green-600"></i>Bird Watching (350+ species)</li>
+                            <li><i class="fas fa-check text-green-600"></i>Forest Nature Walks</li>
+                            <li><i class="fas fa-check text-green-600"></i>Cultural Visits to Batwa Communities</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mountain Gorilla" class="rounded-lg shadow-lg w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Queen Elizabeth National Park -->
+            <div id="queen-elizabeth" class="destination-section">
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div class="md:order-2">
+                        <h3 class="text-3xl font-bold text-green-900 mb-4">2. Queen Elizabeth National Park</h3>
+                        <div class="mb-4">
+                            <span class="badge-highlight">Tree-Climbing Lions</span>
+                            <span class="badge-location">Western Uganda</span>
+                        </div>
+                        <p class="text-gray-700 text-lg mb-4">
+                            Uganda's most popular savanna park, famous for its diverse wildlife including the unique tree-climbing lions and the scenic Kazinga Channel.
+                        </p>
+                        <h4 class="text-xl font-semibold text-green-800 mb-3">Activities:</h4>
+                        <ul class="activity-list">
+                            <li><i class="fas fa-check text-green-600"></i>Game Drives</li>
+                            <li><i class="fas fa-check text-green-600"></i>Kazinga Channel Boat Safari</li>
+                            <li><i class="fas fa-check text-green-600"></i>Chimpanzee Trekking (Kyambura Gorge)</li>
+                            <li><i class="fas fa-check text-green-600"></i>Tree-Climbing Lion Spotting</li>
+                        </ul>
+                    </div>
+                    <div class="md:order-1">
+                        <img src="https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Lions" class="rounded-lg shadow-lg w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Murchison Falls National Park -->
+            <div id="murchison" class="destination-section">
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <h3 class="text-3xl font-bold text-green-900 mb-4">3. Murchison Falls National Park</h3>
+                        <div class="mb-4">
+                            <span class="badge-highlight">World's Most Powerful Waterfall</span>
+                            <span class="badge-location">Northern Uganda</span>
+                        </div>
+                        <p class="text-gray-700 text-lg mb-4">
+                            Experience the dramatic Murchison Falls where the Nile River explodes through a narrow 7-meter gorge, creating one of nature's most spectacular displays.
+                        </p>
+                        <h4 class="text-xl font-semibold text-green-800 mb-3">Activities:</h4>
+                        <ul class="activity-list">
+                            <li><i class="fas fa-check text-green-600"></i>Game Drives</li>
+                            <li><i class="fas fa-check text-green-600"></i>Boat Trips to Base of Falls</li>
+                            <li><i class="fas fa-check text-green-600"></i>Hiking to Top of Falls</li>
+                            <li><i class="fas fa-check text-green-600"></i>Bird Watching</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://images.pexels.com/photos/1447688/pexels-photo-1447688.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Waterfall" class="rounded-lg shadow-lg w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kibale Forest National Park -->
+            <div class="destination-section">
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div class="md:order-2">
+                        <h3 class="text-3xl font-bold text-green-900 mb-4">4. Kibale Forest National Park</h3>
+                        <div class="mb-4">
+                            <span class="badge-highlight">Primate Capital</span>
+                            <span class="badge-location">Near Fort Portal</span>
+                        </div>
+                        <p class="text-gray-700 text-lg mb-4">
+                            Home to the highest concentration of primates in East Africa, with 13 species including over 1,500 chimpanzees.
+                        </p>
+                        <h4 class="text-xl font-semibold text-green-800 mb-3">Activities:</h4>
+                        <ul class="activity-list">
+                            <li><i class="fas fa-check text-green-600"></i>Chimpanzee Tracking</li>
+                            <li><i class="fas fa-check text-green-600"></i>Primate Watching (13 Species)</li>
+                            <li><i class="fas fa-check text-green-600"></i>Bird Watching</li>
+                            <li><i class="fas fa-check text-green-600"></i>Nature Walks</li>
+                        </ul>
+                    </div>
+                    <div class="md:order-1">
+                        <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Chimpanzee" class="rounded-lg shadow-lg w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rwenzori Mountains -->
+            <div class="destination-section">
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <h3 class="text-3xl font-bold text-green-900 mb-4">5. Rwenzori Mountains National Park</h3>
+                        <div class="mb-4">
+                            <span class="badge-highlight">Mountains of the Moon</span>
+                            <span class="badge-location">Western Uganda</span>
+                        </div>
+                        <p class="text-gray-700 text-lg mb-4">
+                            Africa's third highest mountain range with snow-capped peaks and glaciers, offering challenging mountaineering adventures.
+                        </p>
+                        <h4 class="text-xl font-semibold text-green-800 mb-3">Activities:</h4>
+                        <ul class="activity-list">
+                            <li><i class="fas fa-check text-green-600"></i>Mountaineering</li>
+                            <li><i class="fas fa-check text-green-600"></i>Multi-day Hiking</li>
+                            <li><i class="fas fa-check text-green-600"></i>Photography</li>
+                            <li><i class="fas fa-check text-green-600"></i>Cultural Tours</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://images.pexels.com/photos/2670898/pexels-photo-2670898.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mountains" class="rounded-lg shadow-lg w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lake Mburo National Park -->
+            <div class="destination-section">
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div class="md:order-2">
+                        <h3 class="text-3xl font-bold text-green-900 mb-4">6. Lake Mburo National Park</h3>
+                        <div class="mb-4">
+                            <span class="badge-highlight">Closest to Kampala</span>
+                            <span class="badge-location">Central Uganda</span>
+                        </div>
+                        <p class="text-gray-700 text-lg mb-4">
+                            The smallest of Uganda's savanna parks, perfect for walking safaris and home to zebras, antelopes, and over 350 bird species.
+                        </p>
+                        <h4 class="text-xl font-semibold text-green-800 mb-3">Activities:</h4>
+                        <ul class="activity-list">
+                            <li><i class="fas fa-check text-green-600"></i>Walking Safaris</li>
+                            <li><i class="fas fa-check text-green-600"></i>Biking</li>
+                            <li><i class="fas fa-check text-green-600"></i>Boat Rides</li>
+                            <li><i class="fas fa-check text-green-600"></i>Horse Riding</li>
+                        </ul>
+                    </div>
+                    <div class="md:order-1">
+                        <img src="https://images.pexels.com/photos/1115697/pexels-photo-1115697.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Zebras" class="rounded-lg shadow-lg w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Destinations Grid -->
+            <div class="mt-16">
+                <h2 class="text-3xl font-bold text-green-900 mb-8">More Amazing Destinations</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Mount Elgon -->
+                    <div class="destination-card">
+                        <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg?auto=compress&cs=tinysrgb&w=600')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-green-900 mb-2">Mount Elgon National Park</h3>
+                            <p class="text-gray-600 mb-3">Extinct volcano with world's largest caldera</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Hiking & Waterfalls</li>
+                                <li>• Cave Exploration</li>
+                                <li>• Bird Watching</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Kidepo Valley -->
+                    <div class="destination-card">
+                        <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/1300510/pexels-photo-1300510.jpeg?auto=compress&cs=tinysrgb&w=600')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-green-900 mb-2">Kidepo Valley National Park</h3>
+                            <p class="text-gray-600 mb-3">Remote wilderness & untouched landscapes</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Game Drives</li>
+                                <li>• Cultural Tours</li>
+                                <li>• Scenic Landscapes</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ssese Islands -->
+                    <div class="destination-card">
+                        <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=600')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-green-900 mb-2">Ssese Islands</h3>
+                            <p class="text-gray-600 mb-3">Tropical paradise on Lake Victoria</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Beach Relaxation</li>
+                                <li>• Fishing Tours</li>
+                                <li>• Cultural Encounters</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ziwa Rhino Sanctuary -->
+                    <div class="destination-card">
+                        <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/1068383/pexels-photo-1068383.jpeg?auto=compress&cs=tinysrgb&w=600')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-green-900 mb-2">Ziwa Rhino Sanctuary</h3>
+                            <p class="text-gray-600 mb-3">Uganda's only wild rhinos</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Rhino Tracking</li>
+                                <li>• Bird Watching</li>
+                                <li>• Night Walks</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Lake Bunyonyi -->
+                    <div class="destination-card">
+                        <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/3714898/pexels-photo-3714898.jpeg?auto=compress&cs=tinysrgb&w=600')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-green-900 mb-2">Lake Bunyonyi</h3>
+                            <p class="text-gray-600 mb-3">Switzerland of Africa</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Canoeing</li>
+                                <li>• Island Hopping</li>
+                                <li>• Swimming</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Jinja - Source of the Nile -->
+                    <div class="destination-card">
+                        <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?auto=compress&cs=tinysrgb&w=600')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-green-900 mb-2">Source of the Nile - Jinja</h3>
+                            <p class="text-gray-600 mb-3">Adventure capital of East Africa</p>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• White-water Rafting</li>
+                                <li>• Bungee Jumping</li>
+                                <li>• Boat Cruises</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safari Packages -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-green-900 mb-4">Popular Safari Packages</h2>
+                <p class="text-xl text-gray-600">Choose from our carefully crafted safari experiences</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-mountain text-4xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-green-900 mb-2">3-Day Gorilla Safari</h3>
+                        <p class="text-3xl font-bold text-yellow-600 mb-2">From $1,200</p>
+                        <p class="text-gray-600">Per person (minimum 2 people)</p>
+                    </div>
+                    <ul class="space-y-2 text-gray-700 mb-6">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Bwindi Gorilla Trekking</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Accommodation & Meals</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Transport & Guide</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Gorilla Permits</li>
+                    </ul>
+                    <a href="booking.html" class="btn-primary w-full text-center">Book Now</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-binoculars text-4xl text-yellow-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-green-900 mb-2">5-Day Wildlife Safari</h3>
+                        <p class="text-3xl font-bold text-yellow-600 mb-2">From $900</p>
+                        <p class="text-gray-600">Per person (minimum 2 people)</p>
+                    </div>
+                    <ul class="space-y-2 text-gray-700 mb-6">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Queen Elizabeth & Murchison Falls</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Game Drives & Boat Safaris</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>All Accommodation</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Professional Guide</li>
+                    </ul>
+                    <a href="booking.html" class="btn-primary w-full text-center">Book Now</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-globe-africa text-4xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-green-900 mb-2">10-Day Grand Safari</h3>
+                        <p class="text-3xl font-bold text-yellow-600 mb-2">From $2,500</p>
+                        <p class="text-gray-600">Per person (minimum 2 people)</p>
+                    </div>
+                    <ul class="space-y-2 text-gray-700 mb-6">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>6 National Parks</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Gorilla & Chimp Trekking</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Cultural Experiences</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Luxury Accommodation</li>
+                    </ul>
+                    <a href="booking.html" class="btn-primary w-full text-center">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-green-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Experience Uganda's Wildlife?</h2>
+            <p class="text-xl mb-8">Let us create a customized safari experience just for you</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="booking.html" class="btn-primary">Book Your Safari</a>
+                <a href="contact.html" class="btn-secondary">Get Custom Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-mountain text-2xl text-yellow-400"></i>
+                        <span class="text-xl font-bold">Pullman Safaris</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your trusted partner for unforgettable African adventures and reliable transportation services.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="safaris.html" class="hover:text-white">Safari Packages</a></li>
+                        <li><a href="car-rentals.html" class="hover:text-white">Car Rentals</a></li>
+                        <li><a href="testimonials.html" class="hover:text-white">Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Gorilla Trekking</a></li>
+                        <li><a href="#" class="hover:text-white">Wildlife Safaris</a></li>
+                        <li><a href="#" class="hover:text-white">Car Hire</a></li>
+                        <li><a href="#" class="hover:text-white">Airport Transfers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</li>
+                        <li><i class="fas fa-phone mr-2"></i> +256 702 551 090</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@pullmansafaris.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/256702551090" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pullman Safaris and Car Rentals Ltd</title>
+    <meta name="description" content="Contact Pullman Safaris for bookings, inquiries, and customer support. Located in Kampala, Uganda. Professional safari and car rental services.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'safari-green': '#2D5016',
+                        'safari-gold': '#D4A574',
+                        'safari-brown': '#8B4513',
+                        'safari-beige': '#F5E6D3',
+                        'safari-dark': '#1A2F0A'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(45, 80, 22, 0.7), rgba(26, 47, 10, 0.8)), url('https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-bg {
+            background: linear-gradient(135deg, #F5E6D3 0%, #E8D5B7 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-safari-green shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-mountain text-safari-gold text-2xl mr-3"></i>
+                    <span class="text-white font-bold text-xl">Pullman Safaris</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="safaris.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Safaris</a>
+                        <a href="car-rentals.html" class="text-white hover:text-safari-gold px-3 py-2 rounded-md text-sm font-medium transition-colors">Car Rentals</a>
+                        <a href="contact.html" class="text-safari-gold hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-safari-gold">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-safari-dark">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="safaris.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Safaris</a>
+                <a href="car-rentals.html" class="text-white hover:text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Car Rentals</a>
+                <a href="contact.html" class="text-safari-gold block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-96 flex items-center justify-center text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">Contact Us</h1>
+            <p class="text-xl text-white">Get in touch to plan your perfect African adventure</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-safari-green mb-4">Get In Touch</h2>
+                <p class="text-lg text-safari-brown max-w-3xl mx-auto">
+                    Ready to embark on your African adventure? Contact us today and let our experienced team help you plan the perfect safari or car rental experience.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="text-center bg-safari-beige rounded-lg p-8 card-hover">
+                    <div class="text-safari-gold text-4xl mb-4">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-safari-green mb-4">Call Us</h3>
+                    <p class="text-safari-brown mb-4">Speak directly with our safari experts</p>
+                    <a href="tel:+256702551090" class="text-safari-gold hover:text-safari-brown font-semibold text-lg">
+                        +256 702 551 090
+                    </a>
+                </div>
+                <div class="text-center bg-safari-beige rounded-lg p-8 card-hover">
+                    <div class="text-safari-gold text-4xl mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-safari-green mb-4">Email Us</h3>
+                    <p class="text-safari-brown mb-4">Send us your inquiries and requirements</p>
+                    <a href="mailto:info@pullmansafaris.com" class="text-safari-gold hover:text-safari-brown font-semibold">
+                        info@pullmansafaris.com
+                    </a>
+                </div>
+                <div class="text-center bg-safari-beige rounded-lg p-8  card-hover">
+                    <div class="text-safari-gold text-4xl mb-4">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-safari-green mb-4">WhatsApp</h3>
+                    <p class="text-safari-brown mb-4">Quick responses and instant communication</p>
+                    <a href="https://wa.me/256702551090" target="_blank" class="text-safari-gold hover:text-safari-brown font-semibold">
+                        Chat with us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="py-20 section-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-safari-green mb-6">Send Us a Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-safari-green mb-2">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-gold focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-safari-green mb-2">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-gold focus:border-transparent">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-safari-green mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-gold focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-safari-green mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-gold focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-safari-green mb-2">Service Interest *</label>
+                            <select id="service" name="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-gold focus:border-transparent">
+                                <option value="">Select a service</option>
+                                <option value="safari">Safari Packages</option>
+                                <option value="car-rental">Car Rental</option>
+                                <option value="both">Safari & Car Rental</option>
+                                <option value="custom">Custom Package</option>
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="travelDate" class="block text-sm font-medium text-safari-green mb-2">Preferred Travel Date</label>
+                                <input type="date" id="travelDate" name="travelDate" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-gold focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="groupSize" class="block text-sm font-medium text-safari-green mb-2">Group Size</label>
+                                <select id="groupSize" name="groupSize" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-gold focus:border-transparent">
+                                    <option value="">Select group size</option>
+                                    <option value="1">1 person</option>
+                                    <option value="2">2 people</option>
+                                    <option value="3-5">3-5 people</option>
+                                    <option value="6-10">6-10 people</option>
+                                    <option value="10+">10+ people</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-safari-green mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your travel plans, preferences, and any special requirements..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-gold focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-safari-green hover:bg-safari-dark text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Office Information & Map -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-lg p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold text-safari-green mb-6">Visit Our Office</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-location-dot text-safari-gold text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-safari-green">Address</h4>
+                                    <p class="text-safari-brown">Plot 12B Sir Apollo Kaggwa Road<br>Kampala, Uganda</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-safari-gold text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-safari-green">Business Hours</h4>
+                                    <p class="text-safari-brown">Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 4:00 PM<br>Sunday: By appointment</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-globe text-safari-gold text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-safari-green">Service Areas</h4>
+                                    <p class="text-safari-brown">Uganda, Kenya, Tanzania, Rwanda<br>East Africa Region</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Map Placeholder -->
+                    <div class="bg-white rounded-lg p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold text-safari-green mb-6">Find Us</h3>
+                        <div class="bg-safari-beige rounded-lg h-64 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-map-marker-alt text-safari-gold text-4xl mb-4"></i>
+                                <p class="text-safari-brown">Interactive Map</p>
+                                <p class="text-safari-brown text-sm">Plot 12B Sir Apollo Kaggwa Road, Kampala</p>
+                                <a href="https://maps.google.com/?q=Plot+12B+Sir+Apollo+Kaggwa+Road+Kampala+Uganda" target="_blank" class="text-safari-gold hover:text-safari-brown font-semibold mt-2 inline-block">
+                                    View on Google Maps <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-safari-green mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-safari-brown">Quick answers to common questions about our services</p>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-safari-beige rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-safari-green mb-2">How far in advance should I book my safari?</h3>
+                    <p class="text-safari-brown">We recommend booking at least 3-6 months in advance, especially for gorilla trekking permits and peak season travel (June-September, December-January).</p>
+                </div>
+                <div class="bg-safari-beige rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-safari-green mb-2">Do you provide airport transfers?</h3>
+                    <p class="text-safari-brown">Yes, we offer airport pickup and drop-off services for all our safari and car rental clients. This can be arranged as part of your package or as a separate service.</p>
+                </div>
+                <div class="bg-safari-beige rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-safari-green mb-2">What's included in your safari packages?</h3>
+                    <p class="text-safari-brown">Our packages typically include accommodation, meals, transportation, park fees, professional guide, and specified activities. Specific inclusions vary by package - contact us for detailed information.</p>
+                </div>
+                <div class="bg-safari-beige rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-safari-green mb-2">Can I rent a car for self-drive safaris?</h3>
+                    <p class="text-safari-brown">Absolutely! We offer well-equipped 4x4 vehicles perfect for self-drive adventures. All rentals include GPS, emergency contacts, and 24/7 support.</p>
+                </div>
+                <div class="bg-safari-beige rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-safari-green mb-2">What payment methods do you accept?</h3>
+                    <p class="text-safari-brown">We accept bank transfers, credit cards (Visa, MasterCard), and mobile money. A deposit is required to confirm bookings, with the balance due before travel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-safari-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mountain text-safari-gold text-2xl mr-3"></i>
+                        <span class="text-white font-bold text-xl">Pullman Safaris</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Explore Africa with confidence. Your premier safari and car rental partner in East Africa.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-safari-gold hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-safari-gold transition-colors">About Us</a></li>
+                        <li><a href="safaris.html" class="text-gray-400 hover:text-safari-gold transition-colors">Safari Packages</a></li>
+                        <li><a href="car-rentals.html" class="text-gray-400 hover:text-safari-gold transition-colors">Car Rentals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-safari-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Gorilla Trekking</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Wildlife Safaris</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Cultural Tours</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-safari-gold transition-colors">Airport Transfers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-location-dot text-safari-gold mr-3"></i>
+                            <span class="text-gray-400">Plot 12B Sir Apollo Kaggwa Rd, Kampala, Uganda</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-safari-gold mr-3"></i>
+                            <span class="text-gray-400">+256 702 551 090</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-safari-gold mr-3"></i>
+                            <span class="text-gray-400">info@pullmansafaris.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Pullman Safaris and Car Rentals Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/256702551090" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors z-40">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Create WhatsApp message
+            const message = `Hello Pullman Safaris!
+
+I'm interested in your services. Here are my details:
+
+Name: ${data.firstName} ${data.lastName}
+Email: ${data.email}
+Phone: ${data.phone || 'Not provided'}
+Service Interest: ${data.service}
+Travel Date: ${data.travelDate || 'Flexible'}
+Group Size: ${data.groupSize || 'Not specified'}
+
+Message: ${data.message}
+
+Please get back to me with more information.
+
+Thank you!`;
+
+            // Encode message for WhatsApp
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/256702551090?text=${encodedMessage}`;
+            
+            // Open WhatsApp
+            window.open(whatsappUrl, '_blank');
+            
+            // Show success message
+            alert('Thank you for your inquiry! You will be redirected to WhatsApp to send your message.');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('backdrop-blur-sm');
+            } else {
+                navbar.classList.remove('backdrop-blur-sm');
+            }
+        });
+    </script>
+</body>
+</html>
